@@ -13,7 +13,8 @@
     "jest": true
   },
   "rules": {
-    "semi": "warn",
-    "no-unused-vars": "warn"
+    "no-debugger": "warn",
+    "no-unused-vars": "warn",
+    "semi": "warn"
   }
 }
