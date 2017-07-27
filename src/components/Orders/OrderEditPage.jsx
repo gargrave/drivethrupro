@@ -10,11 +10,51 @@ class OrderEditPage extends Component {
     super(props)
 
     this.state = {
+      selectedMenuItem: menu[0],
+      sizeIdx: 0,
       orderItems: [
         { name: menu[0].name, qty: 1, price: menu[0].price },
         { name: menu[1].name, size: menu[1].sizes[1].name, qty: 2, price: menu[1].sizes[1].price }
       ]
     }
+
+    this.completeOrder = this.completeOrder.bind(this)
+    this.cancelOrder = this.cancelOrder.bind(this)
+    this.addItemToOrder = this.addItemToOrder.bind(this)
+    this.clearForm = this.clearForm.bind(this)
+    this.handleItemSelect = this.handleItemSelect.bind(this)
+    this.handleSizeSelect = this.handleSizeSelect.bind(this)
+  }
+
+  completeOrder () {
+    console.log('completeOrder()')
+  }
+
+  cancelOrder () {
+    console.log('cancelOrder()')
+  }
+
+  addItemToOrder () {
+    console.log('addItemToOrder()')
+  }
+
+  clearForm () {
+    console.log('clearForm()')
+  }
+
+  handleItemSelect (event) {
+    this.setState({
+      selectedMenuItem: menu[event.target.value],
+      sizeIdx: 0
+    })
+  }
+
+  handleSizeSelect (event) {
+    console.log('handleSizeSelect')
+    console.log(this.state.selectedMenuItem.sizes[event.target.value])
+    this.setState({
+      sizeIdx: event.target.value
+    })
   }
 
   render () {
@@ -24,8 +64,10 @@ class OrderEditPage extends Component {
 
         <div>
           <div>
-            <button style={{ marginRight: '10px' }}>Save Order</button>
-            <button>Cancel</button>
+            <button style={{ marginRight: '10px' }} onClick={this.completeOrder}>
+              Save Order
+            </button>
+            <button onClick={this.cancelOrder}>Cancel</button>
           </div>
 
           <hr />
@@ -35,22 +77,39 @@ class OrderEditPage extends Component {
             <div>
               <span className="input-group">
                 <label htmlFor="product">Product: </label>
-                <select name="product" id="product">
-                  <option value="asdf">Menu Items...</option>
+                <select
+                  name="product"
+                  id="product"
+                  value={this.state.selectedMenuItem.id}
+                  onChange={this.handleItemSelect}
+                >
+                  {menu.map(item => {
+                    return (
+                      <option key={item.id} value={item.id}>
+                        {item.name}
+                      </option>
+                    )
+                  })}
                 </select>
               </span>
 
               <span className="input-group">
                 <label htmlFor="size">Size: </label>
-                <select name="size" id="size">
-                  <option value="asdf">Sizes...</option>
+                <select name="size" id="size" value={this.state.sizeIdx} onChange={this.handleSizeSelect}>
+                  {this.state.selectedMenuItem.sizes.map((size, idx) => {
+                    return (
+                      <option key={idx} value={idx}>
+                        {size.name}
+                      </option>
+                    )
+                  })}
                 </select>
               </span>
 
               <span className="input-group">
                 <label htmlFor="quantity">Qty: </label>
                 <select name="quantity" id="quantity">
-                  <option value="asdf">Numbers...</option>
+                  <option value="Numbers">Numbers</option>
                 </select>
               </span>
             </div>
@@ -63,8 +122,10 @@ class OrderEditPage extends Component {
             </div>
 
             <div>
-              <button style={{ marginRight: '10px' }}>Add to Order</button>
-              <button>Clear</button>
+              <button style={{ marginRight: '10px' }} onClick={this.addItemToOrder}>
+                Add to Order
+              </button>
+              <button onClick={this.clearForm}>Clear</button>
             </div>
           </div>
           <hr />
