@@ -4,7 +4,7 @@ export default [
   {
     id: nextId++,
     name: 'Hamburger',
-    sizes: { name: 'regular', price: 99 }
+    sizes: [{ name: 'Regular', price: 99 }]
   },
   {
     id: nextId++,
