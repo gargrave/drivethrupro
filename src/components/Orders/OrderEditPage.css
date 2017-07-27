@@ -1,0 +1,12 @@
+.App .order-item-form span.input-group {
+  margin: 10px;
+}
+
+.App .order-item-form div + div {
+  margin-top: 10px;
+}
+
+.App .order-item-form label + select,
+.App .order-item-form label + textarea {
+  margin-left: 6px;
+}
