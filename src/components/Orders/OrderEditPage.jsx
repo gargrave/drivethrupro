@@ -15,7 +15,8 @@ class OrderEditPage extends Component {
       selectedMenuItem: menu[0],
       sizeIdx: 0,
       quantity: 1,
-      orderItems: []
+      orderItems: [],
+      orderTotalPrice: 0
     }
 
     this.completeOrder = this.completeOrder.bind(this)
@@ -51,9 +52,11 @@ class OrderEditPage extends Component {
   handleAddToOrderClick () {
     const item = this.state.selectedMenuItem
     const orderItem = new OrderItem(item.name, this.state.quantity, item.sizes[this.state.sizeIdx])
+    const orderTotalPrice = this.state.orderTotalPrice + orderItem.totalPrice
 
     this.setState({
-      orderItems: [...this.state.orderItems, orderItem]
+      orderItems: [...this.state.orderItems, orderItem],
+      orderTotalPrice
     })
   }
 
@@ -173,7 +176,9 @@ class OrderEditPage extends Component {
           <hr />
 
           <h3>Current Order</h3>
-          <h4>Total: $1.23</h4>
+          <h4>
+            Total: {this.state.orderTotalPrice}
+          </h4>
 
           <ul>
             {this.state.orderItems.map((item, i) => {
