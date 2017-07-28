@@ -6,7 +6,6 @@
   margin-top: 10px;
 }
 
-.App .order-item-form label + select,
-.App .order-item-form label + textarea {
+.App .order-item-form label + select {
   margin-left: 6px;
 }

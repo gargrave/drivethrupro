@@ -4,6 +4,7 @@ import { range } from 'lodash'
 
 import { displayAsDollars } from '../../utils/utils'
 import OrderItem from './utils/OrderItem'
+import OrderQuantityMenu from './components/OrderQuantityMenu'
 import OrderItemRow from './OrderItemRow'
 import './OrderEditPage.css'
 
@@ -169,23 +170,7 @@ class OrderEditPage extends Component {
                 </select>
               </span>
 
-              <span className="input-group">
-                <label htmlFor="quantity">Qty: </label>
-                <select name="quantity" id="quantity" value={this.state.quantity} onChange={this.handleQuantityChange}>
-                  {range(1, 11).map(n =>
-                    <option key={n} value={n}>
-                      {n}
-                    </option>
-                  )}
-                </select>
-              </span>
-            </div>
-
-            <div>
-              <span className="input-group">
-                <label htmlFor="notes">Notes:</label>
-                <textarea name="notes" id="notes" />
-              </span>
+              <OrderQuantityMenu quantity={this.state.quantity} handleQuantityChange={this.handleQuantityChange} />
             </div>
 
             <div>
