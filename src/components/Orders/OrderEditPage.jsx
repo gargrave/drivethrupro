@@ -2,11 +2,11 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux'
 
 import { displayAsDollars } from '../../utils/utils'
-import OrderItem from './utils/OrderItem'
+import OrderItemRow from './components/OrderItemRow'
 import OrderProductMenu from './components/OrderProductMenu'
 import OrderQuantityMenu from './components/OrderQuantityMenu'
 import OrderSizeMenu from './components/OrderSizeMenu'
-import OrderItemRow from './OrderItemRow'
+import OrderItem from './utils/OrderItem'
 import './OrderEditPage.css'
 
 import menu from '../../data/menu-items'

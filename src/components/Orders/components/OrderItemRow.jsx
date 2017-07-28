@@ -1,7 +1,7 @@
 import React from 'react'
 import { func, number, shape, string } from 'prop-types'
 
-import { displayAsDollars } from '../../utils/utils'
+import { displayAsDollars } from '../../../utils/utils'
 
 const OrderItemRow = props => {
   return (
