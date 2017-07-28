@@ -28,6 +28,7 @@ class OrderEditPage extends Component {
     this.handleItemChange = this.handleItemChange.bind(this)
     this.handleSizeChange = this.handleSizeChange.bind(this)
     this.handleQuantityChange = this.handleQuantityChange.bind(this)
+    this.handleRemoveItemClick = this.handleRemoveItemClick.bind(this)
   }
 
   resetOrderFormState () {
@@ -98,6 +99,25 @@ class OrderEditPage extends Component {
    */
   handleQuantityChange (event) {
     this.setState({ quantity: event.target.value })
+  }
+
+  /**
+   * Handler for the 'Remove Item' button.
+   * Removes and item from the current order, and updates the running total.
+   *
+   * @param {*} event The default event
+   * @param {*} itemID The ID of the item to remove from the order
+   */
+  handleRemoveItemClick (event, itemID) {
+    const orderItem = this.state.orderItems.find(i => i.id === itemID)
+    if (orderItem) {
+      const orderTotalPrice = this.state.orderTotalPrice - orderItem.totalPrice
+
+      this.setState({
+        orderItems: this.state.orderItems.filter(i => i.id !== itemID),
+        orderTotalPrice
+      })
+    }
   }
 
   render () {
@@ -183,7 +203,13 @@ class OrderEditPage extends Component {
           </h4>
 
           <ul>
-            {this.state.orderItems.map((item, i) => <OrderItemRow key={i} item={item} />)}
+            {this.state.orderItems.map(item =>
+              <OrderItemRow
+                key={item.id}
+                item={item}
+                handleRemoveItemClick={e => this.handleRemoveItemClick(e, item.id)}
+              />
+            )}
           </ul>
         </div>
       </div>
