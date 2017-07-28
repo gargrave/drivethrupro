@@ -1,11 +1,43 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { withRouter } from 'react-router-dom'
-import { array, object } from 'prop-types'
+import { array, func, object } from 'prop-types'
 
+import { completeOrder } from '../../store/actions/order-actions'
 import OrderDetailRow from './components/OrderDetailRow'
 
 class OrdersListPage extends Component {
+  constructor (props) {
+    super(props)
+
+    this.handleCompleteOrderClick = this.handleCompleteOrderClick.bind(this)
+    this.handleEditOrderClick = this.handleEditOrderClick.bind(this)
+    this.handleCancelOrderClick = this.handleCancelOrderClick.bind(this)
+  }
+
+  /**
+   * Handler for the "Complete Order" button's click event.
+   * Dispatches the signal tot he store that this order is complete, and can be removed.
+   *
+   * @param {*} event The default event
+   * @param {*} orderID The ID of the order to complete
+   */
+  async handleCompleteOrderClick (event, orderID) {
+    await this.props.completeOrder(orderID)
+  }
+
+  handleEditOrderClick (event, orderID) {
+    console.log('TODO: implement handleEditOrderClick')
+    console.log('orderID:')
+    console.dir(orderID)
+  }
+
+  handleCancelOrderClick (event, orderID) {
+    console.log('TODO: implement handleCancelOrderClick')
+    console.log('orderID:')
+    console.dir(orderID)
+  }
+
   render () {
     const { orders } = this.props
     return (
@@ -14,9 +46,20 @@ class OrdersListPage extends Component {
 
         <hr />
         <h3>Open Orders</h3>
-        {orders.map((order, idx) => {
-          return <OrderDetailRow key={order.id} order={order} index={1} />
-        })}
+        {!orders.length && <h4>There are currently no open orders!</h4>}
+        {!!orders.length &&
+          orders.map((order, idx) => {
+            return (
+              <OrderDetailRow
+                key={order.id}
+                order={order}
+                index={idx + 1}
+                handleCompleteOrderClick={e => this.handleCompleteOrderClick(e, order.id)}
+                handleEditOrderClick={e => this.handleEditOrderClick(e, order.id)}
+                handleCancelOrderClick={e => this.handleCancelOrderClick(e, order.id)}
+              />
+            )
+          })}
       </div>
     )
   }
@@ -24,7 +67,8 @@ class OrdersListPage extends Component {
 
 OrdersListPage.propTypes = {
   history: object.isRequired,
-  orders: array.isRequired
+  orders: array.isRequired,
+  completeOrder: func.isRequired
 }
 
 const mapStateToProps = (state, ownProps) => {
@@ -33,4 +77,10 @@ const mapStateToProps = (state, ownProps) => {
   }
 }
 
-export default withRouter(connect(mapStateToProps)(OrdersListPage))
+const mapDispatchToProps = (dispatch, ownProps) => ({
+  completeOrder (orderID) {
+    return dispatch(completeOrder(orderID))
+  }
+})
+
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(OrdersListPage))
