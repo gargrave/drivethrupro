@@ -3,7 +3,7 @@ import { connect } from 'react-redux'
 import { withRouter } from 'react-router-dom'
 import { array, func, object } from 'prop-types'
 
-import { completeOrder } from '../../store/actions/order-actions'
+import { cancelOrder, completeOrder } from '../../store/actions/order-actions'
 import OrderDetailRow from './components/OrderDetailRow'
 
 class OrdersListPage extends Component {
@@ -32,10 +32,15 @@ class OrdersListPage extends Component {
     console.dir(orderID)
   }
 
-  handleCancelOrderClick (event, orderID) {
-    console.log('TODO: implement handleCancelOrderClick')
-    console.log('orderID:')
-    console.dir(orderID)
+  /**
+   * Handler for the "Cancel Order" button's click event.
+   * Dispatches the signal tot he store that this order is cancel, and can be removed.
+   *
+   * @param {*} event The default event
+   * @param {*} orderID The ID of the order to cancel
+   */
+  async handleCancelOrderClick (event, orderID) {
+    await this.props.cancelOrder(orderID)
   }
 
   render () {
@@ -68,7 +73,8 @@ class OrdersListPage extends Component {
 OrdersListPage.propTypes = {
   history: object.isRequired,
   orders: array.isRequired,
-  completeOrder: func.isRequired
+  completeOrder: func.isRequired,
+  cancelOrder: func.isRequired
 }
 
 const mapStateToProps = (state, ownProps) => {
@@ -80,6 +86,10 @@ const mapStateToProps = (state, ownProps) => {
 const mapDispatchToProps = (dispatch, ownProps) => ({
   completeOrder (orderID) {
     return dispatch(completeOrder(orderID))
+  },
+
+  cancelOrder (orderID) {
+    return dispatch(cancelOrder(orderID))
   }
 })
 
