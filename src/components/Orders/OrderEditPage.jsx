@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { range } from 'lodash'
 
+import { displayAsDollars } from '../../utils/utils'
 import OrderItem from './utils/OrderItem'
 import './OrderEditPage.css'
 
@@ -177,14 +178,14 @@ class OrderEditPage extends Component {
 
           <h3>Current Order</h3>
           <h4>
-            Total: {this.state.orderTotalPrice}
+            Total: {displayAsDollars(this.state.orderTotalPrice)}
           </h4>
 
           <ul>
             {this.state.orderItems.map((item, i) => {
               return (
                 <li key={i}>
-                  {item.name} | {item.quantity} | {item.totalPrice}
+                  {item.name} | {item.quantity} | {displayAsDollars(item.totalPrice)}
                 </li>
               )
             })}
