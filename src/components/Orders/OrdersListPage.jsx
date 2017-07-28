@@ -1,18 +1,29 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import { array } from 'prop-types'
+import { withRouter } from 'react-router-dom'
+import { array, object } from 'prop-types'
+
+import OrderDetailRow from './components/OrderDetailRow'
 
 class OrdersListPage extends Component {
   render () {
+    const { orders } = this.props
     return (
       <div>
-        <h2>Orders List Page</h2>
+        <button onClick={() => this.props.history.push('/orders/new')}>New Order</button>
+
+        <hr />
+        <h3>Open Orders</h3>
+        {orders.map((order, idx) => {
+          return <OrderDetailRow key={order.id} order={order} index={1} />
+        })}
       </div>
     )
   }
 }
 
 OrdersListPage.propTypes = {
+  history: object.isRequired,
   orders: array.isRequired
 }
 
@@ -22,4 +33,4 @@ const mapStateToProps = (state, ownProps) => {
   }
 }
 
-export default connect(mapStateToProps)(OrdersListPage)
+export default withRouter(connect(mapStateToProps)(OrdersListPage))
