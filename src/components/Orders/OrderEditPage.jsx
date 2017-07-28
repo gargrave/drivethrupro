@@ -4,6 +4,7 @@ import { range } from 'lodash'
 
 import { displayAsDollars } from '../../utils/utils'
 import OrderItem from './utils/OrderItem'
+import OrderItemRow from './OrderItemRow'
 import './OrderEditPage.css'
 
 import menu from '../../data/menu-items'
@@ -182,13 +183,7 @@ class OrderEditPage extends Component {
           </h4>
 
           <ul>
-            {this.state.orderItems.map((item, i) => {
-              return (
-                <li key={i}>
-                  {item.name} | {item.quantity} | {displayAsDollars(item.totalPrice)}
-                </li>
-              )
-            })}
+            {this.state.orderItems.map((item, i) => <OrderItemRow key={i} item={item} />)}
           </ul>
         </div>
       </div>
