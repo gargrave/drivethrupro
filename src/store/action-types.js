@@ -1,3 +1,4 @@
 export const Orders = {
-  Create: 'CREATE_ORDER'
+  Create: 'CREATE_ORDER',
+  Complete: 'COMPLETE_ORDER'
 }
