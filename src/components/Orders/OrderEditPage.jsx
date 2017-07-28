@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
+import { range } from 'lodash'
 
+import OrderItem from './utils/OrderItem'
 import './OrderEditPage.css'
 
 import menu from '../../data/menu-items'
@@ -12,36 +14,64 @@ class OrderEditPage extends Component {
     this.state = {
       selectedMenuItem: menu[0],
       sizeIdx: 0,
-      orderItems: [
-        { name: menu[0].name, qty: 1, price: menu[0].price },
-        { name: menu[1].name, size: menu[1].sizes[1].name, qty: 2, price: menu[1].sizes[1].price }
-      ]
+      quantity: 1,
+      orderItems: []
     }
 
     this.completeOrder = this.completeOrder.bind(this)
     this.cancelOrder = this.cancelOrder.bind(this)
-    this.addItemToOrder = this.addItemToOrder.bind(this)
-    this.clearForm = this.clearForm.bind(this)
+    this.handleAddToOrderClick = this.handleAddToOrderClick.bind(this)
+    this.handleResetFormClick = this.handleResetFormClick.bind(this)
     this.handleItemSelect = this.handleItemSelect.bind(this)
     this.handleSizeSelect = this.handleSizeSelect.bind(this)
+    this.handleQuantityChange = this.handleQuantityChange.bind(this)
+  }
+
+  resetOrderFormState () {
+    this.setState({
+      selectedMenuItem: menu[0],
+      sizeIdx: 0,
+      quantity: 1
+    })
   }
 
   completeOrder () {
-    console.log('completeOrder()')
+    console.log('TODO: implement completeOrder()')
   }
 
   cancelOrder () {
-    console.log('cancelOrder()')
+    console.log('TODO: implement cancelOrder()')
   }
 
-  addItemToOrder () {
-    console.log('addItemToOrder()')
+  /**
+   * Handler for 'Add to Order' button.
+   * Builds a new OrderItem based on currently-selected values,
+   * and adds it to the local state's 'orderItems' collection.
+   */
+  handleAddToOrderClick () {
+    const item = this.state.selectedMenuItem
+    const orderItem = new OrderItem(item.name, this.state.quantity, item.sizes[this.state.sizeIdx])
+
+    this.setState({
+      orderItems: [...this.state.orderItems, orderItem]
+    })
   }
 
-  clearForm () {
-    console.log('clearForm()')
+  /**
+   * Handler for the 'Reset' button.
+   * Simply calls the function to reset the form to its default state.
+   */
+  handleResetFormClick () {
+    this.resetOrderFormState()
   }
 
+  /**
+   * Handler for change events on the 'Item/Product' dropdown.
+   * Updates the currently-selected item on the local state.
+   *
+   * Note that this also resets the selected size to 0, as the 'sizes'
+   * list will be rebuilt for each separate item, and some items will only have one size.
+   */
   handleItemSelect (event) {
     this.setState({
       selectedMenuItem: menu[event.target.value],
@@ -49,12 +79,20 @@ class OrderEditPage extends Component {
     })
   }
 
+  /**
+   * Handler for changes events on the 'size' dropdown.
+   * Updates the currently-selected size index on the local state.
+   */
   handleSizeSelect (event) {
-    console.log('handleSizeSelect')
-    console.log(this.state.selectedMenuItem.sizes[event.target.value])
-    this.setState({
-      sizeIdx: event.target.value
-    })
+    this.setState({ sizeIdx: event.target.value })
+  }
+
+  /**
+   * Handler for change events on the 'quantity' dropdown menu.
+   * Simply updates the 'quantity' property of the local state.
+   */
+  handleQuantityChange (event) {
+    this.setState({ quantity: event.target.value })
   }
 
   render () {
@@ -108,8 +146,12 @@ class OrderEditPage extends Component {
 
               <span className="input-group">
                 <label htmlFor="quantity">Qty: </label>
-                <select name="quantity" id="quantity">
-                  <option value="Numbers">Numbers</option>
+                <select name="quantity" id="quantity" value={this.state.quantity} onChange={this.handleQuantityChange}>
+                  {range(1, 11).map(n =>
+                    <option key={n} value={n}>
+                      {n}
+                    </option>
+                  )}
                 </select>
               </span>
             </div>
@@ -122,10 +164,10 @@ class OrderEditPage extends Component {
             </div>
 
             <div>
-              <button style={{ marginRight: '10px' }} onClick={this.addItemToOrder}>
+              <button style={{ marginRight: '10px' }} onClick={this.handleAddToOrderClick}>
                 Add to Order
               </button>
-              <button onClick={this.clearForm}>Clear</button>
+              <button onClick={this.handleResetFormClick}>Reset</button>
             </div>
           </div>
           <hr />
@@ -137,7 +179,7 @@ class OrderEditPage extends Component {
             {this.state.orderItems.map((item, i) => {
               return (
                 <li key={i}>
-                  {item.name} {item.size && ` | (${item.size})`} | {item.qty} | {item.price * item.qty}
+                  {item.name} | {item.quantity} | {item.totalPrice}
                 </li>
               )
             })}
