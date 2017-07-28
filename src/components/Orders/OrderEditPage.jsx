@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import { range } from 'lodash'
 
 import { displayAsDollars } from '../../utils/utils'
 import OrderItem from './utils/OrderItem'
 import OrderQuantityMenu from './components/OrderQuantityMenu'
+import OrderSizeMenu from './components/OrderSizeMenu'
 import OrderItemRow from './OrderItemRow'
 import './OrderEditPage.css'
 
@@ -91,7 +91,7 @@ class OrderEditPage extends Component {
    * Updates the currently-selected size index on the local state.
    */
   handleSizeChange (event) {
-    this.setState({ sizeIdx: event.target.value })
+    this.setState({ sizeIdx: Number(event.target.value) })
   }
 
   /**
@@ -99,7 +99,7 @@ class OrderEditPage extends Component {
    * Simply updates the 'quantity' property of the local state.
    */
   handleQuantityChange (event) {
-    this.setState({ quantity: event.target.value })
+    this.setState({ quantity: Number(event.target.value) })
   }
 
   /**
@@ -157,19 +157,11 @@ class OrderEditPage extends Component {
                 </select>
               </span>
 
-              <span className="input-group">
-                <label htmlFor="size">Size: </label>
-                <select name="size" id="size" value={this.state.sizeIdx} onChange={this.handleSizeChange}>
-                  {this.state.selectedMenuItem.sizes.map((size, idx) => {
-                    return (
-                      <option key={idx} value={idx}>
-                        {size.name}
-                      </option>
-                    )
-                  })}
-                </select>
-              </span>
-
+              <OrderSizeMenu
+                sizeIdx={this.state.sizeIdx}
+                availableSizes={this.state.selectedMenuItem.sizes}
+                handleSizeChange={this.handleSizeChange}
+              />
               <OrderQuantityMenu quantity={this.state.quantity} handleQuantityChange={this.handleQuantityChange} />
             </div>
 
