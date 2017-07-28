@@ -1,14 +1,18 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { withRouter } from 'react-router-dom'
-import { object } from 'prop-types'
+import { func, object } from 'prop-types'
 
+import { createOrder } from '../../store/actions/order-actions'
 import { displayAsDollars } from '../../utils/utils'
 import OrderItemRow from './components/OrderItemRow'
 import OrderProductMenu from './components/OrderProductMenu'
 import OrderQuantityMenu from './components/OrderQuantityMenu'
 import OrderSizeMenu from './components/OrderSizeMenu'
+
+import Order from './utils/Order'
 import OrderItem from './utils/OrderItem'
+
 import './OrderEditPage.css'
 
 import menu from '../../data/menu-items'
@@ -43,8 +47,16 @@ class OrderEditPage extends Component {
     })
   }
 
-  completeOrder () {
-    console.log('TODO: implement completeOrder()')
+  /**
+   * Handler for 'Save Order' button.
+   * Sends the current order to the store, and redirects back to list page.
+   */
+  async completeOrder () {
+    if (this.state.orderItems.length) {
+      const order = new Order(this.state.orderItems)
+      await this.props.createOrder(order)
+      this.props.history.push('/orders')
+    }
   }
 
   /**
@@ -190,11 +202,18 @@ class OrderEditPage extends Component {
 }
 
 OrderEditPage.propTypes = {
-  history: object.isRequired
+  history: object.isRequired,
+  createOrder: func.isRequired
 }
 
 const mapStateToProps = (state, ownProps) => {
   return {}
 }
 
-export default withRouter(connect(mapStateToProps)(OrderEditPage))
+const mapDispatchToProps = (dispatch, ownProps) => ({
+  createOrder (order) {
+    return dispatch(createOrder(order))
+  }
+})
+
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(OrderEditPage))
