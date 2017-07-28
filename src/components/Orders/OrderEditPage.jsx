@@ -3,6 +3,7 @@ import { connect } from 'react-redux'
 
 import { displayAsDollars } from '../../utils/utils'
 import OrderItem from './utils/OrderItem'
+import OrderProductMenu from './components/OrderProductMenu'
 import OrderQuantityMenu from './components/OrderQuantityMenu'
 import OrderSizeMenu from './components/OrderSizeMenu'
 import OrderItemRow from './OrderItemRow'
@@ -139,23 +140,11 @@ class OrderEditPage extends Component {
 
           <div className="order-item-form">
             <div>
-              <span className="input-group">
-                <label htmlFor="product">Product: </label>
-                <select
-                  name="product"
-                  id="product"
-                  value={this.state.selectedMenuItem.id}
-                  onChange={this.handleItemChange}
-                >
-                  {menu.map(item => {
-                    return (
-                      <option key={item.id} value={item.id}>
-                        {item.name}
-                      </option>
-                    )
-                  })}
-                </select>
-              </span>
+              <OrderProductMenu
+                menu={menu}
+                selectedMenuItem={this.state.selectedMenuItem}
+                handleItemChange={this.handleItemChange}
+              />
 
               <OrderSizeMenu
                 sizeIdx={this.state.sizeIdx}
