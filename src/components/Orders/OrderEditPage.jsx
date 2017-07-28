@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
+import { withRouter } from 'react-router-dom'
+import { object } from 'prop-types'
 
 import { displayAsDollars } from '../../utils/utils'
 import OrderItemRow from './components/OrderItemRow'
@@ -45,8 +47,12 @@ class OrderEditPage extends Component {
     console.log('TODO: implement completeOrder()')
   }
 
+  /**
+   * Handler for 'Cancel' button.
+   * Simply route back to the main 'orders list' page.
+   */
   cancelOrder () {
-    console.log('TODO: implement cancelOrder()')
+    this.props.history.push('/orders')
   }
 
   /**
@@ -183,10 +189,12 @@ class OrderEditPage extends Component {
   }
 }
 
-OrderEditPage.propTypes = {}
+OrderEditPage.propTypes = {
+  history: object.isRequired
+}
 
 const mapStateToProps = (state, ownProps) => {
   return {}
 }
 
-export default connect(mapStateToProps)(OrderEditPage)
+export default withRouter(connect(mapStateToProps)(OrderEditPage))
