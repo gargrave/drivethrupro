@@ -22,8 +22,8 @@ class OrderEditPage extends Component {
     this.cancelOrder = this.cancelOrder.bind(this)
     this.handleAddToOrderClick = this.handleAddToOrderClick.bind(this)
     this.handleResetFormClick = this.handleResetFormClick.bind(this)
-    this.handleItemSelect = this.handleItemSelect.bind(this)
-    this.handleSizeSelect = this.handleSizeSelect.bind(this)
+    this.handleItemChange = this.handleItemChange.bind(this)
+    this.handleSizeChange = this.handleSizeChange.bind(this)
     this.handleQuantityChange = this.handleQuantityChange.bind(this)
   }
 
@@ -72,7 +72,7 @@ class OrderEditPage extends Component {
    * Note that this also resets the selected size to 0, as the 'sizes'
    * list will be rebuilt for each separate item, and some items will only have one size.
    */
-  handleItemSelect (event) {
+  handleItemChange (event) {
     this.setState({
       selectedMenuItem: menu[event.target.value],
       sizeIdx: 0
@@ -83,7 +83,7 @@ class OrderEditPage extends Component {
    * Handler for changes events on the 'size' dropdown.
    * Updates the currently-selected size index on the local state.
    */
-  handleSizeSelect (event) {
+  handleSizeChange (event) {
     this.setState({ sizeIdx: event.target.value })
   }
 
@@ -119,7 +119,7 @@ class OrderEditPage extends Component {
                   name="product"
                   id="product"
                   value={this.state.selectedMenuItem.id}
-                  onChange={this.handleItemSelect}
+                  onChange={this.handleItemChange}
                 >
                   {menu.map(item => {
                     return (
@@ -133,7 +133,7 @@ class OrderEditPage extends Component {
 
               <span className="input-group">
                 <label htmlFor="size">Size: </label>
-                <select name="size" id="size" value={this.state.sizeIdx} onChange={this.handleSizeSelect}>
+                <select name="size" id="size" value={this.state.sizeIdx} onChange={this.handleSizeChange}>
                   {this.state.selectedMenuItem.sizes.map((size, idx) => {
                     return (
                       <option key={idx} value={idx}>
