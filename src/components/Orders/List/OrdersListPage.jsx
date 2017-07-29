@@ -4,7 +4,10 @@ import { withRouter } from 'react-router-dom'
 import { array, func, object } from 'prop-types'
 
 import { cancelOrder, completeOrder } from '../../../store/actions/order-actions'
+import ManagerAlertNotice from './ManagerAlertNotice'
 import OrderDetailRow from './OrderDetailRow'
+
+import './OrderListPage.css'
 
 class OrdersListPage extends Component {
   constructor (props) {
@@ -44,10 +47,11 @@ class OrdersListPage extends Component {
   render () {
     const { orders } = this.props
     return (
-      <div>
+      <div className="orders-list-view">
         <button onClick={() => this.props.history.push('/orders/new')}>New Order</button>
 
         <hr />
+        {orders.length > 4 && <ManagerAlertNotice />}
         <h3>Open Orders</h3>
         {!orders.length && <h4>There are currently no open orders!</h4>}
         {!!orders.length &&
