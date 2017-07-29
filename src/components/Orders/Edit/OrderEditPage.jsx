@@ -136,12 +136,14 @@ class OrderEditPage extends Component {
   render () {
     return (
       <div>
-        <h2>Order Edit Page</h2>
-
         <div>
           <div>
-            <button onClick={this.completeOrder}>Save Order</button>
-            <button onClick={this.cancelOrder}>Cancel</button>
+            <button className="button" onClick={this.completeOrder}>
+              Submit Order
+            </button>
+            <button className="button button-outline" onClick={this.cancelOrder}>
+              Cancel
+            </button>
           </div>
 
           <hr />

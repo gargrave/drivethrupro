@@ -55,7 +55,9 @@ class OrdersListPage extends Component {
     const { orders } = this.props
     return (
       <div className="orders-list-view">
-        <button onClick={() => this.props.history.push('/orders/new')}>New Order</button>
+        <button className="button" onClick={() => this.props.history.push('/orders/new')}>
+          New Order
+        </button>
 
         <hr />
         {orders.length > 4 && <ManagerAlertNotice orderCount={orders.length} />}

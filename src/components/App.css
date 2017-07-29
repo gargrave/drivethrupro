@@ -1,3 +1,7 @@
 .App {
   text-align: center;
 }
+
+.App.container {
+  max-width: 100.0rem;
+}

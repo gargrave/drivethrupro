@@ -1,0 +1,21 @@
+.order-item-form .input-group {
+  margin: 10px;
+}
+
+.order-item-form .input-group label {
+  text-align: left;
+}
+
+.order-item-form .input-group label + * {
+  margin-left: 6px;
+}
+
+.order-item-form .input-group select {
+  min-width: 150px;
+}
+
+.order-item-form .input-group label,
+.order-item-form .input-group select {
+  display: inline;
+  width: inherit;
+}

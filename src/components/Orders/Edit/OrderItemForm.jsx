@@ -5,31 +5,40 @@ import OrderProductMenu from './OrderProductMenu'
 import OrderQuantityMenu from './OrderQuantityMenu'
 import OrderSizeMenu from './OrderSizeMenu'
 
+import './OrderItemForm.css'
+
 const OrderForm = props => {
   return (
-    <section>
+    <section className="order-item-form">
       <h3>Add an Item</h3>
-      <div className="order-item-form">
-        <div>
+
+      <div className="row">
+        <div className="column">
           <OrderProductMenu
             menu={props.menu}
             selectedMenuItem={props.selectedMenuItem}
             handleItemChange={props.handleItemChange}
           />
+        </div>
 
+        <div className="column">
           <OrderSizeMenu
             sizeIdx={props.sizeIdx}
             availableSizes={props.selectedMenuItem.sizes}
             handleSizeChange={props.handleSizeChange}
           />
+        </div>
+        <div className="column">
           <OrderQuantityMenu quantity={props.quantity} handleQuantityChange={props.handleQuantityChange} />
         </div>
+      </div>
 
-        <div>
-          <button className="add-to-order-button" onClick={props.handleAddToOrderClick}>
+      <div className="row">
+        <div className="column">
+          <button className="button add-to-order-button" onClick={props.handleAddToOrderClick}>
             Add to Order
           </button>
-          <button className="reset-form-button" onClick={props.handleResetFormClick}>
+          <button className="button button-outline reset-form-button" onClick={props.handleResetFormClick}>
             Reset
           </button>
         </div>

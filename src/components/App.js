@@ -13,7 +13,7 @@ class App extends Component {
     return (
       <Provider store={store}>
         <BrowserRouter>
-          <div className="App">
+          <div className="App container">
             <h1>Drive Thru PRO</h1>
             <Routes />
           </div>
