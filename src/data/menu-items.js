@@ -19,7 +19,7 @@ export default [
   {
     id: nextId++,
     name: 'SUPER ULTRA Burger',
-    sizes: [{ name: 'Regular', price: 399 }]
+    sizes: [{ name: 'SUPER ULTRA', price: 399 }]
   },
   {
     id: nextId++,

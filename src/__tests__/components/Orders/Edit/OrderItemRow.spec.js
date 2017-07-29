@@ -23,7 +23,7 @@ describe('OrderItemRow', () => {
     expect(component).toMatchSnapshot()
   })
 
-  test('calls the "complete" callback when the button is clicked', () => {
+  test('calls the "remove" callback when the button is clicked', () => {
     const component = shallow(<OrderItemRow {...props} />)
     expect(props.handleRemoveItemClick.mock.calls.length).toEqual(0)
     component.find('.remove-item-button').simulate('click')
