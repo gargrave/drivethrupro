@@ -1,0 +1,380 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`OrderProductMenu renders correctly 1`] = `
+ShallowWrapper {
+  "complexSelector": ComplexSelector {
+    "buildPredicate": [Function],
+    "childrenOfNode": [Function],
+    "findWhereUnwrapped": [Function],
+  },
+  "length": 1,
+  "node": <span
+    className="input-group order-product-menu"
+>
+    <label
+        htmlFor="product"
+    >
+        Product:
+    </label>
+    <select
+        className="order-product-select"
+        id="product"
+        name="product"
+        onChange={[Function]}
+        value={1}
+    >
+        <option
+            className="order-product-select-option"
+            value={0}
+        >
+            Hamburger
+        </option>
+        <option
+            className="order-product-select-option"
+            value={1}
+        >
+            French Fries
+        </option>
+        <option
+            className="order-product-select-option"
+            value={2}
+        >
+            Fountrain Drink
+        </option>
+    </select>
+</span>,
+  "nodes": Array [
+    <span
+      className="input-group order-product-menu"
+>
+      <label
+            htmlFor="product"
+      >
+            Product:
+      </label>
+      <select
+            className="order-product-select"
+            id="product"
+            name="product"
+            onChange={[Function]}
+            value={1}
+      >
+            <option
+                  className="order-product-select-option"
+                  value={0}
+            >
+                  Hamburger
+            </option>
+            <option
+                  className="order-product-select-option"
+                  value={1}
+            >
+                  French Fries
+            </option>
+            <option
+                  className="order-product-select-option"
+                  value={2}
+            >
+                  Fountrain Drink
+            </option>
+      </select>
+</span>,
+  ],
+  "options": Object {},
+  "renderer": ReactShallowRenderer {
+    "_instance": ShallowComponentWrapper {
+      "_calledComponentWillUnmount": false,
+      "_compositeType": 2,
+      "_context": Object {},
+      "_currentElement": <OrderProductMenu
+        handleItemChange={[Function]}
+        menu={
+                Array [
+                        Object {
+                          "id": 0,
+                          "name": "Hamburger",
+                          "sizes": Array [
+                            Object {
+                              "name": "Regular",
+                              "price": 99,
+                            },
+                          ],
+                        },
+                        Object {
+                          "id": 1,
+                          "name": "French Fries",
+                          "sizes": Array [
+                            Object {
+                              "name": "Small",
+                              "price": 49,
+                            },
+                            Object {
+                              "name": "Medium",
+                              "price": 69,
+                            },
+                            Object {
+                              "name": "Large",
+                              "price": 89,
+                            },
+                          ],
+                        },
+                        Object {
+                          "id": 2,
+                          "name": "Fountrain Drink",
+                          "sizes": Array [
+                            Object {
+                              "name": "Small",
+                              "price": 59,
+                            },
+                            Object {
+                              "name": "Medium",
+                              "price": 79,
+                            },
+                            Object {
+                              "name": "Large",
+                              "price": 99,
+                            },
+                            Object {
+                              "name": "Obscene",
+                              "price": 139,
+                            },
+                          ],
+                        },
+                      ]
+        }
+        selectedMenuItem={
+                Object {
+                        "id": 1,
+                      }
+        }
+/>,
+      "_debugID": 1,
+      "_hostContainerInfo": null,
+      "_hostParent": null,
+      "_instance": StatelessComponent {
+        "_reactInternalInstance": [Circular],
+        "context": Object {},
+        "props": Object {
+          "handleItemChange": [Function],
+          "menu": Array [
+            Object {
+              "id": 0,
+              "name": "Hamburger",
+              "sizes": Array [
+                Object {
+                  "name": "Regular",
+                  "price": 99,
+                },
+              ],
+            },
+            Object {
+              "id": 1,
+              "name": "French Fries",
+              "sizes": Array [
+                Object {
+                  "name": "Small",
+                  "price": 49,
+                },
+                Object {
+                  "name": "Medium",
+                  "price": 69,
+                },
+                Object {
+                  "name": "Large",
+                  "price": 89,
+                },
+              ],
+            },
+            Object {
+              "id": 2,
+              "name": "Fountrain Drink",
+              "sizes": Array [
+                Object {
+                  "name": "Small",
+                  "price": 59,
+                },
+                Object {
+                  "name": "Medium",
+                  "price": 79,
+                },
+                Object {
+                  "name": "Large",
+                  "price": 99,
+                },
+                Object {
+                  "name": "Obscene",
+                  "price": 139,
+                },
+              ],
+            },
+          ],
+          "selectedMenuItem": Object {
+            "id": 1,
+          },
+        },
+        "refs": Object {},
+        "state": null,
+        "updater": Object {
+          "enqueueCallback": [Function],
+          "enqueueCallbackInternal": [Function],
+          "enqueueElementInternal": [Function],
+          "enqueueForceUpdate": [Function],
+          "enqueueReplaceState": [Function],
+          "enqueueSetState": [Function],
+          "isMounted": [Function],
+          "validateCallback": [Function],
+        },
+      },
+      "_mountOrder": 1,
+      "_pendingCallbacks": null,
+      "_pendingElement": null,
+      "_pendingForceUpdate": false,
+      "_pendingReplaceState": false,
+      "_pendingStateQueue": null,
+      "_renderedComponent": NoopInternalComponent {
+        "_currentElement": <span
+          className="input-group order-product-menu"
+>
+          <label
+                    htmlFor="product"
+          >
+                    Product:
+          </label>
+          <select
+                    className="order-product-select"
+                    id="product"
+                    name="product"
+                    onChange={[Function]}
+                    value={1}
+          >
+                    <option
+                              className="order-product-select-option"
+                              value={0}
+                    >
+                              Hamburger
+                    </option>
+                    <option
+                              className="order-product-select-option"
+                              value={1}
+                    >
+                              French Fries
+                    </option>
+                    <option
+                              className="order-product-select-option"
+                              value={2}
+                    >
+                              Fountrain Drink
+                    </option>
+          </select>
+</span>,
+        "_debugID": 2,
+        "_renderedOutput": <span
+          className="input-group order-product-menu"
+>
+          <label
+                    htmlFor="product"
+          >
+                    Product:
+          </label>
+          <select
+                    className="order-product-select"
+                    id="product"
+                    name="product"
+                    onChange={[Function]}
+                    value={1}
+          >
+                    <option
+                              className="order-product-select-option"
+                              value={0}
+                    >
+                              Hamburger
+                    </option>
+                    <option
+                              className="order-product-select-option"
+                              value={1}
+                    >
+                              French Fries
+                    </option>
+                    <option
+                              className="order-product-select-option"
+                              value={2}
+                    >
+                              Fountrain Drink
+                    </option>
+          </select>
+</span>,
+      },
+      "_renderedNodeType": 0,
+      "_rootNodeID": 0,
+      "_topLevelWrapper": null,
+      "_updateBatchNumber": null,
+      "_warnedAboutRefsInRender": false,
+    },
+    "getRenderOutput": [Function],
+    "render": [Function],
+  },
+  "root": [Circular],
+  "unrendered": <OrderProductMenu
+    handleItemChange={[Function]}
+    menu={
+        Array [
+            Object {
+              "id": 0,
+              "name": "Hamburger",
+              "sizes": Array [
+                Object {
+                  "name": "Regular",
+                  "price": 99,
+                },
+              ],
+            },
+            Object {
+              "id": 1,
+              "name": "French Fries",
+              "sizes": Array [
+                Object {
+                  "name": "Small",
+                  "price": 49,
+                },
+                Object {
+                  "name": "Medium",
+                  "price": 69,
+                },
+                Object {
+                  "name": "Large",
+                  "price": 89,
+                },
+              ],
+            },
+            Object {
+              "id": 2,
+              "name": "Fountrain Drink",
+              "sizes": Array [
+                Object {
+                  "name": "Small",
+                  "price": 59,
+                },
+                Object {
+                  "name": "Medium",
+                  "price": 79,
+                },
+                Object {
+                  "name": "Large",
+                  "price": 99,
+                },
+                Object {
+                  "name": "Obscene",
+                  "price": 139,
+                },
+              ],
+            },
+          ]
+    }
+    selectedMenuItem={
+        Object {
+            "id": 1,
+          }
+    }
+/>,
+}
+`;
