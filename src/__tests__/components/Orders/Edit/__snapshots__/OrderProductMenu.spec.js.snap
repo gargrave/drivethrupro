@@ -33,13 +33,55 @@ ShallowWrapper {
             className="order-product-select-option"
             value={1}
         >
-            French Fries
+            Cheeseburger
         </option>
         <option
             className="order-product-select-option"
             value={2}
         >
+            Double Cheeseburger
+        </option>
+        <option
+            className="order-product-select-option"
+            value={3}
+        >
+            SUPER ULTRA Burger
+        </option>
+        <option
+            className="order-product-select-option"
+            value={4}
+        >
+            Chicken Sandwich
+        </option>
+        <option
+            className="order-product-select-option"
+            value={5}
+        >
+            French Fries
+        </option>
+        <option
+            className="order-product-select-option"
+            value={6}
+        >
+            Currrly Fries
+        </option>
+        <option
+            className="order-product-select-option"
+            value={7}
+        >
             Fountrain Drink
+        </option>
+        <option
+            className="order-product-select-option"
+            value={8}
+        >
+            Bottled Water
+        </option>
+        <option
+            className="order-product-select-option"
+            value={9}
+        >
+            Milkshake
         </option>
     </select>
 </span>,
@@ -69,13 +111,55 @@ ShallowWrapper {
                   className="order-product-select-option"
                   value={1}
             >
-                  French Fries
+                  Cheeseburger
             </option>
             <option
                   className="order-product-select-option"
                   value={2}
             >
+                  Double Cheeseburger
+            </option>
+            <option
+                  className="order-product-select-option"
+                  value={3}
+            >
+                  SUPER ULTRA Burger
+            </option>
+            <option
+                  className="order-product-select-option"
+                  value={4}
+            >
+                  Chicken Sandwich
+            </option>
+            <option
+                  className="order-product-select-option"
+                  value={5}
+            >
+                  French Fries
+            </option>
+            <option
+                  className="order-product-select-option"
+                  value={6}
+            >
+                  Currrly Fries
+            </option>
+            <option
+                  className="order-product-select-option"
+                  value={7}
+            >
                   Fountrain Drink
+            </option>
+            <option
+                  className="order-product-select-option"
+                  value={8}
+            >
+                  Bottled Water
+            </option>
+            <option
+                  className="order-product-select-option"
+                  value={9}
+            >
+                  Milkshake
             </option>
       </select>
 </span>,
@@ -102,6 +186,46 @@ ShallowWrapper {
                         },
                         Object {
                           "id": 1,
+                          "name": "Cheeseburger",
+                          "sizes": Array [
+                            Object {
+                              "name": "Regular",
+                              "price": 119,
+                            },
+                          ],
+                        },
+                        Object {
+                          "id": 2,
+                          "name": "Double Cheeseburger",
+                          "sizes": Array [
+                            Object {
+                              "name": "Regular",
+                              "price": 189,
+                            },
+                          ],
+                        },
+                        Object {
+                          "id": 3,
+                          "name": "SUPER ULTRA Burger",
+                          "sizes": Array [
+                            Object {
+                              "name": "SUPER ULTRA",
+                              "price": 399,
+                            },
+                          ],
+                        },
+                        Object {
+                          "id": 4,
+                          "name": "Chicken Sandwich",
+                          "sizes": Array [
+                            Object {
+                              "name": "Regular",
+                              "price": 179,
+                            },
+                          ],
+                        },
+                        Object {
+                          "id": 5,
                           "name": "French Fries",
                           "sizes": Array [
                             Object {
@@ -119,7 +243,25 @@ ShallowWrapper {
                           ],
                         },
                         Object {
-                          "id": 2,
+                          "id": 6,
+                          "name": "Currrly Fries",
+                          "sizes": Array [
+                            Object {
+                              "name": "Small",
+                              "price": 79,
+                            },
+                            Object {
+                              "name": "Medium",
+                              "price": 119,
+                            },
+                            Object {
+                              "name": "Large",
+                              "price": 149,
+                            },
+                          ],
+                        },
+                        Object {
+                          "id": 7,
                           "name": "Fountrain Drink",
                           "sizes": Array [
                             Object {
@@ -137,6 +279,34 @@ ShallowWrapper {
                             Object {
                               "name": "Obscene",
                               "price": 139,
+                            },
+                          ],
+                        },
+                        Object {
+                          "id": 8,
+                          "name": "Bottled Water",
+                          "sizes": Array [
+                            Object {
+                              "name": "Regular",
+                              "price": 129,
+                            },
+                          ],
+                        },
+                        Object {
+                          "id": 9,
+                          "name": "Milkshake",
+                          "sizes": Array [
+                            Object {
+                              "name": "Small",
+                              "price": 119,
+                            },
+                            Object {
+                              "name": "Medium",
+                              "price": 149,
+                            },
+                            Object {
+                              "name": "Large",
+                              "price": 179,
                             },
                           ],
                         },
@@ -169,6 +339,46 @@ ShallowWrapper {
             },
             Object {
               "id": 1,
+              "name": "Cheeseburger",
+              "sizes": Array [
+                Object {
+                  "name": "Regular",
+                  "price": 119,
+                },
+              ],
+            },
+            Object {
+              "id": 2,
+              "name": "Double Cheeseburger",
+              "sizes": Array [
+                Object {
+                  "name": "Regular",
+                  "price": 189,
+                },
+              ],
+            },
+            Object {
+              "id": 3,
+              "name": "SUPER ULTRA Burger",
+              "sizes": Array [
+                Object {
+                  "name": "SUPER ULTRA",
+                  "price": 399,
+                },
+              ],
+            },
+            Object {
+              "id": 4,
+              "name": "Chicken Sandwich",
+              "sizes": Array [
+                Object {
+                  "name": "Regular",
+                  "price": 179,
+                },
+              ],
+            },
+            Object {
+              "id": 5,
               "name": "French Fries",
               "sizes": Array [
                 Object {
@@ -186,7 +396,25 @@ ShallowWrapper {
               ],
             },
             Object {
-              "id": 2,
+              "id": 6,
+              "name": "Currrly Fries",
+              "sizes": Array [
+                Object {
+                  "name": "Small",
+                  "price": 79,
+                },
+                Object {
+                  "name": "Medium",
+                  "price": 119,
+                },
+                Object {
+                  "name": "Large",
+                  "price": 149,
+                },
+              ],
+            },
+            Object {
+              "id": 7,
               "name": "Fountrain Drink",
               "sizes": Array [
                 Object {
@@ -204,6 +432,34 @@ ShallowWrapper {
                 Object {
                   "name": "Obscene",
                   "price": 139,
+                },
+              ],
+            },
+            Object {
+              "id": 8,
+              "name": "Bottled Water",
+              "sizes": Array [
+                Object {
+                  "name": "Regular",
+                  "price": 129,
+                },
+              ],
+            },
+            Object {
+              "id": 9,
+              "name": "Milkshake",
+              "sizes": Array [
+                Object {
+                  "name": "Small",
+                  "price": 119,
+                },
+                Object {
+                  "name": "Medium",
+                  "price": 149,
+                },
+                Object {
+                  "name": "Large",
+                  "price": 179,
                 },
               ],
             },
@@ -257,13 +513,55 @@ ShallowWrapper {
                               className="order-product-select-option"
                               value={1}
                     >
-                              French Fries
+                              Cheeseburger
                     </option>
                     <option
                               className="order-product-select-option"
                               value={2}
                     >
+                              Double Cheeseburger
+                    </option>
+                    <option
+                              className="order-product-select-option"
+                              value={3}
+                    >
+                              SUPER ULTRA Burger
+                    </option>
+                    <option
+                              className="order-product-select-option"
+                              value={4}
+                    >
+                              Chicken Sandwich
+                    </option>
+                    <option
+                              className="order-product-select-option"
+                              value={5}
+                    >
+                              French Fries
+                    </option>
+                    <option
+                              className="order-product-select-option"
+                              value={6}
+                    >
+                              Currrly Fries
+                    </option>
+                    <option
+                              className="order-product-select-option"
+                              value={7}
+                    >
                               Fountrain Drink
+                    </option>
+                    <option
+                              className="order-product-select-option"
+                              value={8}
+                    >
+                              Bottled Water
+                    </option>
+                    <option
+                              className="order-product-select-option"
+                              value={9}
+                    >
+                              Milkshake
                     </option>
           </select>
 </span>,
@@ -293,13 +591,55 @@ ShallowWrapper {
                               className="order-product-select-option"
                               value={1}
                     >
-                              French Fries
+                              Cheeseburger
                     </option>
                     <option
                               className="order-product-select-option"
                               value={2}
                     >
+                              Double Cheeseburger
+                    </option>
+                    <option
+                              className="order-product-select-option"
+                              value={3}
+                    >
+                              SUPER ULTRA Burger
+                    </option>
+                    <option
+                              className="order-product-select-option"
+                              value={4}
+                    >
+                              Chicken Sandwich
+                    </option>
+                    <option
+                              className="order-product-select-option"
+                              value={5}
+                    >
+                              French Fries
+                    </option>
+                    <option
+                              className="order-product-select-option"
+                              value={6}
+                    >
+                              Currrly Fries
+                    </option>
+                    <option
+                              className="order-product-select-option"
+                              value={7}
+                    >
                               Fountrain Drink
+                    </option>
+                    <option
+                              className="order-product-select-option"
+                              value={8}
+                    >
+                              Bottled Water
+                    </option>
+                    <option
+                              className="order-product-select-option"
+                              value={9}
+                    >
+                              Milkshake
                     </option>
           </select>
 </span>,
@@ -330,6 +670,46 @@ ShallowWrapper {
             },
             Object {
               "id": 1,
+              "name": "Cheeseburger",
+              "sizes": Array [
+                Object {
+                  "name": "Regular",
+                  "price": 119,
+                },
+              ],
+            },
+            Object {
+              "id": 2,
+              "name": "Double Cheeseburger",
+              "sizes": Array [
+                Object {
+                  "name": "Regular",
+                  "price": 189,
+                },
+              ],
+            },
+            Object {
+              "id": 3,
+              "name": "SUPER ULTRA Burger",
+              "sizes": Array [
+                Object {
+                  "name": "SUPER ULTRA",
+                  "price": 399,
+                },
+              ],
+            },
+            Object {
+              "id": 4,
+              "name": "Chicken Sandwich",
+              "sizes": Array [
+                Object {
+                  "name": "Regular",
+                  "price": 179,
+                },
+              ],
+            },
+            Object {
+              "id": 5,
               "name": "French Fries",
               "sizes": Array [
                 Object {
@@ -347,7 +727,25 @@ ShallowWrapper {
               ],
             },
             Object {
-              "id": 2,
+              "id": 6,
+              "name": "Currrly Fries",
+              "sizes": Array [
+                Object {
+                  "name": "Small",
+                  "price": 79,
+                },
+                Object {
+                  "name": "Medium",
+                  "price": 119,
+                },
+                Object {
+                  "name": "Large",
+                  "price": 149,
+                },
+              ],
+            },
+            Object {
+              "id": 7,
               "name": "Fountrain Drink",
               "sizes": Array [
                 Object {
@@ -365,6 +763,34 @@ ShallowWrapper {
                 Object {
                   "name": "Obscene",
                   "price": 139,
+                },
+              ],
+            },
+            Object {
+              "id": 8,
+              "name": "Bottled Water",
+              "sizes": Array [
+                Object {
+                  "name": "Regular",
+                  "price": 129,
+                },
+              ],
+            },
+            Object {
+              "id": 9,
+              "name": "Milkshake",
+              "sizes": Array [
+                Object {
+                  "name": "Small",
+                  "price": 119,
+                },
+                Object {
+                  "name": "Medium",
+                  "price": 149,
+                },
+                Object {
+                  "name": "Large",
+                  "price": 179,
                 },
               ],
             },
