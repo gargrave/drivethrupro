@@ -79,10 +79,8 @@ class OrderEditPage extends Component {
   handleAddToOrderClick () {
     const menuItem = this.state.selectedMenuItem
     const orderItem = new OrderItem(menuItem.name, this.state.quantity, menuItem.sizes[this.state.sizeIdx])
-    const order = Object.assign({}, this.state.order)
-    order.items.push(orderItem)
-    order.totalPrice += orderItem.totalPrice
-    order.totalItems += orderItem.quantity
+    const order = new Order(this.state.order)
+    order.addItem(orderItem)
     this.setState({ order })
   }
 
@@ -134,10 +132,8 @@ class OrderEditPage extends Component {
   handleRemoveItemClick (event, itemID) {
     const itemToRemove = this.state.order.items.find(i => i.id === itemID)
     if (itemToRemove) {
-      const order = Object.assign({}, this.state.order)
-      order.items = order.items.filter(i => i.id !== itemID)
-      order.totalPrice -= itemToRemove.totalPrice
-      order.totalItems -= itemToRemove.quantity
+      const order = new Order(this.state.order)
+      order.removeItem(itemToRemove)
       this.setState({ order })
     }
   }
