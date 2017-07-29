@@ -3,19 +3,19 @@ import { connect } from 'react-redux'
 import { withRouter } from 'react-router-dom'
 import { array, bool, func, number, object, shape } from 'prop-types'
 
-import { createOrder, updateOrder } from '../../store/actions/order-actions'
-import { displayAsDollars } from '../../utils/utils'
-import OrderItemRow from './components/OrderItemRow'
-import OrderProductMenu from './components/OrderProductMenu'
-import OrderQuantityMenu from './components/OrderQuantityMenu'
-import OrderSizeMenu from './components/OrderSizeMenu'
+import { createOrder, updateOrder } from '../../../store/actions/order-actions'
+import { displayAsDollars } from '../../../utils/utils'
+import OrderItemRow from './OrderItemRow'
+import OrderProductMenu from './OrderProductMenu'
+import OrderQuantityMenu from './OrderQuantityMenu'
+import OrderSizeMenu from './OrderSizeMenu'
 
-import Order from './utils/Order'
-import OrderItem from './utils/OrderItem'
+import Order from '../utils/Order'
+import OrderItem from '../utils/OrderItem'
 
 import './OrderEditPage.css'
 
-import menu from '../../data/menu-items'
+import menu from '../../../data/menu-items'
 
 class OrderEditPage extends Component {
   constructor (props) {

@@ -1,8 +1,8 @@
 import React from 'react'
 import { Route, Switch } from 'react-router-dom'
 
-import OrderEditPage from './Orders/OrderEditPage'
-import OrdersListPage from './Orders/OrdersListPage'
+import OrderEditPage from './Orders/Edit/OrderEditPage'
+import OrdersListPage from './Orders/List/OrdersListPage'
 import NotFound from './Common/NotFound'
 import Home from './Common/Home'
 

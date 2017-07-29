@@ -3,8 +3,8 @@ import { connect } from 'react-redux'
 import { withRouter } from 'react-router-dom'
 import { array, func, object } from 'prop-types'
 
-import { cancelOrder, completeOrder } from '../../store/actions/order-actions'
-import OrderDetailRow from './components/OrderDetailRow'
+import { cancelOrder, completeOrder } from '../../../store/actions/order-actions'
+import OrderDetailRow from './OrderDetailRow'
 
 class OrdersListPage extends Component {
   constructor (props) {
