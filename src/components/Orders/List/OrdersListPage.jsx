@@ -29,6 +29,13 @@ class OrdersListPage extends Component {
     await this.props.completeOrder(orderID)
   }
 
+  /**
+   * Callback for the "Edit Order" button's 'click' event.
+   * Redirects to the "order edit" page for that order's ID.
+   *
+   * @param {*} event The default event
+   * @param {*} orderID The ID of the order to edit
+   */
   handleEditOrderClick (event, orderID) {
     this.props.history.push(`/orders/${orderID}`)
   }
@@ -52,6 +59,7 @@ class OrdersListPage extends Component {
 
         <hr />
         {orders.length > 4 && <ManagerAlertNotice orderCount={orders.length} />}
+
         <h3>Open Orders</h3>
         {!orders.length && <h4>There are currently no open orders!</h4>}
         {!!orders.length &&

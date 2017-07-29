@@ -1,4 +1,7 @@
-let nextID = 0
+/*
+A simple utility class for keeping track of a single line item within an order.
+*/
+let nextID = 1
 
 export default class OrderItem {
   constructor (name, quantity, size) {
