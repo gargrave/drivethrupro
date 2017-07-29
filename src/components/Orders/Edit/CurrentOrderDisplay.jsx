@@ -4,13 +4,19 @@ import { array, func, number, shape } from 'prop-types'
 import { displayAsDollars } from '../../../utils/utils'
 import OrderItemRow from './OrderItemRow'
 
+import './CurrentOrderDisplay.css'
+
 const CurrentOrderDisplay = props => {
   return (
     <section>
-      <h3>Current Order</h3>
-      <h4 className="current-order-total-price">
-        Total: {displayAsDollars(props.order.totalPrice)}
-      </h4>
+      <h3>
+        Current Order:
+        <span className="current-order-total-price">
+          <strong>
+            {displayAsDollars(props.order.totalPrice)}
+          </strong>
+        </span>
+      </h3>
 
       <ul>
         {props.order.items.map(item =>
