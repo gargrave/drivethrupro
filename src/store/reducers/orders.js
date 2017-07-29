@@ -1,20 +1,25 @@
 import { Orders } from '../action-types'
 
 export default function orders (state = [], action) {
+  const order = action.payload
   switch (action.type) {
     // return state with new order added to the existing list
     case Orders.Create:
-      return [...state, action.payload]
+      return [...state, order]
+
+    // return state with existing order replaced with updated one
+    case Orders.Update:
+      return [...state.filter(o => o.id !== order.id), order]
 
     // return state with the completed order removed from the list
-    // (we are keeping this separate from the 'cancel' action in order
-    // to easily facilitate the ability to tracker completed vs. cancelled orders)
+    // (even they are similar, we are keeping this separate from the 'cancel' action in order
+    // to easily facilitate the ability to track completed vs. cancelled orders)
     case Orders.Complete:
-      return state.filter(order => order.id !== action.payload.id)
+      return state.filter(o => o.id !== order.id)
 
     // return state with the completed order removed from the list
     case Orders.Cancel:
-      return state.filter(order => order.id !== action.payload.id)
+      return state.filter(o => o.id !== order.id)
 
     default:
       return state

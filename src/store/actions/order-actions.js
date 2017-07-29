@@ -7,6 +7,13 @@ function _createOrder (order) {
   }
 }
 
+function _updateOrder (order) {
+  return {
+    type: Orders.Update,
+    payload: order
+  }
+}
+
 function _completeOrder (orderID) {
   return {
     type: Orders.Complete,
@@ -25,6 +32,15 @@ export function createOrder (order) {
   return dispatch => {
     return new Promise((resolve, reject) => {
       dispatch(_createOrder(order))
+      resolve()
+    })
+  }
+}
+
+export function updateOrder (order) {
+  return dispatch => {
+    return new Promise((resolve, reject) => {
+      dispatch(_updateOrder(order))
       resolve()
     })
   }
