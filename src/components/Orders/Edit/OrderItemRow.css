@@ -1,0 +1,4 @@
+.App .order-item-row .order-item-row-item + .order-item-row-item {
+  margin-left: 30px;
+  margin-top: 5px;
+}
