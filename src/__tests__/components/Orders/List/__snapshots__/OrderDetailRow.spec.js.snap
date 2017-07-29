@@ -1,0 +1,196 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`OrderDetailRow renders correctly 1`] = `
+ShallowWrapper {
+  "complexSelector": ComplexSelector {
+    "buildPredicate": [Function],
+    "childrenOfNode": [Function],
+    "findWhereUnwrapped": [Function],
+  },
+  "length": 1,
+  "node": <div>
+    Order #
+    1
+     - 
+    0
+     items - 
+    $0.00
+    <button
+        className="complete-order-btn"
+        onClick={[Function]}
+    >
+        Complete
+    </button>
+    <button
+        className="edit-order-btn"
+        onClick={[Function]}
+    >
+        Edit
+    </button>
+    <button
+        className="cancel-order-btn"
+        onClick={[Function]}
+    >
+        Cancel
+    </button>
+</div>,
+  "nodes": Array [
+    <div>
+      Order #
+      1
+       - 
+      0
+       items - 
+      $0.00
+      <button
+            className="complete-order-btn"
+            onClick={[Function]}
+      >
+            Complete
+      </button>
+      <button
+            className="edit-order-btn"
+            onClick={[Function]}
+      >
+            Edit
+      </button>
+      <button
+            className="cancel-order-btn"
+            onClick={[Function]}
+      >
+            Cancel
+      </button>
+</div>,
+  ],
+  "options": Object {},
+  "renderer": ReactShallowRenderer {
+    "_instance": ShallowComponentWrapper {
+      "_calledComponentWillUnmount": false,
+      "_compositeType": 2,
+      "_context": Object {},
+      "_currentElement": <OrderDetailRow
+        handleCancelOrderClick={[Function]}
+        handleCompleteOrderClick={[Function]}
+        handleEditOrderClick={[Function]}
+        index={1}
+        order={
+                Object {
+                        "totalItems": 0,
+                        "totalPrice": 0,
+                      }
+        }
+/>,
+      "_debugID": 1,
+      "_hostContainerInfo": null,
+      "_hostParent": null,
+      "_instance": StatelessComponent {
+        "_reactInternalInstance": [Circular],
+        "context": Object {},
+        "props": Object {
+          "handleCancelOrderClick": [Function],
+          "handleCompleteOrderClick": [Function],
+          "handleEditOrderClick": [Function],
+          "index": 1,
+          "order": Object {
+            "totalItems": 0,
+            "totalPrice": 0,
+          },
+        },
+        "refs": Object {},
+        "state": null,
+        "updater": Object {
+          "enqueueCallback": [Function],
+          "enqueueCallbackInternal": [Function],
+          "enqueueElementInternal": [Function],
+          "enqueueForceUpdate": [Function],
+          "enqueueReplaceState": [Function],
+          "enqueueSetState": [Function],
+          "isMounted": [Function],
+          "validateCallback": [Function],
+        },
+      },
+      "_mountOrder": 1,
+      "_pendingCallbacks": null,
+      "_pendingElement": null,
+      "_pendingForceUpdate": false,
+      "_pendingReplaceState": false,
+      "_pendingStateQueue": null,
+      "_renderedComponent": NoopInternalComponent {
+        "_currentElement": <div>
+          Order #
+          1
+           - 
+          0
+           items - 
+          $0.00
+          <button
+                    className="complete-order-btn"
+                    onClick={[Function]}
+          >
+                    Complete
+          </button>
+          <button
+                    className="edit-order-btn"
+                    onClick={[Function]}
+          >
+                    Edit
+          </button>
+          <button
+                    className="cancel-order-btn"
+                    onClick={[Function]}
+          >
+                    Cancel
+          </button>
+</div>,
+        "_debugID": 2,
+        "_renderedOutput": <div>
+          Order #
+          1
+           - 
+          0
+           items - 
+          $0.00
+          <button
+                    className="complete-order-btn"
+                    onClick={[Function]}
+          >
+                    Complete
+          </button>
+          <button
+                    className="edit-order-btn"
+                    onClick={[Function]}
+          >
+                    Edit
+          </button>
+          <button
+                    className="cancel-order-btn"
+                    onClick={[Function]}
+          >
+                    Cancel
+          </button>
+</div>,
+      },
+      "_renderedNodeType": 0,
+      "_rootNodeID": 0,
+      "_topLevelWrapper": null,
+      "_updateBatchNumber": null,
+      "_warnedAboutRefsInRender": false,
+    },
+    "getRenderOutput": [Function],
+    "render": [Function],
+  },
+  "root": [Circular],
+  "unrendered": <OrderDetailRow
+    handleCancelOrderClick={[Function]}
+    handleCompleteOrderClick={[Function]}
+    handleEditOrderClick={[Function]}
+    index={1}
+    order={
+        Object {
+            "totalItems": 0,
+            "totalPrice": 0,
+          }
+    }
+/>,
+}
+`;

@@ -8,9 +8,15 @@ const OrderDetailRow = props => {
   return (
     <div>
       Order #{index} - {order.totalItems} items - {displayAsDollars(order.totalPrice)}
-      <button onClick={props.handleCompleteOrderClick}>Complete</button>
-      <button onClick={props.handleEditOrderClick}>Edit</button>
-      <button onClick={props.handleCancelOrderClick}>Cancel</button>
+      <button className="complete-order-btn" onClick={props.handleCompleteOrderClick}>
+        Complete
+      </button>
+      <button className="edit-order-btn" onClick={props.handleEditOrderClick}>
+        Edit
+      </button>
+      <button className="cancel-order-btn" onClick={props.handleCancelOrderClick}>
+        Cancel
+      </button>
     </div>
   )
 }
