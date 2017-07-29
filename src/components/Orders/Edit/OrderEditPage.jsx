@@ -5,6 +5,7 @@ import { array, bool, func, number, object, shape } from 'prop-types'
 
 import { createOrder, updateOrder } from '../../../store/actions/order-actions'
 import { displayAsDollars } from '../../../utils/utils'
+import CurrentOrderDisplay from './CurrentOrderDisplay'
 import OrderItemRow from './OrderItemRow'
 import OrderProductMenu from './OrderProductMenu'
 import OrderQuantityMenu from './OrderQuantityMenu'
@@ -179,20 +180,7 @@ class OrderEditPage extends Component {
           </div>
           <hr />
 
-          <h3>Current Order</h3>
-          <h4>
-            Total: {displayAsDollars(this.state.order.totalPrice)}
-          </h4>
-
-          <ul>
-            {this.state.order.items.map(item =>
-              <OrderItemRow
-                key={item.id}
-                item={item}
-                handleRemoveItemClick={e => this.handleRemoveItemClick(e, item.id)}
-              />
-            )}
-          </ul>
+          <CurrentOrderDisplay order={this.state.order} handleRemoveItemClick={this.handleRemoveItemClick} />
         </div>
       </div>
     )
