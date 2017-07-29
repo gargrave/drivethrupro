@@ -5,7 +5,7 @@ const OrderSizeMenu = props => {
   return (
     <span className="input-group">
       <label htmlFor="size">Size: </label>
-      <select name="size" id="size" value={props.sizeIdx} onChange={props.handleSizeChange}>
+      <select name="size" id="size" className="order-size-menu" value={props.sizeIdx} onChange={props.handleSizeChange}>
         {props.availableSizes.map((size, idx) => {
           return (
             <option key={idx} value={idx}>
