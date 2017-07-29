@@ -51,7 +51,7 @@ class OrdersListPage extends Component {
         <button onClick={() => this.props.history.push('/orders/new')}>New Order</button>
 
         <hr />
-        {orders.length > 4 && <ManagerAlertNotice />}
+        {orders.length > 4 && <ManagerAlertNotice orderCount={orders.length} />}
         <h3>Open Orders</h3>
         {!orders.length && <h4>There are currently no open orders!</h4>}
         {!!orders.length &&
