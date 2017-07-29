@@ -4,12 +4,8 @@ import { withRouter } from 'react-router-dom'
 import { array, bool, func, number, object, shape } from 'prop-types'
 
 import { createOrder, updateOrder } from '../../../store/actions/order-actions'
-import { displayAsDollars } from '../../../utils/utils'
 import CurrentOrderDisplay from './CurrentOrderDisplay'
-import OrderItemRow from './OrderItemRow'
-import OrderProductMenu from './OrderProductMenu'
-import OrderQuantityMenu from './OrderQuantityMenu'
-import OrderSizeMenu from './OrderSizeMenu'
+import OrderItemForm from './OrderItemForm'
 
 import Order from '../utils/Order'
 import OrderItem from '../utils/OrderItem'
@@ -54,10 +50,8 @@ class OrderEditPage extends Component {
   async completeOrder () {
     if (this.state.order.items.length) {
       if (this.props.editing) {
-        console.log('saving updated order...')
         await this.props.updateOrder(this.state.order)
       } else {
-        console.log('creating new order...')
         await this.props.createOrder(this.state.order)
       }
       this.props.history.push('/orders')
@@ -146,40 +140,24 @@ class OrderEditPage extends Component {
 
         <div>
           <div>
-            <button style={{ marginRight: '10px' }} onClick={this.completeOrder}>
-              Save Order
-            </button>
+            <button onClick={this.completeOrder}>Save Order</button>
             <button onClick={this.cancelOrder}>Cancel</button>
           </div>
 
           <hr />
-          <h3>Add an Item</h3>
+          <OrderItemForm
+            menu={menu}
+            selectedMenuItem={this.state.selectedMenuItem}
+            handleItemChange={this.handleItemChange}
+            sizeIdx={this.state.sizeIdx}
+            handleSizeChange={this.handleSizeChange}
+            quantity={this.state.quantity}
+            handleQuantityChange={this.handleQuantityChange}
+            handleAddToOrderClick={this.handleAddToOrderClick}
+            handleResetFormClick={this.handleResetFormClick}
+          />
 
-          <div className="order-item-form">
-            <div>
-              <OrderProductMenu
-                menu={menu}
-                selectedMenuItem={this.state.selectedMenuItem}
-                handleItemChange={this.handleItemChange}
-              />
-
-              <OrderSizeMenu
-                sizeIdx={this.state.sizeIdx}
-                availableSizes={this.state.selectedMenuItem.sizes}
-                handleSizeChange={this.handleSizeChange}
-              />
-              <OrderQuantityMenu quantity={this.state.quantity} handleQuantityChange={this.handleQuantityChange} />
-            </div>
-
-            <div>
-              <button style={{ marginRight: '10px' }} onClick={this.handleAddToOrderClick}>
-                Add to Order
-              </button>
-              <button onClick={this.handleResetFormClick}>Reset</button>
-            </div>
-          </div>
           <hr />
-
           <CurrentOrderDisplay order={this.state.order} handleRemoveItemClick={this.handleRemoveItemClick} />
         </div>
       </div>

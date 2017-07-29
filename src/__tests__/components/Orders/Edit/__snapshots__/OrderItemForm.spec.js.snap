@@ -1,0 +1,1325 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`OrderItemForm renders correctly 1`] = `
+ShallowWrapper {
+  "complexSelector": ComplexSelector {
+    "buildPredicate": [Function],
+    "childrenOfNode": [Function],
+    "findWhereUnwrapped": [Function],
+  },
+  "length": 1,
+  "node": <section>
+    <h3>
+        Add an Item
+    </h3>
+    <div
+        className="order-item-form"
+    >
+        <div>
+            <OrderProductMenu
+                handleItemChange={[Function]}
+                menu={
+                    Array [
+                        Object {
+                          "id": 0,
+                          "name": "Hamburger",
+                          "sizes": Array [
+                            Object {
+                              "name": "Regular",
+                              "price": 99,
+                            },
+                          ],
+                        },
+                        Object {
+                          "id": 1,
+                          "name": "Cheeseburger",
+                          "sizes": Array [
+                            Object {
+                              "name": "Regular",
+                              "price": 119,
+                            },
+                          ],
+                        },
+                        Object {
+                          "id": 2,
+                          "name": "Double Cheeseburger",
+                          "sizes": Array [
+                            Object {
+                              "name": "Regular",
+                              "price": 189,
+                            },
+                          ],
+                        },
+                        Object {
+                          "id": 3,
+                          "name": "SUPER ULTRA Burger",
+                          "sizes": Array [
+                            Object {
+                              "name": "SUPER ULTRA",
+                              "price": 399,
+                            },
+                          ],
+                        },
+                        Object {
+                          "id": 4,
+                          "name": "Chicken Sandwich",
+                          "sizes": Array [
+                            Object {
+                              "name": "Regular",
+                              "price": 179,
+                            },
+                          ],
+                        },
+                        Object {
+                          "id": 5,
+                          "name": "French Fries",
+                          "sizes": Array [
+                            Object {
+                              "name": "Small",
+                              "price": 49,
+                            },
+                            Object {
+                              "name": "Medium",
+                              "price": 69,
+                            },
+                            Object {
+                              "name": "Large",
+                              "price": 89,
+                            },
+                          ],
+                        },
+                        Object {
+                          "id": 6,
+                          "name": "Currrly Fries",
+                          "sizes": Array [
+                            Object {
+                              "name": "Small",
+                              "price": 79,
+                            },
+                            Object {
+                              "name": "Medium",
+                              "price": 119,
+                            },
+                            Object {
+                              "name": "Large",
+                              "price": 149,
+                            },
+                          ],
+                        },
+                        Object {
+                          "id": 7,
+                          "name": "Fountrain Drink",
+                          "sizes": Array [
+                            Object {
+                              "name": "Small",
+                              "price": 59,
+                            },
+                            Object {
+                              "name": "Medium",
+                              "price": 79,
+                            },
+                            Object {
+                              "name": "Large",
+                              "price": 99,
+                            },
+                            Object {
+                              "name": "Obscene",
+                              "price": 139,
+                            },
+                          ],
+                        },
+                        Object {
+                          "id": 8,
+                          "name": "Bottled Water",
+                          "sizes": Array [
+                            Object {
+                              "name": "Regular",
+                              "price": 129,
+                            },
+                          ],
+                        },
+                        Object {
+                          "id": 9,
+                          "name": "Milkshake",
+                          "sizes": Array [
+                            Object {
+                              "name": "Small",
+                              "price": 119,
+                            },
+                            Object {
+                              "name": "Medium",
+                              "price": 149,
+                            },
+                            Object {
+                              "name": "Large",
+                              "price": 179,
+                            },
+                          ],
+                        },
+                      ]
+                }
+                selectedMenuItem={
+                    Object {
+                        "id": 0,
+                        "name": "Hamburger",
+                        "sizes": Array [
+                          Object {
+                            "name": "Regular",
+                            "price": 99,
+                          },
+                        ],
+                      }
+                }
+            />
+            <OrderSizeMenu
+                availableSizes={
+                    Array [
+                        Object {
+                          "name": "Regular",
+                          "price": 99,
+                        },
+                      ]
+                }
+                handleSizeChange={[Function]}
+                sizeIdx={0}
+            />
+            <OrderQuantityMenu
+                handleQuantityChange={[Function]}
+                maxRange={20}
+                quantity={1}
+            />
+        </div>
+        <div>
+            <button
+                className="add-to-order-button"
+                onClick={[Function]}
+            >
+                Add to Order
+            </button>
+            <button
+                className="reset-form-button"
+                onClick={[Function]}
+            >
+                Reset
+            </button>
+        </div>
+    </div>
+</section>,
+  "nodes": Array [
+    <section>
+      <h3>
+            Add an Item
+      </h3>
+      <div
+            className="order-item-form"
+      >
+            <div>
+                  <OrderProductMenu
+                        handleItemChange={[Function]}
+                        menu={
+                              Array [
+                                    Object {
+                                      "id": 0,
+                                      "name": "Hamburger",
+                                      "sizes": Array [
+                                        Object {
+                                          "name": "Regular",
+                                          "price": 99,
+                                        },
+                                      ],
+                                    },
+                                    Object {
+                                      "id": 1,
+                                      "name": "Cheeseburger",
+                                      "sizes": Array [
+                                        Object {
+                                          "name": "Regular",
+                                          "price": 119,
+                                        },
+                                      ],
+                                    },
+                                    Object {
+                                      "id": 2,
+                                      "name": "Double Cheeseburger",
+                                      "sizes": Array [
+                                        Object {
+                                          "name": "Regular",
+                                          "price": 189,
+                                        },
+                                      ],
+                                    },
+                                    Object {
+                                      "id": 3,
+                                      "name": "SUPER ULTRA Burger",
+                                      "sizes": Array [
+                                        Object {
+                                          "name": "SUPER ULTRA",
+                                          "price": 399,
+                                        },
+                                      ],
+                                    },
+                                    Object {
+                                      "id": 4,
+                                      "name": "Chicken Sandwich",
+                                      "sizes": Array [
+                                        Object {
+                                          "name": "Regular",
+                                          "price": 179,
+                                        },
+                                      ],
+                                    },
+                                    Object {
+                                      "id": 5,
+                                      "name": "French Fries",
+                                      "sizes": Array [
+                                        Object {
+                                          "name": "Small",
+                                          "price": 49,
+                                        },
+                                        Object {
+                                          "name": "Medium",
+                                          "price": 69,
+                                        },
+                                        Object {
+                                          "name": "Large",
+                                          "price": 89,
+                                        },
+                                      ],
+                                    },
+                                    Object {
+                                      "id": 6,
+                                      "name": "Currrly Fries",
+                                      "sizes": Array [
+                                        Object {
+                                          "name": "Small",
+                                          "price": 79,
+                                        },
+                                        Object {
+                                          "name": "Medium",
+                                          "price": 119,
+                                        },
+                                        Object {
+                                          "name": "Large",
+                                          "price": 149,
+                                        },
+                                      ],
+                                    },
+                                    Object {
+                                      "id": 7,
+                                      "name": "Fountrain Drink",
+                                      "sizes": Array [
+                                        Object {
+                                          "name": "Small",
+                                          "price": 59,
+                                        },
+                                        Object {
+                                          "name": "Medium",
+                                          "price": 79,
+                                        },
+                                        Object {
+                                          "name": "Large",
+                                          "price": 99,
+                                        },
+                                        Object {
+                                          "name": "Obscene",
+                                          "price": 139,
+                                        },
+                                      ],
+                                    },
+                                    Object {
+                                      "id": 8,
+                                      "name": "Bottled Water",
+                                      "sizes": Array [
+                                        Object {
+                                          "name": "Regular",
+                                          "price": 129,
+                                        },
+                                      ],
+                                    },
+                                    Object {
+                                      "id": 9,
+                                      "name": "Milkshake",
+                                      "sizes": Array [
+                                        Object {
+                                          "name": "Small",
+                                          "price": 119,
+                                        },
+                                        Object {
+                                          "name": "Medium",
+                                          "price": 149,
+                                        },
+                                        Object {
+                                          "name": "Large",
+                                          "price": 179,
+                                        },
+                                      ],
+                                    },
+                                  ]
+                        }
+                        selectedMenuItem={
+                              Object {
+                                    "id": 0,
+                                    "name": "Hamburger",
+                                    "sizes": Array [
+                                      Object {
+                                        "name": "Regular",
+                                        "price": 99,
+                                      },
+                                    ],
+                                  }
+                        }
+                  />
+                  <OrderSizeMenu
+                        availableSizes={
+                              Array [
+                                    Object {
+                                      "name": "Regular",
+                                      "price": 99,
+                                    },
+                                  ]
+                        }
+                        handleSizeChange={[Function]}
+                        sizeIdx={0}
+                  />
+                  <OrderQuantityMenu
+                        handleQuantityChange={[Function]}
+                        maxRange={20}
+                        quantity={1}
+                  />
+            </div>
+            <div>
+                  <button
+                        className="add-to-order-button"
+                        onClick={[Function]}
+                  >
+                        Add to Order
+                  </button>
+                  <button
+                        className="reset-form-button"
+                        onClick={[Function]}
+                  >
+                        Reset
+                  </button>
+            </div>
+      </div>
+</section>,
+  ],
+  "options": Object {},
+  "renderer": ReactShallowRenderer {
+    "_instance": ShallowComponentWrapper {
+      "_calledComponentWillUnmount": false,
+      "_compositeType": 2,
+      "_context": Object {},
+      "_currentElement": <OrderForm
+        handleAddToOrderClick={[Function]}
+        handleItemChange={[Function]}
+        handleQuantityChange={[Function]}
+        handleResetFormClick={[Function]}
+        handleSizeChange={[Function]}
+        menu={
+                Array [
+                        Object {
+                          "id": 0,
+                          "name": "Hamburger",
+                          "sizes": Array [
+                            Object {
+                              "name": "Regular",
+                              "price": 99,
+                            },
+                          ],
+                        },
+                        Object {
+                          "id": 1,
+                          "name": "Cheeseburger",
+                          "sizes": Array [
+                            Object {
+                              "name": "Regular",
+                              "price": 119,
+                            },
+                          ],
+                        },
+                        Object {
+                          "id": 2,
+                          "name": "Double Cheeseburger",
+                          "sizes": Array [
+                            Object {
+                              "name": "Regular",
+                              "price": 189,
+                            },
+                          ],
+                        },
+                        Object {
+                          "id": 3,
+                          "name": "SUPER ULTRA Burger",
+                          "sizes": Array [
+                            Object {
+                              "name": "SUPER ULTRA",
+                              "price": 399,
+                            },
+                          ],
+                        },
+                        Object {
+                          "id": 4,
+                          "name": "Chicken Sandwich",
+                          "sizes": Array [
+                            Object {
+                              "name": "Regular",
+                              "price": 179,
+                            },
+                          ],
+                        },
+                        Object {
+                          "id": 5,
+                          "name": "French Fries",
+                          "sizes": Array [
+                            Object {
+                              "name": "Small",
+                              "price": 49,
+                            },
+                            Object {
+                              "name": "Medium",
+                              "price": 69,
+                            },
+                            Object {
+                              "name": "Large",
+                              "price": 89,
+                            },
+                          ],
+                        },
+                        Object {
+                          "id": 6,
+                          "name": "Currrly Fries",
+                          "sizes": Array [
+                            Object {
+                              "name": "Small",
+                              "price": 79,
+                            },
+                            Object {
+                              "name": "Medium",
+                              "price": 119,
+                            },
+                            Object {
+                              "name": "Large",
+                              "price": 149,
+                            },
+                          ],
+                        },
+                        Object {
+                          "id": 7,
+                          "name": "Fountrain Drink",
+                          "sizes": Array [
+                            Object {
+                              "name": "Small",
+                              "price": 59,
+                            },
+                            Object {
+                              "name": "Medium",
+                              "price": 79,
+                            },
+                            Object {
+                              "name": "Large",
+                              "price": 99,
+                            },
+                            Object {
+                              "name": "Obscene",
+                              "price": 139,
+                            },
+                          ],
+                        },
+                        Object {
+                          "id": 8,
+                          "name": "Bottled Water",
+                          "sizes": Array [
+                            Object {
+                              "name": "Regular",
+                              "price": 129,
+                            },
+                          ],
+                        },
+                        Object {
+                          "id": 9,
+                          "name": "Milkshake",
+                          "sizes": Array [
+                            Object {
+                              "name": "Small",
+                              "price": 119,
+                            },
+                            Object {
+                              "name": "Medium",
+                              "price": 149,
+                            },
+                            Object {
+                              "name": "Large",
+                              "price": 179,
+                            },
+                          ],
+                        },
+                      ]
+        }
+        quantity={1}
+        selectedMenuItem={
+                Object {
+                        "id": 0,
+                        "name": "Hamburger",
+                        "sizes": Array [
+                          Object {
+                            "name": "Regular",
+                            "price": 99,
+                          },
+                        ],
+                      }
+        }
+        sizeIdx={0}
+/>,
+      "_debugID": 1,
+      "_hostContainerInfo": null,
+      "_hostParent": null,
+      "_instance": StatelessComponent {
+        "_reactInternalInstance": [Circular],
+        "context": Object {},
+        "props": Object {
+          "handleAddToOrderClick": [Function],
+          "handleItemChange": [Function],
+          "handleQuantityChange": [Function],
+          "handleResetFormClick": [Function],
+          "handleSizeChange": [Function],
+          "menu": Array [
+            Object {
+              "id": 0,
+              "name": "Hamburger",
+              "sizes": Array [
+                Object {
+                  "name": "Regular",
+                  "price": 99,
+                },
+              ],
+            },
+            Object {
+              "id": 1,
+              "name": "Cheeseburger",
+              "sizes": Array [
+                Object {
+                  "name": "Regular",
+                  "price": 119,
+                },
+              ],
+            },
+            Object {
+              "id": 2,
+              "name": "Double Cheeseburger",
+              "sizes": Array [
+                Object {
+                  "name": "Regular",
+                  "price": 189,
+                },
+              ],
+            },
+            Object {
+              "id": 3,
+              "name": "SUPER ULTRA Burger",
+              "sizes": Array [
+                Object {
+                  "name": "SUPER ULTRA",
+                  "price": 399,
+                },
+              ],
+            },
+            Object {
+              "id": 4,
+              "name": "Chicken Sandwich",
+              "sizes": Array [
+                Object {
+                  "name": "Regular",
+                  "price": 179,
+                },
+              ],
+            },
+            Object {
+              "id": 5,
+              "name": "French Fries",
+              "sizes": Array [
+                Object {
+                  "name": "Small",
+                  "price": 49,
+                },
+                Object {
+                  "name": "Medium",
+                  "price": 69,
+                },
+                Object {
+                  "name": "Large",
+                  "price": 89,
+                },
+              ],
+            },
+            Object {
+              "id": 6,
+              "name": "Currrly Fries",
+              "sizes": Array [
+                Object {
+                  "name": "Small",
+                  "price": 79,
+                },
+                Object {
+                  "name": "Medium",
+                  "price": 119,
+                },
+                Object {
+                  "name": "Large",
+                  "price": 149,
+                },
+              ],
+            },
+            Object {
+              "id": 7,
+              "name": "Fountrain Drink",
+              "sizes": Array [
+                Object {
+                  "name": "Small",
+                  "price": 59,
+                },
+                Object {
+                  "name": "Medium",
+                  "price": 79,
+                },
+                Object {
+                  "name": "Large",
+                  "price": 99,
+                },
+                Object {
+                  "name": "Obscene",
+                  "price": 139,
+                },
+              ],
+            },
+            Object {
+              "id": 8,
+              "name": "Bottled Water",
+              "sizes": Array [
+                Object {
+                  "name": "Regular",
+                  "price": 129,
+                },
+              ],
+            },
+            Object {
+              "id": 9,
+              "name": "Milkshake",
+              "sizes": Array [
+                Object {
+                  "name": "Small",
+                  "price": 119,
+                },
+                Object {
+                  "name": "Medium",
+                  "price": 149,
+                },
+                Object {
+                  "name": "Large",
+                  "price": 179,
+                },
+              ],
+            },
+          ],
+          "quantity": 1,
+          "selectedMenuItem": Object {
+            "id": 0,
+            "name": "Hamburger",
+            "sizes": Array [
+              Object {
+                "name": "Regular",
+                "price": 99,
+              },
+            ],
+          },
+          "sizeIdx": 0,
+        },
+        "refs": Object {},
+        "state": null,
+        "updater": Object {
+          "enqueueCallback": [Function],
+          "enqueueCallbackInternal": [Function],
+          "enqueueElementInternal": [Function],
+          "enqueueForceUpdate": [Function],
+          "enqueueReplaceState": [Function],
+          "enqueueSetState": [Function],
+          "isMounted": [Function],
+          "validateCallback": [Function],
+        },
+      },
+      "_mountOrder": 1,
+      "_pendingCallbacks": null,
+      "_pendingElement": null,
+      "_pendingForceUpdate": false,
+      "_pendingReplaceState": false,
+      "_pendingStateQueue": null,
+      "_renderedComponent": NoopInternalComponent {
+        "_currentElement": <section>
+          <h3>
+                    Add an Item
+          </h3>
+          <div
+                    className="order-item-form"
+          >
+                    <div>
+                              <OrderProductMenu
+                                        handleItemChange={[Function]}
+                                        menu={
+                                                  Array [
+                                                            Object {
+                                                              "id": 0,
+                                                              "name": "Hamburger",
+                                                              "sizes": Array [
+                                                                Object {
+                                                                  "name": "Regular",
+                                                                  "price": 99,
+                                                                },
+                                                              ],
+                                                            },
+                                                            Object {
+                                                              "id": 1,
+                                                              "name": "Cheeseburger",
+                                                              "sizes": Array [
+                                                                Object {
+                                                                  "name": "Regular",
+                                                                  "price": 119,
+                                                                },
+                                                              ],
+                                                            },
+                                                            Object {
+                                                              "id": 2,
+                                                              "name": "Double Cheeseburger",
+                                                              "sizes": Array [
+                                                                Object {
+                                                                  "name": "Regular",
+                                                                  "price": 189,
+                                                                },
+                                                              ],
+                                                            },
+                                                            Object {
+                                                              "id": 3,
+                                                              "name": "SUPER ULTRA Burger",
+                                                              "sizes": Array [
+                                                                Object {
+                                                                  "name": "SUPER ULTRA",
+                                                                  "price": 399,
+                                                                },
+                                                              ],
+                                                            },
+                                                            Object {
+                                                              "id": 4,
+                                                              "name": "Chicken Sandwich",
+                                                              "sizes": Array [
+                                                                Object {
+                                                                  "name": "Regular",
+                                                                  "price": 179,
+                                                                },
+                                                              ],
+                                                            },
+                                                            Object {
+                                                              "id": 5,
+                                                              "name": "French Fries",
+                                                              "sizes": Array [
+                                                                Object {
+                                                                  "name": "Small",
+                                                                  "price": 49,
+                                                                },
+                                                                Object {
+                                                                  "name": "Medium",
+                                                                  "price": 69,
+                                                                },
+                                                                Object {
+                                                                  "name": "Large",
+                                                                  "price": 89,
+                                                                },
+                                                              ],
+                                                            },
+                                                            Object {
+                                                              "id": 6,
+                                                              "name": "Currrly Fries",
+                                                              "sizes": Array [
+                                                                Object {
+                                                                  "name": "Small",
+                                                                  "price": 79,
+                                                                },
+                                                                Object {
+                                                                  "name": "Medium",
+                                                                  "price": 119,
+                                                                },
+                                                                Object {
+                                                                  "name": "Large",
+                                                                  "price": 149,
+                                                                },
+                                                              ],
+                                                            },
+                                                            Object {
+                                                              "id": 7,
+                                                              "name": "Fountrain Drink",
+                                                              "sizes": Array [
+                                                                Object {
+                                                                  "name": "Small",
+                                                                  "price": 59,
+                                                                },
+                                                                Object {
+                                                                  "name": "Medium",
+                                                                  "price": 79,
+                                                                },
+                                                                Object {
+                                                                  "name": "Large",
+                                                                  "price": 99,
+                                                                },
+                                                                Object {
+                                                                  "name": "Obscene",
+                                                                  "price": 139,
+                                                                },
+                                                              ],
+                                                            },
+                                                            Object {
+                                                              "id": 8,
+                                                              "name": "Bottled Water",
+                                                              "sizes": Array [
+                                                                Object {
+                                                                  "name": "Regular",
+                                                                  "price": 129,
+                                                                },
+                                                              ],
+                                                            },
+                                                            Object {
+                                                              "id": 9,
+                                                              "name": "Milkshake",
+                                                              "sizes": Array [
+                                                                Object {
+                                                                  "name": "Small",
+                                                                  "price": 119,
+                                                                },
+                                                                Object {
+                                                                  "name": "Medium",
+                                                                  "price": 149,
+                                                                },
+                                                                Object {
+                                                                  "name": "Large",
+                                                                  "price": 179,
+                                                                },
+                                                              ],
+                                                            },
+                                                          ]
+                                        }
+                                        selectedMenuItem={
+                                                  Object {
+                                                            "id": 0,
+                                                            "name": "Hamburger",
+                                                            "sizes": Array [
+                                                              Object {
+                                                                "name": "Regular",
+                                                                "price": 99,
+                                                              },
+                                                            ],
+                                                          }
+                                        }
+                              />
+                              <OrderSizeMenu
+                                        availableSizes={
+                                                  Array [
+                                                            Object {
+                                                              "name": "Regular",
+                                                              "price": 99,
+                                                            },
+                                                          ]
+                                        }
+                                        handleSizeChange={[Function]}
+                                        sizeIdx={0}
+                              />
+                              <OrderQuantityMenu
+                                        handleQuantityChange={[Function]}
+                                        maxRange={20}
+                                        quantity={1}
+                              />
+                    </div>
+                    <div>
+                              <button
+                                        className="add-to-order-button"
+                                        onClick={[Function]}
+                              >
+                                        Add to Order
+                              </button>
+                              <button
+                                        className="reset-form-button"
+                                        onClick={[Function]}
+                              >
+                                        Reset
+                              </button>
+                    </div>
+          </div>
+</section>,
+        "_debugID": 2,
+        "_renderedOutput": <section>
+          <h3>
+                    Add an Item
+          </h3>
+          <div
+                    className="order-item-form"
+          >
+                    <div>
+                              <OrderProductMenu
+                                        handleItemChange={[Function]}
+                                        menu={
+                                                  Array [
+                                                            Object {
+                                                              "id": 0,
+                                                              "name": "Hamburger",
+                                                              "sizes": Array [
+                                                                Object {
+                                                                  "name": "Regular",
+                                                                  "price": 99,
+                                                                },
+                                                              ],
+                                                            },
+                                                            Object {
+                                                              "id": 1,
+                                                              "name": "Cheeseburger",
+                                                              "sizes": Array [
+                                                                Object {
+                                                                  "name": "Regular",
+                                                                  "price": 119,
+                                                                },
+                                                              ],
+                                                            },
+                                                            Object {
+                                                              "id": 2,
+                                                              "name": "Double Cheeseburger",
+                                                              "sizes": Array [
+                                                                Object {
+                                                                  "name": "Regular",
+                                                                  "price": 189,
+                                                                },
+                                                              ],
+                                                            },
+                                                            Object {
+                                                              "id": 3,
+                                                              "name": "SUPER ULTRA Burger",
+                                                              "sizes": Array [
+                                                                Object {
+                                                                  "name": "SUPER ULTRA",
+                                                                  "price": 399,
+                                                                },
+                                                              ],
+                                                            },
+                                                            Object {
+                                                              "id": 4,
+                                                              "name": "Chicken Sandwich",
+                                                              "sizes": Array [
+                                                                Object {
+                                                                  "name": "Regular",
+                                                                  "price": 179,
+                                                                },
+                                                              ],
+                                                            },
+                                                            Object {
+                                                              "id": 5,
+                                                              "name": "French Fries",
+                                                              "sizes": Array [
+                                                                Object {
+                                                                  "name": "Small",
+                                                                  "price": 49,
+                                                                },
+                                                                Object {
+                                                                  "name": "Medium",
+                                                                  "price": 69,
+                                                                },
+                                                                Object {
+                                                                  "name": "Large",
+                                                                  "price": 89,
+                                                                },
+                                                              ],
+                                                            },
+                                                            Object {
+                                                              "id": 6,
+                                                              "name": "Currrly Fries",
+                                                              "sizes": Array [
+                                                                Object {
+                                                                  "name": "Small",
+                                                                  "price": 79,
+                                                                },
+                                                                Object {
+                                                                  "name": "Medium",
+                                                                  "price": 119,
+                                                                },
+                                                                Object {
+                                                                  "name": "Large",
+                                                                  "price": 149,
+                                                                },
+                                                              ],
+                                                            },
+                                                            Object {
+                                                              "id": 7,
+                                                              "name": "Fountrain Drink",
+                                                              "sizes": Array [
+                                                                Object {
+                                                                  "name": "Small",
+                                                                  "price": 59,
+                                                                },
+                                                                Object {
+                                                                  "name": "Medium",
+                                                                  "price": 79,
+                                                                },
+                                                                Object {
+                                                                  "name": "Large",
+                                                                  "price": 99,
+                                                                },
+                                                                Object {
+                                                                  "name": "Obscene",
+                                                                  "price": 139,
+                                                                },
+                                                              ],
+                                                            },
+                                                            Object {
+                                                              "id": 8,
+                                                              "name": "Bottled Water",
+                                                              "sizes": Array [
+                                                                Object {
+                                                                  "name": "Regular",
+                                                                  "price": 129,
+                                                                },
+                                                              ],
+                                                            },
+                                                            Object {
+                                                              "id": 9,
+                                                              "name": "Milkshake",
+                                                              "sizes": Array [
+                                                                Object {
+                                                                  "name": "Small",
+                                                                  "price": 119,
+                                                                },
+                                                                Object {
+                                                                  "name": "Medium",
+                                                                  "price": 149,
+                                                                },
+                                                                Object {
+                                                                  "name": "Large",
+                                                                  "price": 179,
+                                                                },
+                                                              ],
+                                                            },
+                                                          ]
+                                        }
+                                        selectedMenuItem={
+                                                  Object {
+                                                            "id": 0,
+                                                            "name": "Hamburger",
+                                                            "sizes": Array [
+                                                              Object {
+                                                                "name": "Regular",
+                                                                "price": 99,
+                                                              },
+                                                            ],
+                                                          }
+                                        }
+                              />
+                              <OrderSizeMenu
+                                        availableSizes={
+                                                  Array [
+                                                            Object {
+                                                              "name": "Regular",
+                                                              "price": 99,
+                                                            },
+                                                          ]
+                                        }
+                                        handleSizeChange={[Function]}
+                                        sizeIdx={0}
+                              />
+                              <OrderQuantityMenu
+                                        handleQuantityChange={[Function]}
+                                        maxRange={20}
+                                        quantity={1}
+                              />
+                    </div>
+                    <div>
+                              <button
+                                        className="add-to-order-button"
+                                        onClick={[Function]}
+                              >
+                                        Add to Order
+                              </button>
+                              <button
+                                        className="reset-form-button"
+                                        onClick={[Function]}
+                              >
+                                        Reset
+                              </button>
+                    </div>
+          </div>
+</section>,
+      },
+      "_renderedNodeType": 0,
+      "_rootNodeID": 0,
+      "_topLevelWrapper": null,
+      "_updateBatchNumber": null,
+      "_warnedAboutRefsInRender": false,
+    },
+    "getRenderOutput": [Function],
+    "render": [Function],
+  },
+  "root": [Circular],
+  "unrendered": <OrderForm
+    handleAddToOrderClick={[Function]}
+    handleItemChange={[Function]}
+    handleQuantityChange={[Function]}
+    handleResetFormClick={[Function]}
+    handleSizeChange={[Function]}
+    menu={
+        Array [
+            Object {
+              "id": 0,
+              "name": "Hamburger",
+              "sizes": Array [
+                Object {
+                  "name": "Regular",
+                  "price": 99,
+                },
+              ],
+            },
+            Object {
+              "id": 1,
+              "name": "Cheeseburger",
+              "sizes": Array [
+                Object {
+                  "name": "Regular",
+                  "price": 119,
+                },
+              ],
+            },
+            Object {
+              "id": 2,
+              "name": "Double Cheeseburger",
+              "sizes": Array [
+                Object {
+                  "name": "Regular",
+                  "price": 189,
+                },
+              ],
+            },
+            Object {
+              "id": 3,
+              "name": "SUPER ULTRA Burger",
+              "sizes": Array [
+                Object {
+                  "name": "SUPER ULTRA",
+                  "price": 399,
+                },
+              ],
+            },
+            Object {
+              "id": 4,
+              "name": "Chicken Sandwich",
+              "sizes": Array [
+                Object {
+                  "name": "Regular",
+                  "price": 179,
+                },
+              ],
+            },
+            Object {
+              "id": 5,
+              "name": "French Fries",
+              "sizes": Array [
+                Object {
+                  "name": "Small",
+                  "price": 49,
+                },
+                Object {
+                  "name": "Medium",
+                  "price": 69,
+                },
+                Object {
+                  "name": "Large",
+                  "price": 89,
+                },
+              ],
+            },
+            Object {
+              "id": 6,
+              "name": "Currrly Fries",
+              "sizes": Array [
+                Object {
+                  "name": "Small",
+                  "price": 79,
+                },
+                Object {
+                  "name": "Medium",
+                  "price": 119,
+                },
+                Object {
+                  "name": "Large",
+                  "price": 149,
+                },
+              ],
+            },
+            Object {
+              "id": 7,
+              "name": "Fountrain Drink",
+              "sizes": Array [
+                Object {
+                  "name": "Small",
+                  "price": 59,
+                },
+                Object {
+                  "name": "Medium",
+                  "price": 79,
+                },
+                Object {
+                  "name": "Large",
+                  "price": 99,
+                },
+                Object {
+                  "name": "Obscene",
+                  "price": 139,
+                },
+              ],
+            },
+            Object {
+              "id": 8,
+              "name": "Bottled Water",
+              "sizes": Array [
+                Object {
+                  "name": "Regular",
+                  "price": 129,
+                },
+              ],
+            },
+            Object {
+              "id": 9,
+              "name": "Milkshake",
+              "sizes": Array [
+                Object {
+                  "name": "Small",
+                  "price": 119,
+                },
+                Object {
+                  "name": "Medium",
+                  "price": 149,
+                },
+                Object {
+                  "name": "Large",
+                  "price": 179,
+                },
+              ],
+            },
+          ]
+    }
+    quantity={1}
+    selectedMenuItem={
+        Object {
+            "id": 0,
+            "name": "Hamburger",
+            "sizes": Array [
+              Object {
+                "name": "Regular",
+                "price": 99,
+              },
+            ],
+          }
+    }
+    sizeIdx={0}
+/>,
+}
+`;
