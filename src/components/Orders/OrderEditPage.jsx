@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { withRouter } from 'react-router-dom'
-import { func, object } from 'prop-types'
+import { array, bool, func, number, object, shape } from 'prop-types'
 
-import { createOrder } from '../../store/actions/order-actions'
+import { createOrder, updateOrder } from '../../store/actions/order-actions'
 import { displayAsDollars } from '../../utils/utils'
 import OrderItemRow from './components/OrderItemRow'
 import OrderProductMenu from './components/OrderProductMenu'
@@ -25,8 +25,7 @@ class OrderEditPage extends Component {
       selectedMenuItem: menu[0],
       sizeIdx: 0,
       quantity: 1,
-      orderItems: [],
-      orderTotalPrice: 0
+      order: props.order
     }
 
     this.completeOrder = this.completeOrder.bind(this)
@@ -52,9 +51,14 @@ class OrderEditPage extends Component {
    * Sends the current order to the store, and redirects back to list page.
    */
   async completeOrder () {
-    if (this.state.orderItems.length) {
-      const order = new Order(this.state.orderItems)
-      await this.props.createOrder(order)
+    if (this.state.order.items.length) {
+      if (this.props.editing) {
+        console.log('saving updated order...')
+        await this.props.updateOrder(this.state.order)
+      } else {
+        console.log('creating new order...')
+        await this.props.createOrder(this.state.order)
+      }
       this.props.history.push('/orders')
     }
   }
@@ -70,17 +74,16 @@ class OrderEditPage extends Component {
   /**
    * Handler for 'Add to Order' button.
    * Builds a new OrderItem based on currently-selected values,
-   * and adds it to the local state's 'orderItems' collection.
+   * and adds it to the local state's order's items list.
    */
   handleAddToOrderClick () {
-    const item = this.state.selectedMenuItem
-    const orderItem = new OrderItem(item.name, this.state.quantity, item.sizes[this.state.sizeIdx])
-    const orderTotalPrice = this.state.orderTotalPrice + orderItem.totalPrice
-
-    this.setState({
-      orderItems: [...this.state.orderItems, orderItem],
-      orderTotalPrice
-    })
+    const menuItem = this.state.selectedMenuItem
+    const orderItem = new OrderItem(menuItem.name, this.state.quantity, menuItem.sizes[this.state.sizeIdx])
+    const order = Object.assign({}, this.state.order)
+    order.items.push(orderItem)
+    order.totalPrice += orderItem.totalPrice
+    order.totalItems += orderItem.quantity
+    this.setState({ order })
   }
 
   /**
@@ -129,14 +132,13 @@ class OrderEditPage extends Component {
    * @param {*} itemID The ID of the item to remove from the order
    */
   handleRemoveItemClick (event, itemID) {
-    const orderItem = this.state.orderItems.find(i => i.id === itemID)
-    if (orderItem) {
-      const orderTotalPrice = this.state.orderTotalPrice - orderItem.totalPrice
-
-      this.setState({
-        orderItems: this.state.orderItems.filter(i => i.id !== itemID),
-        orderTotalPrice
-      })
+    const itemToRemove = this.state.order.items.find(i => i.id === itemID)
+    if (itemToRemove) {
+      const order = Object.assign({}, this.state.order)
+      order.items = order.items.filter(i => i.id !== itemID)
+      order.totalPrice -= itemToRemove.totalPrice
+      order.totalItems -= itemToRemove.quantity
+      this.setState({ order })
     }
   }
 
@@ -183,11 +185,11 @@ class OrderEditPage extends Component {
 
           <h3>Current Order</h3>
           <h4>
-            Total: {displayAsDollars(this.state.orderTotalPrice)}
+            Total: {displayAsDollars(this.state.order.totalPrice)}
           </h4>
 
           <ul>
-            {this.state.orderItems.map(item =>
+            {this.state.order.items.map(item =>
               <OrderItemRow
                 key={item.id}
                 item={item}
@@ -202,17 +204,35 @@ class OrderEditPage extends Component {
 }
 
 OrderEditPage.propTypes = {
-  history: object.isRequired,
-  createOrder: func.isRequired
+  history: object.isRequired, // react-router history object
+  order: shape({
+    items: array.isRequired,
+    totalPrice: number.isRequired
+  }).isRequired,
+  editing: bool.isRequired,
+  createOrder: func.isRequired,
+  updateOrder: func.isRequired
 }
 
 const mapStateToProps = (state, ownProps) => {
-  return {}
+  const orderID = ownProps.match.params.id
+  const existingOrder = orderID ? state.orders.find(o => Number(o.id) === Number(orderID)) : null
+  const order = existingOrder ? new Order(existingOrder) : new Order()
+  const editing = existingOrder !== null
+
+  return {
+    order,
+    editing
+  }
 }
 
 const mapDispatchToProps = (dispatch, ownProps) => ({
   createOrder (order) {
     return dispatch(createOrder(order))
+  },
+
+  updateOrder (order) {
+    return dispatch(updateOrder(order))
   }
 })
 

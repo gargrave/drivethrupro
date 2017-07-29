@@ -27,9 +27,7 @@ class OrdersListPage extends Component {
   }
 
   handleEditOrderClick (event, orderID) {
-    console.log('TODO: implement handleEditOrderClick')
-    console.log('orderID:')
-    console.dir(orderID)
+    this.props.history.push(`/orders/${orderID}`)
   }
 
   /**
@@ -78,8 +76,10 @@ OrdersListPage.propTypes = {
 }
 
 const mapStateToProps = (state, ownProps) => {
+  // sort orders from store by id in asc. order
+  const orders = state.orders.sort((a, b) => (a.id < b.id ? -1 : 1))
   return {
-    orders: state.orders
+    orders
   }
 }
 
