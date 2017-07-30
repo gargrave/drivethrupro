@@ -24,7 +24,7 @@ const Button = props => {
   }
 
   return (
-    <span className={classes()} onClick={props.onClick}>
+    <span className={classes()} onClick={props.onClick} disabled={props.disabled}>
       {props.children}
     </span>
   )
@@ -33,6 +33,7 @@ const Button = props => {
 Button.propTypes = {
   children: any,
   className: any,
+  disabled: bool,
   outline: bool,
   inline: bool,
   success: bool,

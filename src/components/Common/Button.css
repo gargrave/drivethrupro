@@ -4,8 +4,8 @@ additional styles on top the default styles provided by Milligram
 :root {
   --success-color: #499e49;
   --success-color-dark: #3f8e3f;
-  --info-color: #5bc0de;
-  --info-color-dark: #31b0d5;
+  --info-color: #4faac5;
+  --info-color-dark: #469cb5;
   --warning-color: #f0ad4e;
   --warning-color-dark: #ec971f;
   --danger-color: #c51919;
