@@ -2,6 +2,7 @@ import React from 'react'
 import { array, func, number, object } from 'prop-types'
 
 import Button from '../../Common/Button'
+import CurrentItemTotal from './CurrentItemTotal'
 import OrderProductMenu from './OrderProductMenu'
 import OrderQuantityMenu from './OrderQuantityMenu'
 import OrderSizeMenu from './OrderSizeMenu'
@@ -11,7 +12,7 @@ import './OrderItemForm.css'
 const OrderForm = props => {
   return (
     <section className="order-item-form">
-      <h4>Add an Item</h4>
+      <CurrentItemTotal item={props.selectedMenuItem} sizeIdx={props.sizeIdx} quantity={props.quantity} />
 
       <div className="row">
         <div className="column">

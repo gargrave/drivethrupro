@@ -19,3 +19,7 @@
   display: inline;
   width: inherit;
 }
+
+.add-to-order-button {
+  margin-top: 10px;
+}

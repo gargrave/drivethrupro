@@ -1,0 +1,200 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CurrentItemTotal renders correctly 1`] = `
+ShallowWrapper {
+  "complexSelector": ComplexSelector {
+    "buildPredicate": [Function],
+    "childrenOfNode": [Function],
+    "findWhereUnwrapped": [Function],
+  },
+  "length": 1,
+  "node": <div
+    className="item-total-display"
+>
+    <h4
+        style={
+            Object {
+                "display": "inline",
+              }
+        }
+    >
+        Add an Item
+    </h4>
+    <p>
+        Item Total:  
+        2
+        x @ 
+        $0.99
+         =
+         
+        <strong>
+            $1.98
+        </strong>
+    </p>
+</div>,
+  "nodes": Array [
+    <div
+      className="item-total-display"
+>
+      <h4
+            style={
+                  Object {
+                        "display": "inline",
+                      }
+            }
+      >
+            Add an Item
+      </h4>
+      <p>
+            Item Total:  
+            2
+            x @ 
+            $0.99
+             =
+             
+            <strong>
+                  $1.98
+            </strong>
+      </p>
+</div>,
+  ],
+  "options": Object {},
+  "renderer": ReactShallowRenderer {
+    "_instance": ShallowComponentWrapper {
+      "_calledComponentWillUnmount": false,
+      "_compositeType": 2,
+      "_context": Object {},
+      "_currentElement": <OrderForm
+        item={
+                Object {
+                        "id": 0,
+                        "name": "Hamburger",
+                        "sizes": Array [
+                          Object {
+                            "name": "Regular",
+                            "price": 99,
+                          },
+                        ],
+                      }
+        }
+        quantity={2}
+        sizeIdx={0}
+/>,
+      "_debugID": 1,
+      "_hostContainerInfo": null,
+      "_hostParent": null,
+      "_instance": StatelessComponent {
+        "_reactInternalInstance": [Circular],
+        "context": Object {},
+        "props": Object {
+          "item": Object {
+            "id": 0,
+            "name": "Hamburger",
+            "sizes": Array [
+              Object {
+                "name": "Regular",
+                "price": 99,
+              },
+            ],
+          },
+          "quantity": 2,
+          "sizeIdx": 0,
+        },
+        "refs": Object {},
+        "state": null,
+        "updater": Object {
+          "enqueueCallback": [Function],
+          "enqueueCallbackInternal": [Function],
+          "enqueueElementInternal": [Function],
+          "enqueueForceUpdate": [Function],
+          "enqueueReplaceState": [Function],
+          "enqueueSetState": [Function],
+          "isMounted": [Function],
+          "validateCallback": [Function],
+        },
+      },
+      "_mountOrder": 1,
+      "_pendingCallbacks": null,
+      "_pendingElement": null,
+      "_pendingForceUpdate": false,
+      "_pendingReplaceState": false,
+      "_pendingStateQueue": null,
+      "_renderedComponent": NoopInternalComponent {
+        "_currentElement": <div
+          className="item-total-display"
+>
+          <h4
+                    style={
+                              Object {
+                                        "display": "inline",
+                                      }
+                    }
+          >
+                    Add an Item
+          </h4>
+          <p>
+                    Item Total:  
+                    2
+                    x @ 
+                    $0.99
+                     =
+                     
+                    <strong>
+                              $1.98
+                    </strong>
+          </p>
+</div>,
+        "_debugID": 2,
+        "_renderedOutput": <div
+          className="item-total-display"
+>
+          <h4
+                    style={
+                              Object {
+                                        "display": "inline",
+                                      }
+                    }
+          >
+                    Add an Item
+          </h4>
+          <p>
+                    Item Total:  
+                    2
+                    x @ 
+                    $0.99
+                     =
+                     
+                    <strong>
+                              $1.98
+                    </strong>
+          </p>
+</div>,
+      },
+      "_renderedNodeType": 0,
+      "_rootNodeID": 0,
+      "_topLevelWrapper": null,
+      "_updateBatchNumber": null,
+      "_warnedAboutRefsInRender": false,
+    },
+    "getRenderOutput": [Function],
+    "render": [Function],
+  },
+  "root": [Circular],
+  "unrendered": <OrderForm
+    item={
+        Object {
+            "id": 0,
+            "name": "Hamburger",
+            "sizes": Array [
+              Object {
+                "name": "Regular",
+                "price": 99,
+              },
+            ],
+          }
+    }
+    quantity={2}
+    sizeIdx={0}
+/>,
+}
+`;
