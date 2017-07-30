@@ -6,7 +6,7 @@ import './ManagerAlertNotice.css'
 const ManagerAlertNotice = props => {
   return (
     <div className="manager-alert">
-      {props.orderCount ? props.orderCount : 'Too many '} orders in queue! Manager has been alerted!{' '}
+      {props.orderCount ? props.orderCount : 'Too many '} orders in queue! Mr. Manager has been alerted!{' '}
       <strong>Let&apos;s pick it up, people!</strong>
     </div>
   )

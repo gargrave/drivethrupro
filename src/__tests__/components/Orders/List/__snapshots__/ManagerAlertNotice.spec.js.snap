@@ -12,7 +12,7 @@ ShallowWrapper {
     className="manager-alert"
 >
     Too many 
-     orders in queue! Manager has been alerted!
+     orders in queue! Mr. Manager has been alerted!
      
     <strong>
         Let's pick it up, people!
@@ -23,7 +23,7 @@ ShallowWrapper {
       className="manager-alert"
 >
       Too many 
-       orders in queue! Manager has been alerted!
+       orders in queue! Mr. Manager has been alerted!
        
       <strong>
             Let's pick it up, people!
@@ -68,7 +68,7 @@ ShallowWrapper {
           className="manager-alert"
 >
           Too many 
-           orders in queue! Manager has been alerted!
+           orders in queue! Mr. Manager has been alerted!
            
           <strong>
                     Let's pick it up, people!
@@ -79,7 +79,7 @@ ShallowWrapper {
           className="manager-alert"
 >
           Too many 
-           orders in queue! Manager has been alerted!
+           orders in queue! Mr. Manager has been alerted!
            
           <strong>
                     Let's pick it up, people!
