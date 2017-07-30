@@ -12,7 +12,7 @@ const HomeRoute = props => {
 
   return (
     <div>
-      <h2>DriveThru Pro</h2>
+      <h2>DriveThru PRO</h2>
 
       <hr />
       <h4>Links:</h4>
