@@ -1,0 +1,1294 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`OpenOrdersDisplay renders correctly 1`] = `
+ShallowWrapper {
+  "complexSelector": ComplexSelector {
+    "buildPredicate": [Function],
+    "childrenOfNode": [Function],
+    "findWhereUnwrapped": [Function],
+  },
+  "length": 1,
+  "node": <section
+    className="open-orders"
+>
+    <h3>
+        Open Orders
+    </h3>
+    <ManagerAlertNotice
+        orderCount={5}
+    />
+    <table>
+        <thead>
+            <tr>
+                <th>
+                    Order #
+                </th>
+                <th>
+                    # of Items
+                </th>
+                <th>
+                    Price
+                </th>
+                <th />
+                <th />
+                <th />
+            </tr>
+        </thead>
+        <tbody>
+            <OrderDetailRow
+                handleCancelOrderClick={[Function]}
+                handleCompleteOrderClick={[Function]}
+                handleEditOrderClick={[Function]}
+                index={1}
+                order={
+                    Object {
+                        "id": 1,
+                        "items": Array [
+                          Object {
+                            "id": 1,
+                            "name": "Hamburger (Regular)",
+                            "pricePerUnit": 99,
+                            "quantity": 1,
+                            "totalPrice": 99,
+                          },
+                          Object {
+                            "id": 2,
+                            "name": "Hamburger (Regular)",
+                            "pricePerUnit": 99,
+                            "quantity": 1,
+                            "totalPrice": 99,
+                          },
+                          Object {
+                            "id": 3,
+                            "name": "Hamburger (Regular)",
+                            "pricePerUnit": 99,
+                            "quantity": 1,
+                            "totalPrice": 99,
+                          },
+                          Object {
+                            "id": 4,
+                            "name": "Hamburger (Regular)",
+                            "pricePerUnit": 99,
+                            "quantity": 1,
+                            "totalPrice": 99,
+                          },
+                        ],
+                        "totalItems": 4,
+                        "totalPrice": 396,
+                      }
+                }
+            />
+            <OrderDetailRow
+                handleCancelOrderClick={[Function]}
+                handleCompleteOrderClick={[Function]}
+                handleEditOrderClick={[Function]}
+                index={2}
+                order={
+                    Object {
+                        "id": 3,
+                        "items": Array [
+                          Object {
+                            "id": 5,
+                            "name": "Hamburger (Regular)",
+                            "pricePerUnit": 99,
+                            "quantity": 1,
+                            "totalPrice": 99,
+                          },
+                          Object {
+                            "id": 6,
+                            "name": "French Fries (Large)",
+                            "pricePerUnit": 89,
+                            "quantity": 1,
+                            "totalPrice": 89,
+                          },
+                          Object {
+                            "id": 7,
+                            "name": "Fountrain Drink (Large)",
+                            "pricePerUnit": 99,
+                            "quantity": 1,
+                            "totalPrice": 99,
+                          },
+                        ],
+                        "totalItems": 3,
+                        "totalPrice": 287,
+                      }
+                }
+            />
+            <OrderDetailRow
+                handleCancelOrderClick={[Function]}
+                handleCompleteOrderClick={[Function]}
+                handleEditOrderClick={[Function]}
+                index={3}
+                order={
+                    Object {
+                        "id": 5,
+                        "items": Array [
+                          Object {
+                            "id": 8,
+                            "name": "Double Cheeseburger (Regular)",
+                            "pricePerUnit": 189,
+                            "quantity": 1,
+                            "totalPrice": 189,
+                          },
+                          Object {
+                            "id": 9,
+                            "name": "French Fries (Large)",
+                            "pricePerUnit": 89,
+                            "quantity": 1,
+                            "totalPrice": 89,
+                          },
+                          Object {
+                            "id": 10,
+                            "name": "Fountrain Drink (Obscene)",
+                            "pricePerUnit": 139,
+                            "quantity": 2,
+                            "totalPrice": 278,
+                          },
+                        ],
+                        "totalItems": 4,
+                        "totalPrice": 556,
+                      }
+                }
+            />
+            <OrderDetailRow
+                handleCancelOrderClick={[Function]}
+                handleCompleteOrderClick={[Function]}
+                handleEditOrderClick={[Function]}
+                index={4}
+                order={
+                    Object {
+                        "id": 7,
+                        "items": Array [
+                          Object {
+                            "id": 11,
+                            "name": "Currrly Fries (Small)",
+                            "pricePerUnit": 79,
+                            "quantity": 5,
+                            "totalPrice": 395,
+                          },
+                          Object {
+                            "id": 12,
+                            "name": "Milkshake (Medium)",
+                            "pricePerUnit": 149,
+                            "quantity": 5,
+                            "totalPrice": 745,
+                          },
+                        ],
+                        "totalItems": 10,
+                        "totalPrice": 1140,
+                      }
+                }
+            />
+            <OrderDetailRow
+                handleCancelOrderClick={[Function]}
+                handleCompleteOrderClick={[Function]}
+                handleEditOrderClick={[Function]}
+                index={5}
+                order={
+                    Object {
+                        "id": 9,
+                        "items": Array [
+                          Object {
+                            "id": 13,
+                            "name": "Double Cheeseburger (Regular)",
+                            "pricePerUnit": 189,
+                            "quantity": 2,
+                            "totalPrice": 378,
+                          },
+                          Object {
+                            "id": 14,
+                            "name": "Bottled Water (Regular)",
+                            "pricePerUnit": 129,
+                            "quantity": 2,
+                            "totalPrice": 258,
+                          },
+                        ],
+                        "totalItems": 4,
+                        "totalPrice": 636,
+                      }
+                }
+            />
+        </tbody>
+    </table>
+</section>,
+  "nodes": Array [
+    <section
+      className="open-orders"
+>
+      <h3>
+            Open Orders
+      </h3>
+      <ManagerAlertNotice
+            orderCount={5}
+      />
+      <table>
+            <thead>
+                  <tr>
+                        <th>
+                              Order #
+                        </th>
+                        <th>
+                              # of Items
+                        </th>
+                        <th>
+                              Price
+                        </th>
+                        <th />
+                        <th />
+                        <th />
+                  </tr>
+            </thead>
+            <tbody>
+                  <OrderDetailRow
+                        handleCancelOrderClick={[Function]}
+                        handleCompleteOrderClick={[Function]}
+                        handleEditOrderClick={[Function]}
+                        index={1}
+                        order={
+                              Object {
+                                    "id": 1,
+                                    "items": Array [
+                                      Object {
+                                        "id": 1,
+                                        "name": "Hamburger (Regular)",
+                                        "pricePerUnit": 99,
+                                        "quantity": 1,
+                                        "totalPrice": 99,
+                                      },
+                                      Object {
+                                        "id": 2,
+                                        "name": "Hamburger (Regular)",
+                                        "pricePerUnit": 99,
+                                        "quantity": 1,
+                                        "totalPrice": 99,
+                                      },
+                                      Object {
+                                        "id": 3,
+                                        "name": "Hamburger (Regular)",
+                                        "pricePerUnit": 99,
+                                        "quantity": 1,
+                                        "totalPrice": 99,
+                                      },
+                                      Object {
+                                        "id": 4,
+                                        "name": "Hamburger (Regular)",
+                                        "pricePerUnit": 99,
+                                        "quantity": 1,
+                                        "totalPrice": 99,
+                                      },
+                                    ],
+                                    "totalItems": 4,
+                                    "totalPrice": 396,
+                                  }
+                        }
+                  />
+                  <OrderDetailRow
+                        handleCancelOrderClick={[Function]}
+                        handleCompleteOrderClick={[Function]}
+                        handleEditOrderClick={[Function]}
+                        index={2}
+                        order={
+                              Object {
+                                    "id": 3,
+                                    "items": Array [
+                                      Object {
+                                        "id": 5,
+                                        "name": "Hamburger (Regular)",
+                                        "pricePerUnit": 99,
+                                        "quantity": 1,
+                                        "totalPrice": 99,
+                                      },
+                                      Object {
+                                        "id": 6,
+                                        "name": "French Fries (Large)",
+                                        "pricePerUnit": 89,
+                                        "quantity": 1,
+                                        "totalPrice": 89,
+                                      },
+                                      Object {
+                                        "id": 7,
+                                        "name": "Fountrain Drink (Large)",
+                                        "pricePerUnit": 99,
+                                        "quantity": 1,
+                                        "totalPrice": 99,
+                                      },
+                                    ],
+                                    "totalItems": 3,
+                                    "totalPrice": 287,
+                                  }
+                        }
+                  />
+                  <OrderDetailRow
+                        handleCancelOrderClick={[Function]}
+                        handleCompleteOrderClick={[Function]}
+                        handleEditOrderClick={[Function]}
+                        index={3}
+                        order={
+                              Object {
+                                    "id": 5,
+                                    "items": Array [
+                                      Object {
+                                        "id": 8,
+                                        "name": "Double Cheeseburger (Regular)",
+                                        "pricePerUnit": 189,
+                                        "quantity": 1,
+                                        "totalPrice": 189,
+                                      },
+                                      Object {
+                                        "id": 9,
+                                        "name": "French Fries (Large)",
+                                        "pricePerUnit": 89,
+                                        "quantity": 1,
+                                        "totalPrice": 89,
+                                      },
+                                      Object {
+                                        "id": 10,
+                                        "name": "Fountrain Drink (Obscene)",
+                                        "pricePerUnit": 139,
+                                        "quantity": 2,
+                                        "totalPrice": 278,
+                                      },
+                                    ],
+                                    "totalItems": 4,
+                                    "totalPrice": 556,
+                                  }
+                        }
+                  />
+                  <OrderDetailRow
+                        handleCancelOrderClick={[Function]}
+                        handleCompleteOrderClick={[Function]}
+                        handleEditOrderClick={[Function]}
+                        index={4}
+                        order={
+                              Object {
+                                    "id": 7,
+                                    "items": Array [
+                                      Object {
+                                        "id": 11,
+                                        "name": "Currrly Fries (Small)",
+                                        "pricePerUnit": 79,
+                                        "quantity": 5,
+                                        "totalPrice": 395,
+                                      },
+                                      Object {
+                                        "id": 12,
+                                        "name": "Milkshake (Medium)",
+                                        "pricePerUnit": 149,
+                                        "quantity": 5,
+                                        "totalPrice": 745,
+                                      },
+                                    ],
+                                    "totalItems": 10,
+                                    "totalPrice": 1140,
+                                  }
+                        }
+                  />
+                  <OrderDetailRow
+                        handleCancelOrderClick={[Function]}
+                        handleCompleteOrderClick={[Function]}
+                        handleEditOrderClick={[Function]}
+                        index={5}
+                        order={
+                              Object {
+                                    "id": 9,
+                                    "items": Array [
+                                      Object {
+                                        "id": 13,
+                                        "name": "Double Cheeseburger (Regular)",
+                                        "pricePerUnit": 189,
+                                        "quantity": 2,
+                                        "totalPrice": 378,
+                                      },
+                                      Object {
+                                        "id": 14,
+                                        "name": "Bottled Water (Regular)",
+                                        "pricePerUnit": 129,
+                                        "quantity": 2,
+                                        "totalPrice": 258,
+                                      },
+                                    ],
+                                    "totalItems": 4,
+                                    "totalPrice": 636,
+                                  }
+                        }
+                  />
+            </tbody>
+      </table>
+</section>,
+  ],
+  "options": Object {},
+  "renderer": ReactShallowRenderer {
+    "_instance": ShallowComponentWrapper {
+      "_calledComponentWillUnmount": false,
+      "_compositeType": 2,
+      "_context": Object {},
+      "_currentElement": <OpenOrdersDisplay
+        handleCancelOrderClick={[Function]}
+        handleCompleteOrderClick={[Function]}
+        handleEditOrderClick={[Function]}
+        orders={
+                Array [
+                        Object {
+                          "id": 1,
+                          "items": Array [
+                            Object {
+                              "id": 1,
+                              "name": "Hamburger (Regular)",
+                              "pricePerUnit": 99,
+                              "quantity": 1,
+                              "totalPrice": 99,
+                            },
+                            Object {
+                              "id": 2,
+                              "name": "Hamburger (Regular)",
+                              "pricePerUnit": 99,
+                              "quantity": 1,
+                              "totalPrice": 99,
+                            },
+                            Object {
+                              "id": 3,
+                              "name": "Hamburger (Regular)",
+                              "pricePerUnit": 99,
+                              "quantity": 1,
+                              "totalPrice": 99,
+                            },
+                            Object {
+                              "id": 4,
+                              "name": "Hamburger (Regular)",
+                              "pricePerUnit": 99,
+                              "quantity": 1,
+                              "totalPrice": 99,
+                            },
+                          ],
+                          "totalItems": 4,
+                          "totalPrice": 396,
+                        },
+                        Object {
+                          "id": 3,
+                          "items": Array [
+                            Object {
+                              "id": 5,
+                              "name": "Hamburger (Regular)",
+                              "pricePerUnit": 99,
+                              "quantity": 1,
+                              "totalPrice": 99,
+                            },
+                            Object {
+                              "id": 6,
+                              "name": "French Fries (Large)",
+                              "pricePerUnit": 89,
+                              "quantity": 1,
+                              "totalPrice": 89,
+                            },
+                            Object {
+                              "id": 7,
+                              "name": "Fountrain Drink (Large)",
+                              "pricePerUnit": 99,
+                              "quantity": 1,
+                              "totalPrice": 99,
+                            },
+                          ],
+                          "totalItems": 3,
+                          "totalPrice": 287,
+                        },
+                        Object {
+                          "id": 5,
+                          "items": Array [
+                            Object {
+                              "id": 8,
+                              "name": "Double Cheeseburger (Regular)",
+                              "pricePerUnit": 189,
+                              "quantity": 1,
+                              "totalPrice": 189,
+                            },
+                            Object {
+                              "id": 9,
+                              "name": "French Fries (Large)",
+                              "pricePerUnit": 89,
+                              "quantity": 1,
+                              "totalPrice": 89,
+                            },
+                            Object {
+                              "id": 10,
+                              "name": "Fountrain Drink (Obscene)",
+                              "pricePerUnit": 139,
+                              "quantity": 2,
+                              "totalPrice": 278,
+                            },
+                          ],
+                          "totalItems": 4,
+                          "totalPrice": 556,
+                        },
+                        Object {
+                          "id": 7,
+                          "items": Array [
+                            Object {
+                              "id": 11,
+                              "name": "Currrly Fries (Small)",
+                              "pricePerUnit": 79,
+                              "quantity": 5,
+                              "totalPrice": 395,
+                            },
+                            Object {
+                              "id": 12,
+                              "name": "Milkshake (Medium)",
+                              "pricePerUnit": 149,
+                              "quantity": 5,
+                              "totalPrice": 745,
+                            },
+                          ],
+                          "totalItems": 10,
+                          "totalPrice": 1140,
+                        },
+                        Object {
+                          "id": 9,
+                          "items": Array [
+                            Object {
+                              "id": 13,
+                              "name": "Double Cheeseburger (Regular)",
+                              "pricePerUnit": 189,
+                              "quantity": 2,
+                              "totalPrice": 378,
+                            },
+                            Object {
+                              "id": 14,
+                              "name": "Bottled Water (Regular)",
+                              "pricePerUnit": 129,
+                              "quantity": 2,
+                              "totalPrice": 258,
+                            },
+                          ],
+                          "totalItems": 4,
+                          "totalPrice": 636,
+                        },
+                      ]
+        }
+/>,
+      "_debugID": 1,
+      "_hostContainerInfo": null,
+      "_hostParent": null,
+      "_instance": StatelessComponent {
+        "_reactInternalInstance": [Circular],
+        "context": Object {},
+        "props": Object {
+          "handleCancelOrderClick": [Function],
+          "handleCompleteOrderClick": [Function],
+          "handleEditOrderClick": [Function],
+          "orders": Array [
+            Object {
+              "id": 1,
+              "items": Array [
+                Object {
+                  "id": 1,
+                  "name": "Hamburger (Regular)",
+                  "pricePerUnit": 99,
+                  "quantity": 1,
+                  "totalPrice": 99,
+                },
+                Object {
+                  "id": 2,
+                  "name": "Hamburger (Regular)",
+                  "pricePerUnit": 99,
+                  "quantity": 1,
+                  "totalPrice": 99,
+                },
+                Object {
+                  "id": 3,
+                  "name": "Hamburger (Regular)",
+                  "pricePerUnit": 99,
+                  "quantity": 1,
+                  "totalPrice": 99,
+                },
+                Object {
+                  "id": 4,
+                  "name": "Hamburger (Regular)",
+                  "pricePerUnit": 99,
+                  "quantity": 1,
+                  "totalPrice": 99,
+                },
+              ],
+              "totalItems": 4,
+              "totalPrice": 396,
+            },
+            Object {
+              "id": 3,
+              "items": Array [
+                Object {
+                  "id": 5,
+                  "name": "Hamburger (Regular)",
+                  "pricePerUnit": 99,
+                  "quantity": 1,
+                  "totalPrice": 99,
+                },
+                Object {
+                  "id": 6,
+                  "name": "French Fries (Large)",
+                  "pricePerUnit": 89,
+                  "quantity": 1,
+                  "totalPrice": 89,
+                },
+                Object {
+                  "id": 7,
+                  "name": "Fountrain Drink (Large)",
+                  "pricePerUnit": 99,
+                  "quantity": 1,
+                  "totalPrice": 99,
+                },
+              ],
+              "totalItems": 3,
+              "totalPrice": 287,
+            },
+            Object {
+              "id": 5,
+              "items": Array [
+                Object {
+                  "id": 8,
+                  "name": "Double Cheeseburger (Regular)",
+                  "pricePerUnit": 189,
+                  "quantity": 1,
+                  "totalPrice": 189,
+                },
+                Object {
+                  "id": 9,
+                  "name": "French Fries (Large)",
+                  "pricePerUnit": 89,
+                  "quantity": 1,
+                  "totalPrice": 89,
+                },
+                Object {
+                  "id": 10,
+                  "name": "Fountrain Drink (Obscene)",
+                  "pricePerUnit": 139,
+                  "quantity": 2,
+                  "totalPrice": 278,
+                },
+              ],
+              "totalItems": 4,
+              "totalPrice": 556,
+            },
+            Object {
+              "id": 7,
+              "items": Array [
+                Object {
+                  "id": 11,
+                  "name": "Currrly Fries (Small)",
+                  "pricePerUnit": 79,
+                  "quantity": 5,
+                  "totalPrice": 395,
+                },
+                Object {
+                  "id": 12,
+                  "name": "Milkshake (Medium)",
+                  "pricePerUnit": 149,
+                  "quantity": 5,
+                  "totalPrice": 745,
+                },
+              ],
+              "totalItems": 10,
+              "totalPrice": 1140,
+            },
+            Object {
+              "id": 9,
+              "items": Array [
+                Object {
+                  "id": 13,
+                  "name": "Double Cheeseburger (Regular)",
+                  "pricePerUnit": 189,
+                  "quantity": 2,
+                  "totalPrice": 378,
+                },
+                Object {
+                  "id": 14,
+                  "name": "Bottled Water (Regular)",
+                  "pricePerUnit": 129,
+                  "quantity": 2,
+                  "totalPrice": 258,
+                },
+              ],
+              "totalItems": 4,
+              "totalPrice": 636,
+            },
+          ],
+        },
+        "refs": Object {},
+        "state": null,
+        "updater": Object {
+          "enqueueCallback": [Function],
+          "enqueueCallbackInternal": [Function],
+          "enqueueElementInternal": [Function],
+          "enqueueForceUpdate": [Function],
+          "enqueueReplaceState": [Function],
+          "enqueueSetState": [Function],
+          "isMounted": [Function],
+          "validateCallback": [Function],
+        },
+      },
+      "_mountOrder": 1,
+      "_pendingCallbacks": null,
+      "_pendingElement": null,
+      "_pendingForceUpdate": false,
+      "_pendingReplaceState": false,
+      "_pendingStateQueue": null,
+      "_renderedComponent": NoopInternalComponent {
+        "_currentElement": <section
+          className="open-orders"
+>
+          <h3>
+                    Open Orders
+          </h3>
+          <ManagerAlertNotice
+                    orderCount={5}
+          />
+          <table>
+                    <thead>
+                              <tr>
+                                        <th>
+                                                  Order #
+                                        </th>
+                                        <th>
+                                                  # of Items
+                                        </th>
+                                        <th>
+                                                  Price
+                                        </th>
+                                        <th />
+                                        <th />
+                                        <th />
+                              </tr>
+                    </thead>
+                    <tbody>
+                              <OrderDetailRow
+                                        handleCancelOrderClick={[Function]}
+                                        handleCompleteOrderClick={[Function]}
+                                        handleEditOrderClick={[Function]}
+                                        index={1}
+                                        order={
+                                                  Object {
+                                                            "id": 1,
+                                                            "items": Array [
+                                                              Object {
+                                                                "id": 1,
+                                                                "name": "Hamburger (Regular)",
+                                                                "pricePerUnit": 99,
+                                                                "quantity": 1,
+                                                                "totalPrice": 99,
+                                                              },
+                                                              Object {
+                                                                "id": 2,
+                                                                "name": "Hamburger (Regular)",
+                                                                "pricePerUnit": 99,
+                                                                "quantity": 1,
+                                                                "totalPrice": 99,
+                                                              },
+                                                              Object {
+                                                                "id": 3,
+                                                                "name": "Hamburger (Regular)",
+                                                                "pricePerUnit": 99,
+                                                                "quantity": 1,
+                                                                "totalPrice": 99,
+                                                              },
+                                                              Object {
+                                                                "id": 4,
+                                                                "name": "Hamburger (Regular)",
+                                                                "pricePerUnit": 99,
+                                                                "quantity": 1,
+                                                                "totalPrice": 99,
+                                                              },
+                                                            ],
+                                                            "totalItems": 4,
+                                                            "totalPrice": 396,
+                                                          }
+                                        }
+                              />
+                              <OrderDetailRow
+                                        handleCancelOrderClick={[Function]}
+                                        handleCompleteOrderClick={[Function]}
+                                        handleEditOrderClick={[Function]}
+                                        index={2}
+                                        order={
+                                                  Object {
+                                                            "id": 3,
+                                                            "items": Array [
+                                                              Object {
+                                                                "id": 5,
+                                                                "name": "Hamburger (Regular)",
+                                                                "pricePerUnit": 99,
+                                                                "quantity": 1,
+                                                                "totalPrice": 99,
+                                                              },
+                                                              Object {
+                                                                "id": 6,
+                                                                "name": "French Fries (Large)",
+                                                                "pricePerUnit": 89,
+                                                                "quantity": 1,
+                                                                "totalPrice": 89,
+                                                              },
+                                                              Object {
+                                                                "id": 7,
+                                                                "name": "Fountrain Drink (Large)",
+                                                                "pricePerUnit": 99,
+                                                                "quantity": 1,
+                                                                "totalPrice": 99,
+                                                              },
+                                                            ],
+                                                            "totalItems": 3,
+                                                            "totalPrice": 287,
+                                                          }
+                                        }
+                              />
+                              <OrderDetailRow
+                                        handleCancelOrderClick={[Function]}
+                                        handleCompleteOrderClick={[Function]}
+                                        handleEditOrderClick={[Function]}
+                                        index={3}
+                                        order={
+                                                  Object {
+                                                            "id": 5,
+                                                            "items": Array [
+                                                              Object {
+                                                                "id": 8,
+                                                                "name": "Double Cheeseburger (Regular)",
+                                                                "pricePerUnit": 189,
+                                                                "quantity": 1,
+                                                                "totalPrice": 189,
+                                                              },
+                                                              Object {
+                                                                "id": 9,
+                                                                "name": "French Fries (Large)",
+                                                                "pricePerUnit": 89,
+                                                                "quantity": 1,
+                                                                "totalPrice": 89,
+                                                              },
+                                                              Object {
+                                                                "id": 10,
+                                                                "name": "Fountrain Drink (Obscene)",
+                                                                "pricePerUnit": 139,
+                                                                "quantity": 2,
+                                                                "totalPrice": 278,
+                                                              },
+                                                            ],
+                                                            "totalItems": 4,
+                                                            "totalPrice": 556,
+                                                          }
+                                        }
+                              />
+                              <OrderDetailRow
+                                        handleCancelOrderClick={[Function]}
+                                        handleCompleteOrderClick={[Function]}
+                                        handleEditOrderClick={[Function]}
+                                        index={4}
+                                        order={
+                                                  Object {
+                                                            "id": 7,
+                                                            "items": Array [
+                                                              Object {
+                                                                "id": 11,
+                                                                "name": "Currrly Fries (Small)",
+                                                                "pricePerUnit": 79,
+                                                                "quantity": 5,
+                                                                "totalPrice": 395,
+                                                              },
+                                                              Object {
+                                                                "id": 12,
+                                                                "name": "Milkshake (Medium)",
+                                                                "pricePerUnit": 149,
+                                                                "quantity": 5,
+                                                                "totalPrice": 745,
+                                                              },
+                                                            ],
+                                                            "totalItems": 10,
+                                                            "totalPrice": 1140,
+                                                          }
+                                        }
+                              />
+                              <OrderDetailRow
+                                        handleCancelOrderClick={[Function]}
+                                        handleCompleteOrderClick={[Function]}
+                                        handleEditOrderClick={[Function]}
+                                        index={5}
+                                        order={
+                                                  Object {
+                                                            "id": 9,
+                                                            "items": Array [
+                                                              Object {
+                                                                "id": 13,
+                                                                "name": "Double Cheeseburger (Regular)",
+                                                                "pricePerUnit": 189,
+                                                                "quantity": 2,
+                                                                "totalPrice": 378,
+                                                              },
+                                                              Object {
+                                                                "id": 14,
+                                                                "name": "Bottled Water (Regular)",
+                                                                "pricePerUnit": 129,
+                                                                "quantity": 2,
+                                                                "totalPrice": 258,
+                                                              },
+                                                            ],
+                                                            "totalItems": 4,
+                                                            "totalPrice": 636,
+                                                          }
+                                        }
+                              />
+                    </tbody>
+          </table>
+</section>,
+        "_debugID": 2,
+        "_renderedOutput": <section
+          className="open-orders"
+>
+          <h3>
+                    Open Orders
+          </h3>
+          <ManagerAlertNotice
+                    orderCount={5}
+          />
+          <table>
+                    <thead>
+                              <tr>
+                                        <th>
+                                                  Order #
+                                        </th>
+                                        <th>
+                                                  # of Items
+                                        </th>
+                                        <th>
+                                                  Price
+                                        </th>
+                                        <th />
+                                        <th />
+                                        <th />
+                              </tr>
+                    </thead>
+                    <tbody>
+                              <OrderDetailRow
+                                        handleCancelOrderClick={[Function]}
+                                        handleCompleteOrderClick={[Function]}
+                                        handleEditOrderClick={[Function]}
+                                        index={1}
+                                        order={
+                                                  Object {
+                                                            "id": 1,
+                                                            "items": Array [
+                                                              Object {
+                                                                "id": 1,
+                                                                "name": "Hamburger (Regular)",
+                                                                "pricePerUnit": 99,
+                                                                "quantity": 1,
+                                                                "totalPrice": 99,
+                                                              },
+                                                              Object {
+                                                                "id": 2,
+                                                                "name": "Hamburger (Regular)",
+                                                                "pricePerUnit": 99,
+                                                                "quantity": 1,
+                                                                "totalPrice": 99,
+                                                              },
+                                                              Object {
+                                                                "id": 3,
+                                                                "name": "Hamburger (Regular)",
+                                                                "pricePerUnit": 99,
+                                                                "quantity": 1,
+                                                                "totalPrice": 99,
+                                                              },
+                                                              Object {
+                                                                "id": 4,
+                                                                "name": "Hamburger (Regular)",
+                                                                "pricePerUnit": 99,
+                                                                "quantity": 1,
+                                                                "totalPrice": 99,
+                                                              },
+                                                            ],
+                                                            "totalItems": 4,
+                                                            "totalPrice": 396,
+                                                          }
+                                        }
+                              />
+                              <OrderDetailRow
+                                        handleCancelOrderClick={[Function]}
+                                        handleCompleteOrderClick={[Function]}
+                                        handleEditOrderClick={[Function]}
+                                        index={2}
+                                        order={
+                                                  Object {
+                                                            "id": 3,
+                                                            "items": Array [
+                                                              Object {
+                                                                "id": 5,
+                                                                "name": "Hamburger (Regular)",
+                                                                "pricePerUnit": 99,
+                                                                "quantity": 1,
+                                                                "totalPrice": 99,
+                                                              },
+                                                              Object {
+                                                                "id": 6,
+                                                                "name": "French Fries (Large)",
+                                                                "pricePerUnit": 89,
+                                                                "quantity": 1,
+                                                                "totalPrice": 89,
+                                                              },
+                                                              Object {
+                                                                "id": 7,
+                                                                "name": "Fountrain Drink (Large)",
+                                                                "pricePerUnit": 99,
+                                                                "quantity": 1,
+                                                                "totalPrice": 99,
+                                                              },
+                                                            ],
+                                                            "totalItems": 3,
+                                                            "totalPrice": 287,
+                                                          }
+                                        }
+                              />
+                              <OrderDetailRow
+                                        handleCancelOrderClick={[Function]}
+                                        handleCompleteOrderClick={[Function]}
+                                        handleEditOrderClick={[Function]}
+                                        index={3}
+                                        order={
+                                                  Object {
+                                                            "id": 5,
+                                                            "items": Array [
+                                                              Object {
+                                                                "id": 8,
+                                                                "name": "Double Cheeseburger (Regular)",
+                                                                "pricePerUnit": 189,
+                                                                "quantity": 1,
+                                                                "totalPrice": 189,
+                                                              },
+                                                              Object {
+                                                                "id": 9,
+                                                                "name": "French Fries (Large)",
+                                                                "pricePerUnit": 89,
+                                                                "quantity": 1,
+                                                                "totalPrice": 89,
+                                                              },
+                                                              Object {
+                                                                "id": 10,
+                                                                "name": "Fountrain Drink (Obscene)",
+                                                                "pricePerUnit": 139,
+                                                                "quantity": 2,
+                                                                "totalPrice": 278,
+                                                              },
+                                                            ],
+                                                            "totalItems": 4,
+                                                            "totalPrice": 556,
+                                                          }
+                                        }
+                              />
+                              <OrderDetailRow
+                                        handleCancelOrderClick={[Function]}
+                                        handleCompleteOrderClick={[Function]}
+                                        handleEditOrderClick={[Function]}
+                                        index={4}
+                                        order={
+                                                  Object {
+                                                            "id": 7,
+                                                            "items": Array [
+                                                              Object {
+                                                                "id": 11,
+                                                                "name": "Currrly Fries (Small)",
+                                                                "pricePerUnit": 79,
+                                                                "quantity": 5,
+                                                                "totalPrice": 395,
+                                                              },
+                                                              Object {
+                                                                "id": 12,
+                                                                "name": "Milkshake (Medium)",
+                                                                "pricePerUnit": 149,
+                                                                "quantity": 5,
+                                                                "totalPrice": 745,
+                                                              },
+                                                            ],
+                                                            "totalItems": 10,
+                                                            "totalPrice": 1140,
+                                                          }
+                                        }
+                              />
+                              <OrderDetailRow
+                                        handleCancelOrderClick={[Function]}
+                                        handleCompleteOrderClick={[Function]}
+                                        handleEditOrderClick={[Function]}
+                                        index={5}
+                                        order={
+                                                  Object {
+                                                            "id": 9,
+                                                            "items": Array [
+                                                              Object {
+                                                                "id": 13,
+                                                                "name": "Double Cheeseburger (Regular)",
+                                                                "pricePerUnit": 189,
+                                                                "quantity": 2,
+                                                                "totalPrice": 378,
+                                                              },
+                                                              Object {
+                                                                "id": 14,
+                                                                "name": "Bottled Water (Regular)",
+                                                                "pricePerUnit": 129,
+                                                                "quantity": 2,
+                                                                "totalPrice": 258,
+                                                              },
+                                                            ],
+                                                            "totalItems": 4,
+                                                            "totalPrice": 636,
+                                                          }
+                                        }
+                              />
+                    </tbody>
+          </table>
+</section>,
+      },
+      "_renderedNodeType": 0,
+      "_rootNodeID": 0,
+      "_topLevelWrapper": null,
+      "_updateBatchNumber": null,
+      "_warnedAboutRefsInRender": false,
+    },
+    "getRenderOutput": [Function],
+    "render": [Function],
+  },
+  "root": [Circular],
+  "unrendered": <OpenOrdersDisplay
+    handleCancelOrderClick={[Function]}
+    handleCompleteOrderClick={[Function]}
+    handleEditOrderClick={[Function]}
+    orders={
+        Array [
+            Object {
+              "id": 1,
+              "items": Array [
+                Object {
+                  "id": 1,
+                  "name": "Hamburger (Regular)",
+                  "pricePerUnit": 99,
+                  "quantity": 1,
+                  "totalPrice": 99,
+                },
+                Object {
+                  "id": 2,
+                  "name": "Hamburger (Regular)",
+                  "pricePerUnit": 99,
+                  "quantity": 1,
+                  "totalPrice": 99,
+                },
+                Object {
+                  "id": 3,
+                  "name": "Hamburger (Regular)",
+                  "pricePerUnit": 99,
+                  "quantity": 1,
+                  "totalPrice": 99,
+                },
+                Object {
+                  "id": 4,
+                  "name": "Hamburger (Regular)",
+                  "pricePerUnit": 99,
+                  "quantity": 1,
+                  "totalPrice": 99,
+                },
+              ],
+              "totalItems": 4,
+              "totalPrice": 396,
+            },
+            Object {
+              "id": 3,
+              "items": Array [
+                Object {
+                  "id": 5,
+                  "name": "Hamburger (Regular)",
+                  "pricePerUnit": 99,
+                  "quantity": 1,
+                  "totalPrice": 99,
+                },
+                Object {
+                  "id": 6,
+                  "name": "French Fries (Large)",
+                  "pricePerUnit": 89,
+                  "quantity": 1,
+                  "totalPrice": 89,
+                },
+                Object {
+                  "id": 7,
+                  "name": "Fountrain Drink (Large)",
+                  "pricePerUnit": 99,
+                  "quantity": 1,
+                  "totalPrice": 99,
+                },
+              ],
+              "totalItems": 3,
+              "totalPrice": 287,
+            },
+            Object {
+              "id": 5,
+              "items": Array [
+                Object {
+                  "id": 8,
+                  "name": "Double Cheeseburger (Regular)",
+                  "pricePerUnit": 189,
+                  "quantity": 1,
+                  "totalPrice": 189,
+                },
+                Object {
+                  "id": 9,
+                  "name": "French Fries (Large)",
+                  "pricePerUnit": 89,
+                  "quantity": 1,
+                  "totalPrice": 89,
+                },
+                Object {
+                  "id": 10,
+                  "name": "Fountrain Drink (Obscene)",
+                  "pricePerUnit": 139,
+                  "quantity": 2,
+                  "totalPrice": 278,
+                },
+              ],
+              "totalItems": 4,
+              "totalPrice": 556,
+            },
+            Object {
+              "id": 7,
+              "items": Array [
+                Object {
+                  "id": 11,
+                  "name": "Currrly Fries (Small)",
+                  "pricePerUnit": 79,
+                  "quantity": 5,
+                  "totalPrice": 395,
+                },
+                Object {
+                  "id": 12,
+                  "name": "Milkshake (Medium)",
+                  "pricePerUnit": 149,
+                  "quantity": 5,
+                  "totalPrice": 745,
+                },
+              ],
+              "totalItems": 10,
+              "totalPrice": 1140,
+            },
+            Object {
+              "id": 9,
+              "items": Array [
+                Object {
+                  "id": 13,
+                  "name": "Double Cheeseburger (Regular)",
+                  "pricePerUnit": 189,
+                  "quantity": 2,
+                  "totalPrice": 378,
+                },
+                Object {
+                  "id": 14,
+                  "name": "Bottled Water (Regular)",
+                  "pricePerUnit": 129,
+                  "quantity": 2,
+                  "totalPrice": 258,
+                },
+              ],
+              "totalItems": 4,
+              "totalPrice": 636,
+            },
+          ]
+    }
+/>,
+}
+`;

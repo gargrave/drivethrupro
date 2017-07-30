@@ -4,10 +4,8 @@ import { withRouter } from 'react-router-dom'
 import { array, func, object } from 'prop-types'
 
 import { cancelOrder, completeOrder } from '../../../store/actions/order-actions'
-import ManagerAlertNotice from './ManagerAlertNotice'
-import OrderDetailRow from './OrderDetailRow'
-
-import './OrderListPage.css'
+import Button from '../../Common/Button'
+import OpenOrdersDisplay from './OpenOrdersDisplay'
 
 class OrdersListPage extends Component {
   constructor (props) {
@@ -52,45 +50,17 @@ class OrdersListPage extends Component {
   }
 
   render () {
-    const { orders } = this.props
     return (
       <div className="orders-list-view">
-        <button className="button" onClick={() => this.props.history.push('/orders/new')}>
-          New Order
-        </button>
+        <Button onClick={() => this.props.history.push('/orders/new')}>Add an Order</Button>
 
         <hr />
-        {orders.length > 4 && <ManagerAlertNotice orderCount={orders.length} />}
-
-        <h3>Open Orders</h3>
-        {!orders.length && <h4>There are currently no open orders!</h4>}
-        {!!orders.length &&
-          <table>
-            <thead>
-              <tr>
-                <th>Order #</th>
-                <th># of Items</th>
-                <th>Price</th>
-                <th />
-                <th />
-                <th />
-              </tr>
-            </thead>
-            <tbody>
-              {orders.map((order, idx) => {
-                return (
-                  <OrderDetailRow
-                    key={order.id}
-                    order={order}
-                    index={idx + 1}
-                    handleCompleteOrderClick={e => this.handleCompleteOrderClick(e, order.id)}
-                    handleEditOrderClick={e => this.handleEditOrderClick(e, order.id)}
-                    handleCancelOrderClick={e => this.handleCancelOrderClick(e, order.id)}
-                  />
-                )
-              })}
-            </tbody>
-          </table>}
+        <OpenOrdersDisplay
+          orders={this.props.orders}
+          handleCompleteOrderClick={this.handleCompleteOrderClick}
+          handleEditOrderClick={this.handleEditOrderClick}
+          handleCancelOrderClick={this.handleCancelOrderClick}
+        />
       </div>
     )
   }
