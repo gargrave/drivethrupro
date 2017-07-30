@@ -7,20 +7,25 @@ import './OrderItemRow.css'
 
 const OrderItemRow = props => {
   return (
-    <li className="order-item-row">
-      <span className="order-item-row-item order-item-row-name">
+    <tr className="order-item-row">
+      <td className="order-item-row-item order-item-row-name">
         {props.item.name}
-      </span>
-      <span className="order-item-row-item order-item-row-quantity">
+      </td>
+      <td className="order-item-row-item order-item-row-quantity">
         {props.item.quantity} @ {displayAsDollars(props.item.pricePerUnit)}
-      </span>
-      <span className="order-item-row-item order-item-row-price">
+      </td>
+      <td className="order-item-row-item order-item-row-price">
         {displayAsDollars(props.item.pricePerUnit * props.item.quantity)}
-      </span>
-      <button className="order-item-row-item remove-item-button" onClick={props.handleRemoveItemClick}>
-        Remove
-      </button>
-    </li>
+      </td>
+      <td className="order-item-row-item">
+        <span
+          className="button button-outline order-item-row-item remove-item-button"
+          onClick={props.handleRemoveItemClick}
+        >
+          Remove
+        </span>
+      </td>
+    </tr>
   )
 }
 

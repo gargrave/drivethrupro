@@ -10,78 +10,112 @@ ShallowWrapper {
   "length": 1,
   "node": <section>
     <h3>
-        Current Order
+        Current Order:
+        <span
+            className="current-order-total-price"
+        >
+            <strong>
+                $1.87
+            </strong>
+        </span>
     </h3>
-    <h4
-        className="current-order-total-price"
-    >
-        Total: 
-        $1.87
-    </h4>
-    <ul>
-        <OrderItemRow
-            handleRemoveItemClick={[Function]}
-            item={
-                OrderItem {
-                    "id": 1,
-                    "name": "Item A (Small)",
-                    "pricePerUnit": 49,
-                    "quantity": 1,
-                    "totalPrice": 49,
-                  }
-            }
-        />
-        <OrderItemRow
-            handleRemoveItemClick={[Function]}
-            item={
-                OrderItem {
-                    "id": 2,
-                    "name": "Item B (Medium)",
-                    "pricePerUnit": 69,
-                    "quantity": 2,
-                    "totalPrice": 138,
-                  }
-            }
-        />
-    </ul>
+    <table>
+        <thead>
+            <tr>
+                <th>
+                    Product
+                </th>
+                <th>
+                    Quantity
+                </th>
+                <th>
+                    Total Price
+                </th>
+                <th />
+            </tr>
+        </thead>
+        <tbody>
+            <OrderItemRow
+                handleRemoveItemClick={[Function]}
+                item={
+                    OrderItem {
+                        "id": 1,
+                        "name": "Item A (Small)",
+                        "pricePerUnit": 49,
+                        "quantity": 1,
+                        "totalPrice": 49,
+                      }
+                }
+            />
+            <OrderItemRow
+                handleRemoveItemClick={[Function]}
+                item={
+                    OrderItem {
+                        "id": 2,
+                        "name": "Item B (Medium)",
+                        "pricePerUnit": 69,
+                        "quantity": 2,
+                        "totalPrice": 138,
+                      }
+                }
+            />
+        </tbody>
+    </table>
 </section>,
   "nodes": Array [
     <section>
       <h3>
-            Current Order
+            Current Order:
+            <span
+                  className="current-order-total-price"
+            >
+                  <strong>
+                        $1.87
+                  </strong>
+            </span>
       </h3>
-      <h4
-            className="current-order-total-price"
-      >
-            Total: 
-            $1.87
-      </h4>
-      <ul>
-            <OrderItemRow
-                  handleRemoveItemClick={[Function]}
-                  item={
-                        OrderItem {
-                              "id": 1,
-                              "name": "Item A (Small)",
-                              "pricePerUnit": 49,
-                              "quantity": 1,
-                              "totalPrice": 49,
-                            }
-                  }
-            />
-            <OrderItemRow
-                  handleRemoveItemClick={[Function]}
-                  item={
-                        OrderItem {
-                              "id": 2,
-                              "name": "Item B (Medium)",
-                              "pricePerUnit": 69,
-                              "quantity": 2,
-                              "totalPrice": 138,
-                            }
-                  }
-            />
-      </ul>
+      <table>
+            <thead>
+                  <tr>
+                        <th>
+                              Product
+                        </th>
+                        <th>
+                              Quantity
+                        </th>
+                        <th>
+                              Total Price
+                        </th>
+                        <th />
+                  </tr>
+            </thead>
+            <tbody>
+                  <OrderItemRow
+                        handleRemoveItemClick={[Function]}
+                        item={
+                              OrderItem {
+                                    "id": 1,
+                                    "name": "Item A (Small)",
+                                    "pricePerUnit": 49,
+                                    "quantity": 1,
+                                    "totalPrice": 49,
+                                  }
+                        }
+                  />
+                  <OrderItemRow
+                        handleRemoveItemClick={[Function]}
+                        item={
+                              OrderItem {
+                                    "id": 2,
+                                    "name": "Item B (Medium)",
+                                    "pricePerUnit": 69,
+                                    "quantity": 2,
+                                    "totalPrice": 138,
+                                  }
+                        }
+                  />
+            </tbody>
+      </table>
 </section>,
   ],
   "options": Object {},
@@ -168,78 +202,112 @@ ShallowWrapper {
       "_renderedComponent": NoopInternalComponent {
         "_currentElement": <section>
           <h3>
-                    Current Order
+                    Current Order:
+                    <span
+                              className="current-order-total-price"
+                    >
+                              <strong>
+                                        $1.87
+                              </strong>
+                    </span>
           </h3>
-          <h4
-                    className="current-order-total-price"
-          >
-                    Total: 
-                    $1.87
-          </h4>
-          <ul>
-                    <OrderItemRow
-                              handleRemoveItemClick={[Function]}
-                              item={
-                                        OrderItem {
-                                                  "id": 1,
-                                                  "name": "Item A (Small)",
-                                                  "pricePerUnit": 49,
-                                                  "quantity": 1,
-                                                  "totalPrice": 49,
-                                                }
-                              }
-                    />
-                    <OrderItemRow
-                              handleRemoveItemClick={[Function]}
-                              item={
-                                        OrderItem {
-                                                  "id": 2,
-                                                  "name": "Item B (Medium)",
-                                                  "pricePerUnit": 69,
-                                                  "quantity": 2,
-                                                  "totalPrice": 138,
-                                                }
-                              }
-                    />
-          </ul>
+          <table>
+                    <thead>
+                              <tr>
+                                        <th>
+                                                  Product
+                                        </th>
+                                        <th>
+                                                  Quantity
+                                        </th>
+                                        <th>
+                                                  Total Price
+                                        </th>
+                                        <th />
+                              </tr>
+                    </thead>
+                    <tbody>
+                              <OrderItemRow
+                                        handleRemoveItemClick={[Function]}
+                                        item={
+                                                  OrderItem {
+                                                            "id": 1,
+                                                            "name": "Item A (Small)",
+                                                            "pricePerUnit": 49,
+                                                            "quantity": 1,
+                                                            "totalPrice": 49,
+                                                          }
+                                        }
+                              />
+                              <OrderItemRow
+                                        handleRemoveItemClick={[Function]}
+                                        item={
+                                                  OrderItem {
+                                                            "id": 2,
+                                                            "name": "Item B (Medium)",
+                                                            "pricePerUnit": 69,
+                                                            "quantity": 2,
+                                                            "totalPrice": 138,
+                                                          }
+                                        }
+                              />
+                    </tbody>
+          </table>
 </section>,
         "_debugID": 2,
         "_renderedOutput": <section>
           <h3>
-                    Current Order
+                    Current Order:
+                    <span
+                              className="current-order-total-price"
+                    >
+                              <strong>
+                                        $1.87
+                              </strong>
+                    </span>
           </h3>
-          <h4
-                    className="current-order-total-price"
-          >
-                    Total: 
-                    $1.87
-          </h4>
-          <ul>
-                    <OrderItemRow
-                              handleRemoveItemClick={[Function]}
-                              item={
-                                        OrderItem {
-                                                  "id": 1,
-                                                  "name": "Item A (Small)",
-                                                  "pricePerUnit": 49,
-                                                  "quantity": 1,
-                                                  "totalPrice": 49,
-                                                }
-                              }
-                    />
-                    <OrderItemRow
-                              handleRemoveItemClick={[Function]}
-                              item={
-                                        OrderItem {
-                                                  "id": 2,
-                                                  "name": "Item B (Medium)",
-                                                  "pricePerUnit": 69,
-                                                  "quantity": 2,
-                                                  "totalPrice": 138,
-                                                }
-                              }
-                    />
-          </ul>
+          <table>
+                    <thead>
+                              <tr>
+                                        <th>
+                                                  Product
+                                        </th>
+                                        <th>
+                                                  Quantity
+                                        </th>
+                                        <th>
+                                                  Total Price
+                                        </th>
+                                        <th />
+                              </tr>
+                    </thead>
+                    <tbody>
+                              <OrderItemRow
+                                        handleRemoveItemClick={[Function]}
+                                        item={
+                                                  OrderItem {
+                                                            "id": 1,
+                                                            "name": "Item A (Small)",
+                                                            "pricePerUnit": 49,
+                                                            "quantity": 1,
+                                                            "totalPrice": 49,
+                                                          }
+                                        }
+                              />
+                              <OrderItemRow
+                                        handleRemoveItemClick={[Function]}
+                                        item={
+                                                  OrderItem {
+                                                            "id": 2,
+                                                            "name": "Item B (Medium)",
+                                                            "pricePerUnit": 69,
+                                                            "quantity": 2,
+                                                            "totalPrice": 138,
+                                                          }
+                                        }
+                              />
+                    </tbody>
+          </table>
 </section>,
       },
       "_renderedNodeType": 0,

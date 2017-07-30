@@ -18,15 +18,25 @@ const CurrentOrderDisplay = props => {
         </span>
       </h3>
 
-      <ul>
-        {props.order.items.map(item =>
-          <OrderItemRow
-            key={item.id}
-            item={item}
-            handleRemoveItemClick={e => props.handleRemoveItemClick(e, item.id)}
-          />
-        )}
-      </ul>
+      <table>
+        <thead>
+          <tr>
+            <th>Product</th>
+            <th>Quantity</th>
+            <th>Total Price</th>
+            <th />
+          </tr>
+        </thead>
+        <tbody>
+          {props.order.items.map(item =>
+            <OrderItemRow
+              key={item.id}
+              item={item}
+              handleRemoveItemClick={e => props.handleRemoveItemClick(e, item.id)}
+            />
+          )}
+        </tbody>
+      </table>
     </section>
   )
 }

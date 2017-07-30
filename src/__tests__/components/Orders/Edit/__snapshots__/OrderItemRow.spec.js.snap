@@ -8,61 +8,69 @@ ShallowWrapper {
     "findWhereUnwrapped": [Function],
   },
   "length": 1,
-  "node": <li
+  "node": <tr
     className="order-item-row"
 >
-    <span
+    <td
         className="order-item-row-item order-item-row-name"
     >
         Test Item
-    </span>
-    <span
+    </td>
+    <td
         className="order-item-row-item order-item-row-quantity"
     >
         2
          @ 
         $0.05
-    </span>
-    <span
+    </td>
+    <td
         className="order-item-row-item order-item-row-price"
     >
         $0.10
-    </span>
-    <button
-        className="order-item-row-item remove-item-button"
-        onClick={[Function]}
+    </td>
+    <td
+        className="order-item-row-item"
     >
-        Remove
-    </button>
-</li>,
+        <span
+            className="button button-outline order-item-row-item remove-item-button"
+            onClick={[Function]}
+        >
+            Remove
+        </span>
+    </td>
+</tr>,
   "nodes": Array [
-    <li
+    <tr
       className="order-item-row"
 >
-      <span
+      <td
             className="order-item-row-item order-item-row-name"
       >
             Test Item
-      </span>
-      <span
+      </td>
+      <td
             className="order-item-row-item order-item-row-quantity"
       >
             2
              @ 
             $0.05
-      </span>
-      <span
+      </td>
+      <td
             className="order-item-row-item order-item-row-price"
       >
             $0.10
-      </span>
-      <button
-            className="order-item-row-item remove-item-button"
-            onClick={[Function]}
+      </td>
+      <td
+            className="order-item-row-item"
       >
-            Remove
-      </button>
-</li>,
+            <span
+                  className="button button-outline order-item-row-item remove-item-button"
+                  onClick={[Function]}
+            >
+                  Remove
+            </span>
+      </td>
+</tr>,
   ],
   "options": Object {},
   "renderer": ReactShallowRenderer {
@@ -114,61 +122,69 @@ ShallowWrapper {
       "_pendingReplaceState": false,
       "_pendingStateQueue": null,
       "_renderedComponent": NoopInternalComponent {
-        "_currentElement": <li
+        "_currentElement": <tr
           className="order-item-row"
 >
-          <span
+          <td
                     className="order-item-row-item order-item-row-name"
           >
                     Test Item
-          </span>
-          <span
+          </td>
+          <td
                     className="order-item-row-item order-item-row-quantity"
           >
                     2
                      @ 
                     $0.05
-          </span>
-          <span
+          </td>
+          <td
                     className="order-item-row-item order-item-row-price"
           >
                     $0.10
-          </span>
-          <button
-                    className="order-item-row-item remove-item-button"
-                    onClick={[Function]}
+          </td>
+          <td
+                    className="order-item-row-item"
           >
-                    Remove
-          </button>
-</li>,
+                    <span
+                              className="button button-outline order-item-row-item remove-item-button"
+                              onClick={[Function]}
+                    >
+                              Remove
+                    </span>
+          </td>
+</tr>,
         "_debugID": 2,
-        "_renderedOutput": <li
+        "_renderedOutput": <tr
           className="order-item-row"
 >
-          <span
+          <td
                     className="order-item-row-item order-item-row-name"
           >
                     Test Item
-          </span>
-          <span
+          </td>
+          <td
                     className="order-item-row-item order-item-row-quantity"
           >
                     2
                      @ 
                     $0.05
-          </span>
-          <span
+          </td>
+          <td
                     className="order-item-row-item order-item-row-price"
           >
                     $0.10
-          </span>
-          <button
-                    className="order-item-row-item remove-item-button"
-                    onClick={[Function]}
+          </td>
+          <td
+                    className="order-item-row-item"
           >
-                    Remove
-          </button>
-</li>,
+                    <span
+                              className="button button-outline order-item-row-item remove-item-button"
+                              onClick={[Function]}
+                    >
+                              Remove
+                    </span>
+          </td>
+</tr>,
       },
       "_renderedNodeType": 0,
       "_rootNodeID": 0,
