@@ -1,0 +1,26 @@
+/*
+additional styles on top the default styles provided by Milligram
+*/
+
+:root {
+  --danger-color: #c51919;
+}
+
+.button.button-inline {
+  /* update display properties for more minimal inline display;
+   * e.g. so it fits into a <tr> without any weird spacing issues 
+   */
+  display: inline;
+  padding: 9px 14px;
+}
+
+/* outlined styled "danger" colored button */
+.button.button-outline.button-danger {
+  color: var(--danger-color);
+  border-color: var(--danger-color);
+}
+
+.button.button-outline.button-danger:hover {
+  background-color: var(--danger-color);
+  color: white;
+}
