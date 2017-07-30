@@ -32,6 +32,14 @@ ShallowWrapper {
             Create a New Order
         </Link>
     </h5>
+    <h5>
+        <Link
+            replace={false}
+            to="/about"
+        >
+            About DriveThru PRO
+        </Link>
+    </h5>
     <hr />
     <h4>
         Stats:
@@ -104,6 +112,14 @@ ShallowWrapper {
                   to="/orders/new"
             >
                   Create a New Order
+            </Link>
+      </h5>
+      <h5>
+            <Link
+                  replace={false}
+                  to="/about"
+            >
+                  About DriveThru PRO
             </Link>
       </h5>
       <hr />
@@ -224,6 +240,14 @@ ShallowWrapper {
                               Create a New Order
                     </Link>
           </h5>
+          <h5>
+                    <Link
+                              replace={false}
+                              to="/about"
+                    >
+                              About DriveThru PRO
+                    </Link>
+          </h5>
           <hr />
           <h4>
                     Stats:
@@ -296,6 +320,14 @@ ShallowWrapper {
                               to="/orders/new"
                     >
                               Create a New Order
+                    </Link>
+          </h5>
+          <h5>
+                    <Link
+                              replace={false}
+                              to="/about"
+                    >
+                              About DriveThru PRO
                     </Link>
           </h5>
           <hr />

@@ -22,6 +22,9 @@ const HomeRoute = props => {
       <h5>
         <Link to="/orders/new">Create a New Order</Link>
       </h5>
+      <h5>
+        <Link to="/about">About DriveThru PRO</Link>
+      </h5>
 
       <hr />
       <h4>Stats:</h4>
