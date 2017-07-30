@@ -8,59 +8,97 @@ ShallowWrapper {
     "findWhereUnwrapped": [Function],
   },
   "length": 1,
-  "node": <div>
-    Order #
-    1
-     - 
-    0
-     items - 
-    $0.00
-    <button
-        className="complete-order-btn"
-        onClick={[Function]}
+  "node": <tr
+    className="order-item-row"
+>
+    <td
+        className="order-item-row-item"
     >
-        Complete
-    </button>
-    <button
-        className="edit-order-btn"
-        onClick={[Function]}
+        1
+    </td>
+    <td
+        className="order-item-row-item"
+    />
+    <td
+        className="order-item-row-item"
     >
-        Edit
-    </button>
-    <button
-        className="cancel-order-btn"
-        onClick={[Function]}
+        $0.00
+    </td>
+    <td
+        className="order-item-row-item"
     >
-        Cancel
-    </button>
-</div>,
-  "nodes": Array [
-    <div>
-      Order #
-      1
-       - 
-      0
-       items - 
-      $0.00
-      <button
+        <Button
             className="complete-order-btn"
+            inline={true}
             onClick={[Function]}
-      >
+        >
             Complete
-      </button>
-      <button
+        </Button>
+        <Button
             className="edit-order-btn"
+            inline={true}
             onClick={[Function]}
-      >
+            outline={true}
+        >
             Edit
-      </button>
-      <button
+        </Button>
+        <Button
             className="cancel-order-btn"
+            danger={true}
+            inline={true}
             onClick={[Function]}
-      >
+            outline={true}
+        >
             Cancel
-      </button>
-</div>,
+        </Button>
+    </td>
+</tr>,
+  "nodes": Array [
+    <tr
+      className="order-item-row"
+>
+      <td
+            className="order-item-row-item"
+      >
+            1
+      </td>
+      <td
+            className="order-item-row-item"
+      />
+      <td
+            className="order-item-row-item"
+      >
+            $0.00
+      </td>
+      <td
+            className="order-item-row-item"
+      >
+            <Button
+                  className="complete-order-btn"
+                  inline={true}
+                  onClick={[Function]}
+            >
+                  Complete
+            </Button>
+            <Button
+                  className="edit-order-btn"
+                  inline={true}
+                  onClick={[Function]}
+                  outline={true}
+            >
+                  Edit
+            </Button>
+            <Button
+                  className="cancel-order-btn"
+                  danger={true}
+                  inline={true}
+                  onClick={[Function]}
+                  outline={true}
+            >
+                  Cancel
+            </Button>
+      </td>
+</tr>,
   ],
   "options": Object {},
   "renderer": ReactShallowRenderer {
@@ -116,59 +154,97 @@ ShallowWrapper {
       "_pendingReplaceState": false,
       "_pendingStateQueue": null,
       "_renderedComponent": NoopInternalComponent {
-        "_currentElement": <div>
-          Order #
-          1
-           - 
-          0
-           items - 
-          $0.00
-          <button
-                    className="complete-order-btn"
-                    onClick={[Function]}
+        "_currentElement": <tr
+          className="order-item-row"
+>
+          <td
+                    className="order-item-row-item"
           >
-                    Complete
-          </button>
-          <button
-                    className="edit-order-btn"
-                    onClick={[Function]}
+                    1
+          </td>
+          <td
+                    className="order-item-row-item"
+          />
+          <td
+                    className="order-item-row-item"
           >
-                    Edit
-          </button>
-          <button
-                    className="cancel-order-btn"
-                    onClick={[Function]}
+                    $0.00
+          </td>
+          <td
+                    className="order-item-row-item"
           >
-                    Cancel
-          </button>
-</div>,
+                    <Button
+                              className="complete-order-btn"
+                              inline={true}
+                              onClick={[Function]}
+                    >
+                              Complete
+                    </Button>
+                    <Button
+                              className="edit-order-btn"
+                              inline={true}
+                              onClick={[Function]}
+                              outline={true}
+                    >
+                              Edit
+                    </Button>
+                    <Button
+                              className="cancel-order-btn"
+                              danger={true}
+                              inline={true}
+                              onClick={[Function]}
+                              outline={true}
+                    >
+                              Cancel
+                    </Button>
+          </td>
+</tr>,
         "_debugID": 2,
-        "_renderedOutput": <div>
-          Order #
-          1
-           - 
-          0
-           items - 
-          $0.00
-          <button
-                    className="complete-order-btn"
-                    onClick={[Function]}
+        "_renderedOutput": <tr
+          className="order-item-row"
+>
+          <td
+                    className="order-item-row-item"
           >
-                    Complete
-          </button>
-          <button
-                    className="edit-order-btn"
-                    onClick={[Function]}
+                    1
+          </td>
+          <td
+                    className="order-item-row-item"
+          />
+          <td
+                    className="order-item-row-item"
           >
-                    Edit
-          </button>
-          <button
-                    className="cancel-order-btn"
-                    onClick={[Function]}
+                    $0.00
+          </td>
+          <td
+                    className="order-item-row-item"
           >
-                    Cancel
-          </button>
-</div>,
+                    <Button
+                              className="complete-order-btn"
+                              inline={true}
+                              onClick={[Function]}
+                    >
+                              Complete
+                    </Button>
+                    <Button
+                              className="edit-order-btn"
+                              inline={true}
+                              onClick={[Function]}
+                              outline={true}
+                    >
+                              Edit
+                    </Button>
+                    <Button
+                              className="cancel-order-btn"
+                              danger={true}
+                              inline={true}
+                              onClick={[Function]}
+                              outline={true}
+                    >
+                              Cancel
+                    </Button>
+          </td>
+</tr>,
       },
       "_renderedNodeType": 0,
       "_rootNodeID": 0,

@@ -65,18 +65,32 @@ class OrdersListPage extends Component {
         <h3>Open Orders</h3>
         {!orders.length && <h4>There are currently no open orders!</h4>}
         {!!orders.length &&
-          orders.map((order, idx) => {
-            return (
-              <OrderDetailRow
-                key={order.id}
-                order={order}
-                index={idx + 1}
-                handleCompleteOrderClick={e => this.handleCompleteOrderClick(e, order.id)}
-                handleEditOrderClick={e => this.handleEditOrderClick(e, order.id)}
-                handleCancelOrderClick={e => this.handleCancelOrderClick(e, order.id)}
-              />
-            )
-          })}
+          <table>
+            <thead>
+              <tr>
+                <th>Order #</th>
+                <th># of Items</th>
+                <th>Price</th>
+                <th />
+                <th />
+                <th />
+              </tr>
+            </thead>
+            <tbody>
+              {orders.map((order, idx) => {
+                return (
+                  <OrderDetailRow
+                    key={order.id}
+                    order={order}
+                    index={idx + 1}
+                    handleCompleteOrderClick={e => this.handleCompleteOrderClick(e, order.id)}
+                    handleEditOrderClick={e => this.handleEditOrderClick(e, order.id)}
+                    handleCancelOrderClick={e => this.handleCancelOrderClick(e, order.id)}
+                  />
+                )
+              })}
+            </tbody>
+          </table>}
       </div>
     )
   }

@@ -2,22 +2,35 @@ import React from 'react'
 import { func, number, shape } from 'prop-types'
 
 import { displayAsDollars } from '../../../utils/utils'
+import Button from '../../Common/Button'
+
+import './OrderDetailRow.css'
 
 const OrderDetailRow = props => {
   const { index, order } = props
   return (
-    <div>
-      Order #{index} - {order.totalItems} items - {displayAsDollars(order.totalPrice)}
-      <button className="complete-order-btn" onClick={props.handleCompleteOrderClick}>
-        Complete
-      </button>
-      <button className="edit-order-btn" onClick={props.handleEditOrderClick}>
-        Edit
-      </button>
-      <button className="cancel-order-btn" onClick={props.handleCancelOrderClick}>
-        Cancel
-      </button>
-    </div>
+    <tr className="order-item-row">
+      <td className="order-item-row-item">
+        {index}
+      </td>
+      <td className="order-item-row-item">
+        {order.totalItems}
+      </td>
+      <td className="order-item-row-item">
+        {displayAsDollars(order.totalPrice)}
+      </td>
+      <td className="order-item-row-item">
+        <Button inline className="complete-order-btn" onClick={props.handleCompleteOrderClick}>
+          Complete
+        </Button>
+        <Button inline outline className="edit-order-btn" onClick={props.handleEditOrderClick}>
+          Edit
+        </Button>
+        <Button inline outline danger className="cancel-order-btn" onClick={props.handleCancelOrderClick}>
+          Cancel
+        </Button>
+      </td>
+    </tr>
   )
 }
 
