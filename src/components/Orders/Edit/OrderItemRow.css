@@ -14,21 +14,6 @@
   text-align: left;
 }
 
-/* override styles of "remove item" button */
-.App .order-item-row .remove-item-button {
-  /* change coloring to red-ish */
-  color: #ab1616;
-  border-color: #ab1616;
-  /* update display properties so it fits into a <tr> without any weird spacing issues */
-  display: inline;
-  padding: 9px 14px;
-}
-
-.App .order-item-row .remove-item-button:hover {
-  background-color: #ab1616;
-  color: white;
-}
-
 @media only screen and (min-width: 641px) {
   .App .order-item-row td {
     min-width: 160px;

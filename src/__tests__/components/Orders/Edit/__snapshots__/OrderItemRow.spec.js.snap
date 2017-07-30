@@ -31,12 +31,15 @@ ShallowWrapper {
     <td
         className="order-item-row-item"
     >
-        <span
-            className="button button-outline order-item-row-item remove-item-button"
+        <Button
+            className="order-item-row-item remove-item-btn"
+            danger={true}
+            inline={true}
             onClick={[Function]}
+            outline={true}
         >
             Remove
-        </span>
+        </Button>
     </td>
 </tr>,
   "nodes": Array [
@@ -63,12 +66,15 @@ ShallowWrapper {
       <td
             className="order-item-row-item"
       >
-            <span
-                  className="button button-outline order-item-row-item remove-item-button"
+            <Button
+                  className="order-item-row-item remove-item-btn"
+                  danger={true}
+                  inline={true}
                   onClick={[Function]}
+                  outline={true}
             >
                   Remove
-            </span>
+            </Button>
       </td>
 </tr>,
   ],
@@ -145,12 +151,15 @@ ShallowWrapper {
           <td
                     className="order-item-row-item"
           >
-                    <span
-                              className="button button-outline order-item-row-item remove-item-button"
+                    <Button
+                              className="order-item-row-item remove-item-btn"
+                              danger={true}
+                              inline={true}
                               onClick={[Function]}
+                              outline={true}
                     >
                               Remove
-                    </span>
+                    </Button>
           </td>
 </tr>,
         "_debugID": 2,
@@ -177,12 +186,15 @@ ShallowWrapper {
           <td
                     className="order-item-row-item"
           >
-                    <span
-                              className="button button-outline order-item-row-item remove-item-button"
+                    <Button
+                              className="order-item-row-item remove-item-btn"
+                              danger={true}
+                              inline={true}
                               onClick={[Function]}
+                              outline={true}
                     >
                               Remove
-                    </span>
+                    </Button>
           </td>
 </tr>,
       },

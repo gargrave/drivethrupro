@@ -2,6 +2,7 @@ import React from 'react'
 import { func, number, shape, string } from 'prop-types'
 
 import { displayAsDollars } from '../../../utils/utils'
+import Button from '../../Common/Button'
 
 import './OrderItemRow.css'
 
@@ -18,12 +19,15 @@ const OrderItemRow = props => {
         {displayAsDollars(props.item.pricePerUnit * props.item.quantity)}
       </td>
       <td className="order-item-row-item">
-        <span
-          className="button button-outline order-item-row-item remove-item-button"
+        <Button
+          inline
+          outline
+          danger
+          className="order-item-row-item remove-item-btn"
           onClick={props.handleRemoveItemClick}
         >
           Remove
-        </span>
+        </Button>
       </td>
     </tr>
   )
