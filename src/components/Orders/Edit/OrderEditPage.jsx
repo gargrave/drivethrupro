@@ -27,7 +27,6 @@ class OrderEditPage extends Component {
     this.completeOrder = this.completeOrder.bind(this)
     this.cancelOrder = this.cancelOrder.bind(this)
     this.handleAddToOrderClick = this.handleAddToOrderClick.bind(this)
-    this.handleResetFormClick = this.handleResetFormClick.bind(this)
     this.handleItemChange = this.handleItemChange.bind(this)
     this.handleSizeChange = this.handleSizeChange.bind(this)
     this.handleQuantityChange = this.handleQuantityChange.bind(this)
@@ -76,14 +75,6 @@ class OrderEditPage extends Component {
     const order = new Order(this.state.order)
     order.addItem(orderItem)
     this.setState({ order })
-  }
-
-  /**
-   * Handler for the 'Reset' button.
-   * Simply calls the function to reset the form to its default state.
-   */
-  handleResetFormClick () {
-    this.resetOrderFormState()
   }
 
   /**
@@ -152,7 +143,6 @@ class OrderEditPage extends Component {
           quantity={this.state.quantity}
           handleQuantityChange={this.handleQuantityChange}
           handleAddToOrderClick={this.handleAddToOrderClick}
-          handleResetFormClick={this.handleResetFormClick}
         />
 
         <hr />

@@ -37,9 +37,6 @@ const OrderForm = props => {
       <Button info className="add-to-order-button" onClick={props.handleAddToOrderClick}>
         Add to Order
       </Button>
-      <Button warning className="reset-form-button" onClick={props.handleResetFormClick}>
-        Reset
-      </Button>
     </section>
   )
 }
@@ -52,8 +49,7 @@ OrderForm.propTypes = {
   handleSizeChange: func.isRequired,
   quantity: number.isRequired,
   handleQuantityChange: func.isRequired,
-  handleAddToOrderClick: func.isRequired,
-  handleResetFormClick: func.isRequired
+  handleAddToOrderClick: func.isRequired
 }
 
 export default OrderForm

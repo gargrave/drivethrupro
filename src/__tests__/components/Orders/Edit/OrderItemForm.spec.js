@@ -43,10 +43,4 @@ describe('OrderItemForm', () => {
     component.find('.add-to-order-button').simulate('click')
     expect(props.handleAddToOrderClick.mock.calls.length).toEqual(1)
   })
-
-  test('calls the "reset form" callback when the button is clicked', () => {
-    expect(props.handleResetFormClick.mock.calls.length).toEqual(0)
-    component.find('.reset-form-button').simulate('click')
-    expect(props.handleResetFormClick.mock.calls.length).toEqual(1)
-  })
 })

@@ -8,14 +8,18 @@ ShallowWrapper {
     "findWhereUnwrapped": [Function],
   },
   "length": 1,
-  "node": <section>
-    <h3>
+  "node": <section
+    className="order-item-form"
+>
+    <h4>
         Add an Item
-    </h3>
+    </h4>
     <div
-        className="order-item-form"
+        className="row"
     >
-        <div>
+        <div
+            className="column"
+        >
             <OrderProductMenu
                 handleItemChange={[Function]}
                 menu={
@@ -171,6 +175,10 @@ ShallowWrapper {
                       }
                 }
             />
+        </div>
+        <div
+            className="column"
+        >
             <OrderSizeMenu
                 availableSizes={
                     Array [
@@ -183,37 +191,38 @@ ShallowWrapper {
                 handleSizeChange={[Function]}
                 sizeIdx={0}
             />
+        </div>
+        <div
+            className="column"
+        >
             <OrderQuantityMenu
                 handleQuantityChange={[Function]}
                 maxRange={20}
                 quantity={1}
             />
         </div>
-        <div>
-            <button
-                className="add-to-order-button"
-                onClick={[Function]}
-            >
-                Add to Order
-            </button>
-            <button
-                className="reset-form-button"
-                onClick={[Function]}
-            >
-                Reset
-            </button>
-        </div>
     </div>
+    <Button
+        className="add-to-order-button"
+        info={true}
+        onClick={[Function]}
+    >
+        Add to Order
+    </Button>
 </section>,
   "nodes": Array [
-    <section>
-      <h3>
+    <section
+      className="order-item-form"
+>
+      <h4>
             Add an Item
-      </h3>
+      </h4>
       <div
-            className="order-item-form"
+            className="row"
       >
-            <div>
+            <div
+                  className="column"
+            >
                   <OrderProductMenu
                         handleItemChange={[Function]}
                         menu={
@@ -369,6 +378,10 @@ ShallowWrapper {
                                   }
                         }
                   />
+            </div>
+            <div
+                  className="column"
+            >
                   <OrderSizeMenu
                         availableSizes={
                               Array [
@@ -381,27 +394,24 @@ ShallowWrapper {
                         handleSizeChange={[Function]}
                         sizeIdx={0}
                   />
+            </div>
+            <div
+                  className="column"
+            >
                   <OrderQuantityMenu
                         handleQuantityChange={[Function]}
                         maxRange={20}
                         quantity={1}
                   />
             </div>
-            <div>
-                  <button
-                        className="add-to-order-button"
-                        onClick={[Function]}
-                  >
-                        Add to Order
-                  </button>
-                  <button
-                        className="reset-form-button"
-                        onClick={[Function]}
-                  >
-                        Reset
-                  </button>
-            </div>
       </div>
+      <Button
+            className="add-to-order-button"
+            info={true}
+            onClick={[Function]}
+      >
+            Add to Order
+      </Button>
 </section>,
   ],
   "options": Object {},
@@ -754,14 +764,18 @@ ShallowWrapper {
       "_pendingReplaceState": false,
       "_pendingStateQueue": null,
       "_renderedComponent": NoopInternalComponent {
-        "_currentElement": <section>
-          <h3>
+        "_currentElement": <section
+          className="order-item-form"
+>
+          <h4>
                     Add an Item
-          </h3>
+          </h4>
           <div
-                    className="order-item-form"
+                    className="row"
           >
-                    <div>
+                    <div
+                              className="column"
+                    >
                               <OrderProductMenu
                                         handleItemChange={[Function]}
                                         menu={
@@ -917,6 +931,10 @@ ShallowWrapper {
                                                           }
                                         }
                               />
+                    </div>
+                    <div
+                              className="column"
+                    >
                               <OrderSizeMenu
                                         availableSizes={
                                                   Array [
@@ -929,37 +947,38 @@ ShallowWrapper {
                                         handleSizeChange={[Function]}
                                         sizeIdx={0}
                               />
+                    </div>
+                    <div
+                              className="column"
+                    >
                               <OrderQuantityMenu
                                         handleQuantityChange={[Function]}
                                         maxRange={20}
                                         quantity={1}
                               />
                     </div>
-                    <div>
-                              <button
-                                        className="add-to-order-button"
-                                        onClick={[Function]}
-                              >
-                                        Add to Order
-                              </button>
-                              <button
-                                        className="reset-form-button"
-                                        onClick={[Function]}
-                              >
-                                        Reset
-                              </button>
-                    </div>
           </div>
+          <Button
+                    className="add-to-order-button"
+                    info={true}
+                    onClick={[Function]}
+          >
+                    Add to Order
+          </Button>
 </section>,
         "_debugID": 2,
-        "_renderedOutput": <section>
-          <h3>
+        "_renderedOutput": <section
+          className="order-item-form"
+>
+          <h4>
                     Add an Item
-          </h3>
+          </h4>
           <div
-                    className="order-item-form"
+                    className="row"
           >
-                    <div>
+                    <div
+                              className="column"
+                    >
                               <OrderProductMenu
                                         handleItemChange={[Function]}
                                         menu={
@@ -1115,6 +1134,10 @@ ShallowWrapper {
                                                           }
                                         }
                               />
+                    </div>
+                    <div
+                              className="column"
+                    >
                               <OrderSizeMenu
                                         availableSizes={
                                                   Array [
@@ -1127,27 +1150,24 @@ ShallowWrapper {
                                         handleSizeChange={[Function]}
                                         sizeIdx={0}
                               />
+                    </div>
+                    <div
+                              className="column"
+                    >
                               <OrderQuantityMenu
                                         handleQuantityChange={[Function]}
                                         maxRange={20}
                                         quantity={1}
                               />
                     </div>
-                    <div>
-                              <button
-                                        className="add-to-order-button"
-                                        onClick={[Function]}
-                              >
-                                        Add to Order
-                              </button>
-                              <button
-                                        className="reset-form-button"
-                                        onClick={[Function]}
-                              >
-                                        Reset
-                              </button>
-                    </div>
           </div>
+          <Button
+                    className="add-to-order-button"
+                    info={true}
+                    onClick={[Function]}
+          >
+                    Add to Order
+          </Button>
 </section>,
       },
       "_renderedNodeType": 0,
