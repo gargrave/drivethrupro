@@ -33,7 +33,7 @@ export default [
   },
   {
     id: nextId++,
-    name: 'Currrly Fries',
+    name: 'Curly Fries',
     sizes: [{ name: 'Small', price: 79 }, { name: 'Medium', price: 119 }, { name: 'Large', price: 149 }]
   },
   {
@@ -43,7 +43,7 @@ export default [
       { name: 'Small', price: 59 },
       { name: 'Medium', price: 79 },
       { name: 'Large', price: 99 },
-      { name: 'Obscene', price: 139 }
+      { name: 'Obscenely Huge', price: 139 }
     ]
   },
   {

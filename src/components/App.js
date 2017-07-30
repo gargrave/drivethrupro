@@ -15,7 +15,7 @@ class App extends Component {
       <Provider store={store}>
         <BrowserRouter>
           <div>
-            <Titlebar title="DriveThru PRO" titleLink="/orders" />
+            <Titlebar title="DriveThru PRO" titleLink="/" />
             <main className="App container">
               <Routes />
             </main>
