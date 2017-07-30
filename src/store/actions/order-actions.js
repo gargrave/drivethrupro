@@ -14,17 +14,17 @@ function _updateOrder (order) {
   }
 }
 
-function _completeOrder (orderID) {
+function _completeOrder (order) {
   return {
     type: Orders.Complete,
-    payload: { id: orderID }
+    payload: order
   }
 }
 
-function _cancelOrder (orderID) {
+function _cancelOrder (order) {
   return {
     type: Orders.Cancel,
-    payload: { id: orderID }
+    payload: order
   }
 }
 
@@ -46,19 +46,19 @@ export function updateOrder (order) {
   }
 }
 
-export function completeOrder (orderID) {
+export function completeOrder (order) {
   return dispatch => {
     return new Promise((resolve, reject) => {
-      dispatch(_completeOrder(orderID))
+      dispatch(_completeOrder(order))
       resolve()
     })
   }
 }
 
-export function cancelOrder (orderID) {
+export function cancelOrder (order) {
   return dispatch => {
     return new Promise((resolve, reject) => {
-      dispatch(_cancelOrder(orderID))
+      dispatch(_cancelOrder(order))
       resolve()
     })
   }

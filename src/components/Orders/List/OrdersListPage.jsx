@@ -21,10 +21,10 @@ class OrdersListPage extends Component {
    * Dispatches the signal tot he store that this order is complete, and can be removed.
    *
    * @param {*} event The default event
-   * @param {*} orderID The ID of the order to complete
+   * @param {*} orderID The order to complete
    */
-  async handleCompleteOrderClick (event, orderID) {
-    await this.props.completeOrder(orderID)
+  async handleCompleteOrderClick (event, order) {
+    await this.props.completeOrder(order)
   }
 
   /**
@@ -43,10 +43,10 @@ class OrdersListPage extends Component {
    * Dispatches the signal tot he store that this order is cancel, and can be removed.
    *
    * @param {*} event The default event
-   * @param {*} orderID The ID of the order to cancel
+   * @param {*} order The order to cancel
    */
-  async handleCancelOrderClick (event, orderID) {
-    await this.props.cancelOrder(orderID)
+  async handleCancelOrderClick (event, order) {
+    await this.props.cancelOrder(order)
   }
 
   render () {
@@ -84,12 +84,12 @@ const mapStateToProps = (state, ownProps) => {
 }
 
 const mapDispatchToProps = (dispatch, ownProps) => ({
-  completeOrder (orderID) {
-    return dispatch(completeOrder(orderID))
+  completeOrder (order) {
+    return dispatch(completeOrder(order))
   },
 
-  cancelOrder (orderID) {
-    return dispatch(cancelOrder(orderID))
+  cancelOrder (order) {
+    return dispatch(cancelOrder(order))
   }
 })
 

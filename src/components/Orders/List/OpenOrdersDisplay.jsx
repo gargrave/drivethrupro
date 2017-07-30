@@ -31,9 +31,9 @@ const OpenOrdersDisplay = props => {
                   key={order.id}
                   order={order}
                   index={idx + 1}
-                  handleCompleteOrderClick={e => props.handleCompleteOrderClick(e, order.id)}
+                  handleCompleteOrderClick={e => props.handleCompleteOrderClick(e, order)}
                   handleEditOrderClick={e => props.handleEditOrderClick(e, order.id)}
-                  handleCancelOrderClick={e => props.handleCancelOrderClick(e, order.id)}
+                  handleCancelOrderClick={e => props.handleCancelOrderClick(e, order)}
                 />
               )
             })}
