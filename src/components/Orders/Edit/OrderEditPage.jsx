@@ -4,6 +4,7 @@ import { withRouter } from 'react-router-dom'
 import { array, bool, func, number, object, shape } from 'prop-types'
 
 import { createOrder, updateOrder } from '../../../store/actions/order-actions'
+import Button from '../../Common/Button'
 import CurrentOrderDisplay from './CurrentOrderDisplay'
 import OrderItemForm from './OrderItemForm'
 
@@ -134,32 +135,28 @@ class OrderEditPage extends Component {
   render () {
     return (
       <div>
-        <div>
-          <div>
-            <button className="button" onClick={this.completeOrder}>
-              Submit Order
-            </button>
-            <button className="button button-outline" onClick={this.cancelOrder}>
-              Cancel
-            </button>
-          </div>
+        <Button success onClick={this.completeOrder} disabled={!this.state.order.items.length}>
+          Submit Order
+        </Button>
+        <Button outline info onClick={this.cancelOrder}>
+          Cancel
+        </Button>
 
-          <hr />
-          <OrderItemForm
-            menu={menu}
-            selectedMenuItem={this.state.selectedMenuItem}
-            handleItemChange={this.handleItemChange}
-            sizeIdx={this.state.sizeIdx}
-            handleSizeChange={this.handleSizeChange}
-            quantity={this.state.quantity}
-            handleQuantityChange={this.handleQuantityChange}
-            handleAddToOrderClick={this.handleAddToOrderClick}
-            handleResetFormClick={this.handleResetFormClick}
-          />
+        <hr />
+        <OrderItemForm
+          menu={menu}
+          selectedMenuItem={this.state.selectedMenuItem}
+          handleItemChange={this.handleItemChange}
+          sizeIdx={this.state.sizeIdx}
+          handleSizeChange={this.handleSizeChange}
+          quantity={this.state.quantity}
+          handleQuantityChange={this.handleQuantityChange}
+          handleAddToOrderClick={this.handleAddToOrderClick}
+          handleResetFormClick={this.handleResetFormClick}
+        />
 
-          <hr />
-          <CurrentOrderDisplay order={this.state.order} handleRemoveItemClick={this.handleRemoveItemClick} />
-        </div>
+        <hr />
+        <CurrentOrderDisplay order={this.state.order} handleRemoveItemClick={this.handleRemoveItemClick} />
       </div>
     )
   }

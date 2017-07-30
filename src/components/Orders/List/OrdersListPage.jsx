@@ -52,7 +52,9 @@ class OrdersListPage extends Component {
   render () {
     return (
       <div className="orders-list-view">
-        <Button onClick={() => this.props.history.push('/orders/new')}>Add an Order</Button>
+        <Button success onClick={() => this.props.history.push('/orders/new')}>
+          Add an Order
+        </Button>
 
         <hr />
         <OpenOrdersDisplay

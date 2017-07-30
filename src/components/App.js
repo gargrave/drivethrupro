@@ -13,10 +13,10 @@ class App extends Component {
     return (
       <Provider store={store}>
         <BrowserRouter>
-          <div className="App container">
-            <h1>Drive Thru PRO</h1>
+          <main className="App container">
+            <h1>DriveThru PRO</h1>
             <Routes />
-          </div>
+          </main>
         </BrowserRouter>
       </Provider>
     )

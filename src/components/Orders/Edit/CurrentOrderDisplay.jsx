@@ -9,14 +9,14 @@ import './CurrentOrderDisplay.css'
 const CurrentOrderDisplay = props => {
   return (
     <section>
-      <h3>
+      <h4>
         Current Order:
         <span className="current-order-total-price">
           <strong>
             {displayAsDollars(props.order.totalPrice)}
           </strong>
         </span>
-      </h3>
+      </h4>
 
       <table>
         <thead>
