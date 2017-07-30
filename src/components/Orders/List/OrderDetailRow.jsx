@@ -20,10 +20,10 @@ const OrderDetailRow = props => {
         {displayAsDollars(order.totalPrice)}
       </td>
       <td className="order-item-row-item">
-        <Button inline className="complete-order-btn" onClick={props.handleCompleteOrderClick}>
+        <Button inline outline success className="complete-order-btn" onClick={props.handleCompleteOrderClick}>
           Complete
         </Button>
-        <Button inline outline className="edit-order-btn" onClick={props.handleEditOrderClick}>
+        <Button inline outline warning className="edit-order-btn" onClick={props.handleEditOrderClick}>
           Edit
         </Button>
         <Button inline outline danger className="cancel-order-btn" onClick={props.handleCancelOrderClick}>
