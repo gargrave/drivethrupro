@@ -8,9 +8,9 @@ const Titlebar = props => {
   const { title, titleLink } = props
   return (
     <div className="titlebar">
-      {!titleLink && props.title}
+      {!titleLink && <span className="title-unlinked">props.title</span>}
       {!!titleLink &&
-        <Link to={titleLink}>
+        <Link to={titleLink} className="title-linked">
           {title}
         </Link>}
     </div>
