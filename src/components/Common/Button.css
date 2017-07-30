@@ -1,9 +1,15 @@
 /*
 additional styles on top the default styles provided by Milligram
 */
-
 :root {
+  --success-color: #499e49;
+  --success-color-dark: #3f8e3f;
+  --info-color: #5bc0de;
+  --info-color-dark: #31b0d5;
+  --warning-color: #f0ad4e;
+  --warning-color-dark: #ec971f;
   --danger-color: #c51919;
+  --danger-color-dark: #af1515;
 }
 
 .button.button-inline {
@@ -14,10 +20,95 @@ additional styles on top the default styles provided by Milligram
   padding: 9px 14px;
 }
 
-/* outlined styled "danger" colored button */
-.button.button-outline.button-danger {
-  color: var(--danger-color);
+/* 
+"success" style buttons 
+*/
+.button.button-success:not(.button-outline) {
+  background-color: var(--success-color);
+  border-color: var(--success-color);
+  color: white;
+}
+
+.button.button-success:not(.button-outline):hover {
+  background-color: var(--success-color-dark);
+  border-color: var(--success-color-dark);
+}
+
+.button.button-outline.button-success {
+  border-color: var(--success-color);
+  color: var(--success-color);
+}
+
+.button.button-outline.button-success:hover {
+  background-color: var(--success-color);
+  color: white;
+}
+
+/* 
+"info" style buttons 
+*/
+.button.button-info:not(.button-outline) {
+  background-color: var(--info-color);
+  border-color: var(--info-color);
+  color: white;
+}
+
+.button.button-info:not(.button-outline):hover {
+  background-color: var(--info-color-dark);
+  border-color: var(--info-color-dark);
+}
+
+.button.button-outline.button-info {
+  border-color: var(--info-color);
+  color: var(--info-color);
+}
+
+.button.button-outline.button-info:hover {
+  background-color: var(--info-color);
+  color: white;
+}
+
+/* 
+"warning" style buttons 
+*/
+.button.button-warning:not(.button-outline) {
+  background-color: var(--warning-color);
+  border-color: var(--warning-color);
+  color: white;
+}
+
+.button.button-warning:not(.button-outline):hover {
+  background-color: var(--warning-color-dark);
+  border-color: var(--warning-color-dark);
+}
+
+.button.button-outline.button-warning {
+  border-color: var(--warning-color);
+  color: var(--warning-color);
+}
+
+.button.button-outline.button-warning:hover {
+  background-color: var(--warning-color);
+  color: white;
+}
+
+/* 
+"danger" style button 
+*/
+.button.button-danger:not(.button-outline) {
+  background-color: var(--danger-color);
   border-color: var(--danger-color);
+  color: white;
+}
+
+.button.button-danger:not(.button-outline):hover {
+  background-color: var(--danger-color-dark);
+  border-color: var(--danger-color-dark);
+}
+
+.button.button-outline.button-danger {
+  border-color: var(--danger-color);
+  color: var(--danger-color);
 }
 
 .button.button-outline.button-danger:hover {

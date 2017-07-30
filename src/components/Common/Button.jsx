@@ -15,6 +15,9 @@ const Button = props => {
       `button` +
       `${props.outline ? ' button-outline' : ''}` +
       `${props.inline ? ' button-inline' : ''}` +
+      `${props.success ? ' button-success' : ''}` +
+      `${props.info ? ' button-info' : ''}` +
+      `${props.warning ? ' button-warning' : ''}` +
       `${props.danger ? ' button-danger' : ''}` +
       ` ${props.className}`
     )
@@ -32,6 +35,9 @@ Button.propTypes = {
   className: any,
   outline: bool,
   inline: bool,
+  success: bool,
+  info: bool,
+  warning: bool,
   danger: bool,
   onClick: func.isRequired
 }
