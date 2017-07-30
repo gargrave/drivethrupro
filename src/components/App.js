@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { BrowserRouter } from 'react-router-dom'
 import { Provider } from 'react-redux'
 
+import Titlebar from './Common/Titlebar'
 import Routes from './Routes'
 
 import store from '../store/store'
@@ -13,10 +14,12 @@ class App extends Component {
     return (
       <Provider store={store}>
         <BrowserRouter>
-          <main className="App container">
-            <h1>DriveThru PRO</h1>
-            <Routes />
-          </main>
+          <div>
+            <Titlebar title="DriveThru PRO" titleLink="/orders" />
+            <main className="App container">
+              <Routes />
+            </main>
+          </div>
         </BrowserRouter>
       </Provider>
     )
