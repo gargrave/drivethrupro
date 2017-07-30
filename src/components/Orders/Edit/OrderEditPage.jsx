@@ -10,8 +10,6 @@ import OrderItemForm from './OrderItemForm'
 import Order from '../utils/Order'
 import OrderItem from '../utils/OrderItem'
 
-import './OrderEditPage.css'
-
 import menu from '../../../data/menu-items'
 
 class OrderEditPage extends Component {
