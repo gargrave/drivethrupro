@@ -31,6 +31,8 @@ ShallowWrapper {
             className="complete-order-btn"
             inline={true}
             onClick={[Function]}
+            outline={true}
+            success={true}
         >
             Complete
         </Button>
@@ -39,6 +41,7 @@ ShallowWrapper {
             inline={true}
             onClick={[Function]}
             outline={true}
+            warning={true}
         >
             Edit
         </Button>
@@ -77,6 +80,8 @@ ShallowWrapper {
                   className="complete-order-btn"
                   inline={true}
                   onClick={[Function]}
+                  outline={true}
+                  success={true}
             >
                   Complete
             </Button>
@@ -85,6 +90,7 @@ ShallowWrapper {
                   inline={true}
                   onClick={[Function]}
                   outline={true}
+                  warning={true}
             >
                   Edit
             </Button>
@@ -177,6 +183,8 @@ ShallowWrapper {
                               className="complete-order-btn"
                               inline={true}
                               onClick={[Function]}
+                              outline={true}
+                              success={true}
                     >
                               Complete
                     </Button>
@@ -185,6 +193,7 @@ ShallowWrapper {
                               inline={true}
                               onClick={[Function]}
                               outline={true}
+                              warning={true}
                     >
                               Edit
                     </Button>
@@ -223,6 +232,8 @@ ShallowWrapper {
                               className="complete-order-btn"
                               inline={true}
                               onClick={[Function]}
+                              outline={true}
+                              success={true}
                     >
                               Complete
                     </Button>
@@ -231,6 +242,7 @@ ShallowWrapper {
                               inline={true}
                               onClick={[Function]}
                               outline={true}
+                              warning={true}
                     >
                               Edit
                     </Button>

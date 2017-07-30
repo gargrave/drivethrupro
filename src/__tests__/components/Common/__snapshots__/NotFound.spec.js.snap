@@ -10,14 +10,52 @@ ShallowWrapper {
   "length": 1,
   "node": <div>
     <h2>
-        404 Not Found!
+        ONOS! This is the dreaded 404 page!
     </h2>
+    <h4>
+        You are probably looking for one of these pages:
+    </h4>
+    <h5>
+        <Link
+            replace={false}
+            to="/orders"
+        >
+            View Open Orders
+        </Link>
+    </h5>
+    <h5>
+        <Link
+            replace={false}
+            to="/orders/new"
+        >
+            Create a New Order
+        </Link>
+    </h5>
 </div>,
   "nodes": Array [
     <div>
       <h2>
-            404 Not Found!
+            ONOS! This is the dreaded 404 page!
       </h2>
+      <h4>
+            You are probably looking for one of these pages:
+      </h4>
+      <h5>
+            <Link
+                  replace={false}
+                  to="/orders"
+            >
+                  View Open Orders
+            </Link>
+      </h5>
+      <h5>
+            <Link
+                  replace={false}
+                  to="/orders/new"
+            >
+                  Create a New Order
+            </Link>
+      </h5>
 </div>,
   ],
   "options": Object {},
@@ -56,14 +94,52 @@ ShallowWrapper {
       "_renderedComponent": NoopInternalComponent {
         "_currentElement": <div>
           <h2>
-                    404 Not Found!
+                    ONOS! This is the dreaded 404 page!
           </h2>
+          <h4>
+                    You are probably looking for one of these pages:
+          </h4>
+          <h5>
+                    <Link
+                              replace={false}
+                              to="/orders"
+                    >
+                              View Open Orders
+                    </Link>
+          </h5>
+          <h5>
+                    <Link
+                              replace={false}
+                              to="/orders/new"
+                    >
+                              Create a New Order
+                    </Link>
+          </h5>
 </div>,
         "_debugID": 2,
         "_renderedOutput": <div>
           <h2>
-                    404 Not Found!
+                    ONOS! This is the dreaded 404 page!
           </h2>
+          <h4>
+                    You are probably looking for one of these pages:
+          </h4>
+          <h5>
+                    <Link
+                              replace={false}
+                              to="/orders"
+                    >
+                              View Open Orders
+                    </Link>
+          </h5>
+          <h5>
+                    <Link
+                              replace={false}
+                              to="/orders/new"
+                    >
+                              Create a New Order
+                    </Link>
+          </h5>
 </div>,
       },
       "_renderedNodeType": 0,

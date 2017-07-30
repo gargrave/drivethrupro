@@ -107,7 +107,7 @@ ShallowWrapper {
                         },
                         Object {
                           "id": 6,
-                          "name": "Currrly Fries",
+                          "name": "Curly Fries",
                           "sizes": Array [
                             Object {
                               "name": "Small",
@@ -140,7 +140,7 @@ ShallowWrapper {
                               "price": 99,
                             },
                             Object {
-                              "name": "Obscene",
+                              "name": "Obscenely Huge",
                               "price": 139,
                             },
                           ],
@@ -323,7 +323,7 @@ ShallowWrapper {
                                     },
                                     Object {
                                       "id": 6,
-                                      "name": "Currrly Fries",
+                                      "name": "Curly Fries",
                                       "sizes": Array [
                                         Object {
                                           "name": "Small",
@@ -356,7 +356,7 @@ ShallowWrapper {
                                           "price": 99,
                                         },
                                         Object {
-                                          "name": "Obscene",
+                                          "name": "Obscenely Huge",
                                           "price": 139,
                                         },
                                       ],
@@ -524,7 +524,7 @@ ShallowWrapper {
                         },
                         Object {
                           "id": 6,
-                          "name": "Currrly Fries",
+                          "name": "Curly Fries",
                           "sizes": Array [
                             Object {
                               "name": "Small",
@@ -557,7 +557,7 @@ ShallowWrapper {
                               "price": 99,
                             },
                             Object {
-                              "name": "Obscene",
+                              "name": "Obscenely Huge",
                               "price": 139,
                             },
                           ],
@@ -690,7 +690,7 @@ ShallowWrapper {
             },
             Object {
               "id": 6,
-              "name": "Currrly Fries",
+              "name": "Curly Fries",
               "sizes": Array [
                 Object {
                   "name": "Small",
@@ -723,7 +723,7 @@ ShallowWrapper {
                   "price": 99,
                 },
                 Object {
-                  "name": "Obscene",
+                  "name": "Obscenely Huge",
                   "price": 139,
                 },
               ],
@@ -889,7 +889,7 @@ ShallowWrapper {
                                                             },
                                                             Object {
                                                               "id": 6,
-                                                              "name": "Currrly Fries",
+                                                              "name": "Curly Fries",
                                                               "sizes": Array [
                                                                 Object {
                                                                   "name": "Small",
@@ -922,7 +922,7 @@ ShallowWrapper {
                                                                   "price": 99,
                                                                 },
                                                                 Object {
-                                                                  "name": "Obscene",
+                                                                  "name": "Obscenely Huge",
                                                                   "price": 139,
                                                                 },
                                                               ],
@@ -1105,7 +1105,7 @@ ShallowWrapper {
                                                             },
                                                             Object {
                                                               "id": 6,
-                                                              "name": "Currrly Fries",
+                                                              "name": "Curly Fries",
                                                               "sizes": Array [
                                                                 Object {
                                                                   "name": "Small",
@@ -1138,7 +1138,7 @@ ShallowWrapper {
                                                                   "price": 99,
                                                                 },
                                                                 Object {
-                                                                  "name": "Obscene",
+                                                                  "name": "Obscenely Huge",
                                                                   "price": 139,
                                                                 },
                                                               ],
@@ -1310,7 +1310,7 @@ ShallowWrapper {
             },
             Object {
               "id": 6,
-              "name": "Currrly Fries",
+              "name": "Curly Fries",
               "sizes": Array [
                 Object {
                   "name": "Small",
@@ -1343,7 +1343,7 @@ ShallowWrapper {
                   "price": 99,
                 },
                 Object {
-                  "name": "Obscene",
+                  "name": "Obscenely Huge",
                   "price": 139,
                 },
               ],

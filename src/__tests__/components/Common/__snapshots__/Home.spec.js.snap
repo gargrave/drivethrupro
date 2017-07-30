@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Home renders correctly 1`] = `
+exports[`Home (without Redux) Home renders correctly 1`] = `
 ShallowWrapper {
   "complexSelector": ComplexSelector {
     "buildPredicate": [Function],
@@ -10,14 +10,150 @@ ShallowWrapper {
   "length": 1,
   "node": <div>
     <h2>
-        Home
+        DriveThru Pro
     </h2>
+    <hr />
+    <h4>
+        Links:
+    </h4>
+    <h5>
+        <Link
+            replace={false}
+            to="/orders"
+        >
+            View Open Orders
+        </Link>
+    </h5>
+    <h5>
+        <Link
+            replace={false}
+            to="/orders/new"
+        >
+            Create a New Order
+        </Link>
+    </h5>
+    <hr />
+    <h4>
+        Stats:
+    </h4>
+    <h5>
+        You have 
+        <span
+            style={
+                Object {
+                    "color": "green",
+                  }
+            }
+        >
+            completed
+        </span>
+         
+        <strong>
+            0 orders
+        </strong>
+        , for a total of
+         
+        <strong>
+            $0.00
+        </strong>
+        .
+    </h5>
+    <h5>
+        You have 
+        <span
+            style={
+                Object {
+                    "color": "red",
+                  }
+            }
+        >
+            cancelled
+        </span>
+         
+        <strong>
+            0 orders
+        </strong>
+        , for a total loss of
+         
+        <strong>
+            $0.00
+        </strong>
+        .
+    </h5>
 </div>,
   "nodes": Array [
     <div>
       <h2>
-            Home
+            DriveThru Pro
       </h2>
+      <hr />
+      <h4>
+            Links:
+      </h4>
+      <h5>
+            <Link
+                  replace={false}
+                  to="/orders"
+            >
+                  View Open Orders
+            </Link>
+      </h5>
+      <h5>
+            <Link
+                  replace={false}
+                  to="/orders/new"
+            >
+                  Create a New Order
+            </Link>
+      </h5>
+      <hr />
+      <h4>
+            Stats:
+      </h4>
+      <h5>
+            You have 
+            <span
+                  style={
+                        Object {
+                              "color": "green",
+                            }
+                  }
+            >
+                  completed
+            </span>
+             
+            <strong>
+                  0 orders
+            </strong>
+            , for a total of
+             
+            <strong>
+                  $0.00
+            </strong>
+            .
+      </h5>
+      <h5>
+            You have 
+            <span
+                  style={
+                        Object {
+                              "color": "red",
+                            }
+                  }
+            >
+                  cancelled
+            </span>
+             
+            <strong>
+                  0 orders
+            </strong>
+            , for a total loss of
+             
+            <strong>
+                  $0.00
+            </strong>
+            .
+      </h5>
 </div>,
   ],
   "options": Object {},
@@ -26,14 +162,24 @@ ShallowWrapper {
       "_calledComponentWillUnmount": false,
       "_compositeType": 2,
       "_context": Object {},
-      "_currentElement": <HomeRoute />,
+      "_currentElement": <HomeRoute
+        ordersCancelled={0}
+        ordersCompleted={0}
+        revenueEarned={0}
+        revenueLost={0}
+/>,
       "_debugID": 1,
       "_hostContainerInfo": null,
       "_hostParent": null,
       "_instance": StatelessComponent {
         "_reactInternalInstance": [Circular],
         "context": Object {},
-        "props": Object {},
+        "props": Object {
+          "ordersCancelled": 0,
+          "ordersCompleted": 0,
+          "revenueEarned": 0,
+          "revenueLost": 0,
+        },
         "refs": Object {},
         "state": null,
         "updater": Object {
@@ -56,14 +202,150 @@ ShallowWrapper {
       "_renderedComponent": NoopInternalComponent {
         "_currentElement": <div>
           <h2>
-                    Home
+                    DriveThru Pro
           </h2>
+          <hr />
+          <h4>
+                    Links:
+          </h4>
+          <h5>
+                    <Link
+                              replace={false}
+                              to="/orders"
+                    >
+                              View Open Orders
+                    </Link>
+          </h5>
+          <h5>
+                    <Link
+                              replace={false}
+                              to="/orders/new"
+                    >
+                              Create a New Order
+                    </Link>
+          </h5>
+          <hr />
+          <h4>
+                    Stats:
+          </h4>
+          <h5>
+                    You have 
+                    <span
+                              style={
+                                        Object {
+                                                  "color": "green",
+                                                }
+                              }
+                    >
+                              completed
+                    </span>
+                     
+                    <strong>
+                              0 orders
+                    </strong>
+                    , for a total of
+                     
+                    <strong>
+                              $0.00
+                    </strong>
+                    .
+          </h5>
+          <h5>
+                    You have 
+                    <span
+                              style={
+                                        Object {
+                                                  "color": "red",
+                                                }
+                              }
+                    >
+                              cancelled
+                    </span>
+                     
+                    <strong>
+                              0 orders
+                    </strong>
+                    , for a total loss of
+                     
+                    <strong>
+                              $0.00
+                    </strong>
+                    .
+          </h5>
 </div>,
         "_debugID": 2,
         "_renderedOutput": <div>
           <h2>
-                    Home
+                    DriveThru Pro
           </h2>
+          <hr />
+          <h4>
+                    Links:
+          </h4>
+          <h5>
+                    <Link
+                              replace={false}
+                              to="/orders"
+                    >
+                              View Open Orders
+                    </Link>
+          </h5>
+          <h5>
+                    <Link
+                              replace={false}
+                              to="/orders/new"
+                    >
+                              Create a New Order
+                    </Link>
+          </h5>
+          <hr />
+          <h4>
+                    Stats:
+          </h4>
+          <h5>
+                    You have 
+                    <span
+                              style={
+                                        Object {
+                                                  "color": "green",
+                                                }
+                              }
+                    >
+                              completed
+                    </span>
+                     
+                    <strong>
+                              0 orders
+                    </strong>
+                    , for a total of
+                     
+                    <strong>
+                              $0.00
+                    </strong>
+                    .
+          </h5>
+          <h5>
+                    You have 
+                    <span
+                              style={
+                                        Object {
+                                                  "color": "red",
+                                                }
+                              }
+                    >
+                              cancelled
+                    </span>
+                     
+                    <strong>
+                              0 orders
+                    </strong>
+                    , for a total loss of
+                     
+                    <strong>
+                              $0.00
+                    </strong>
+                    .
+          </h5>
 </div>,
       },
       "_renderedNodeType": 0,
@@ -76,6 +358,11 @@ ShallowWrapper {
     "render": [Function],
   },
   "root": [Circular],
-  "unrendered": <HomeRoute />,
+  "unrendered": <HomeRoute
+    ordersCancelled={0}
+    ordersCompleted={0}
+    revenueEarned={0}
+    revenueLost={0}
+/>,
 }
 `;

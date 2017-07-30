@@ -55,4 +55,5 @@ const mapStateToProps = (state, ownProps) => {
   }
 }
 
+export const Unwrapped = HomeRoute
 export default connect(mapStateToProps)(HomeRoute)
