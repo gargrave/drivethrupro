@@ -10,7 +10,7 @@ ShallowWrapper {
   "length": 1,
   "node": <div>
     <h2>
-        DriveThru Pro
+        DriveThru PRO
     </h2>
     <hr />
     <h4>
@@ -84,7 +84,7 @@ ShallowWrapper {
   "nodes": Array [
     <div>
       <h2>
-            DriveThru Pro
+            DriveThru PRO
       </h2>
       <hr />
       <h4>
@@ -202,7 +202,7 @@ ShallowWrapper {
       "_renderedComponent": NoopInternalComponent {
         "_currentElement": <div>
           <h2>
-                    DriveThru Pro
+                    DriveThru PRO
           </h2>
           <hr />
           <h4>
@@ -276,7 +276,7 @@ ShallowWrapper {
         "_debugID": 2,
         "_renderedOutput": <div>
           <h2>
-                    DriveThru Pro
+                    DriveThru PRO
           </h2>
           <hr />
           <h4>
