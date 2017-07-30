@@ -1,6 +1,7 @@
 import React from 'react'
 import { array, func, number, object } from 'prop-types'
 
+import Button from '../../Common/Button'
 import OrderProductMenu from './OrderProductMenu'
 import OrderQuantityMenu from './OrderQuantityMenu'
 import OrderSizeMenu from './OrderSizeMenu'
@@ -33,16 +34,12 @@ const OrderForm = props => {
         </div>
       </div>
 
-      <div className="row">
-        <div className="column">
-          <button className="button add-to-order-button" onClick={props.handleAddToOrderClick}>
-            Add to Order
-          </button>
-          <button className="button button-outline reset-form-button" onClick={props.handleResetFormClick}>
-            Reset
-          </button>
-        </div>
-      </div>
+      <Button info className="add-to-order-button" onClick={props.handleAddToOrderClick}>
+        Add to Order
+      </Button>
+      <Button warning className="reset-form-button" onClick={props.handleResetFormClick}>
+        Reset
+      </Button>
     </section>
   )
 }
