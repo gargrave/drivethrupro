@@ -1,5 +1,7 @@
 import { Orders } from '../action-types'
 
+import mock from '../../data/mock-orders' // eslint-disable-line no-unused-vars
+
 export default function orders (state = [], action) {
   const order = action.payload
   switch (action.type) {
