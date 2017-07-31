@@ -29,6 +29,7 @@
 ## Some Notes
 
 - File structure is domain-based for the most part, so if you are looking for a component on the "Order Edit" page, you will probably find it in `src/components/Orders/Edit`. The Redux-connected "containers" generally have "Page" in the title (e.g. `OrderEditPage.jsx`), and everything else is a functional/stateless component.
+- Needless to say, there is no actual database in use at this point. The menu of available items is populated by the data in `src/data/menu-items.js`, and all of the actual orders and order stats are simply held in memory.
 - Given the nature of the app, I put the strongest focus on making a good tablet/desktop experience, rather than mobile. It is fully responsive and _mostly_ nice on mobile--the one exception I can think of right away is that the table showing open orders doesn't quite fit on mobile. I would probably just need to replace it with something else altogether to make it work better (e.g. just use a list of Cards displaying order details), but again, I just didn't have time to make everything _perfect_.
 - Test coverage is fairly strong, albeit not 100%. I tried to break things up into small, easily testable components as much as possible, and only connected the very top-level containers/pages to Redux, so that certainly helps make testing more digestible.
-- There are a couple places where I have some duplicated CSS that I wanted to pull into a separate component, but I just didn't have time to get it finished.
+- There are a couple places where I have some duplicated CSS that I wanted to pull into a separate component to help keep it DRY, but I just really didn't have time to make everything perfect. Consider it a roadmap item for the highly-anticipated 1.1 update!
