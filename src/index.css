@@ -14,3 +14,12 @@ hr {
 .button + .button {
   margin-left: 10px;
 }
+
+/* get rid of some of Milligram's default purple coloring */
+a {
+  color: #337ab7;
+}
+
+select:focus {
+  border-color: #64777b;
+}
