@@ -15,7 +15,7 @@
 - Run the dev server with `npm run dev` or `yarn dev`
 - Run tests in watch mode with `npm test` or `yarn test`
 - To build for deployment, run `npm run build` or `yarn build`
-- You can also try a pre-deployed on Netlify version [here](https://drivethrupro.netlify.com/).
+- You can also try a pre-deployed version on Netlify [here](https://drivethrupro.netlify.com/).
 
 ## Tech Stuff
 
